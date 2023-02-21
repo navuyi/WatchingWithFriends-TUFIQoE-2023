@@ -1,0 +1,43 @@
+$TEXT_COLOR: whitesmoke;
+$BACKGROUND_COLOR: #222222;
+
+$YT_RED: #FF0000;
+$YT_BLACK: #282828;
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 32px;
+  color: $TEXT_COLOR;
+  margin: 0 0;
+}
+
+body{
+  background-color: $YT_BLACK;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.start-button{
+  width: 100%;
+  font-size: 24px;
+  margin-top: 100px;
+
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  align-self: center;
+
+  background-color: $YT_RED;
+  outline: none;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+.start-button:hover{
+  background-color: #b40000;
+}
+.start-button:active{
+  background-color: #f91d1d;
+}
