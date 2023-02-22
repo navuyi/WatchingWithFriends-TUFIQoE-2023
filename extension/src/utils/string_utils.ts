@@ -1,9 +1,8 @@
-
 /**
- * Function removes whitespaces from provided string
- * @param {string} text 
+ * Removes whitespaces from given string
+ * @param text
  * @returns {string}
-*/
-export const remove_whitespaces = (text) => {
+ */
+export const remove_whitespaces = (text : string) : string => {
     return text.replaceAll(/\s/g,'')
 }

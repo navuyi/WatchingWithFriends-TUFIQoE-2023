@@ -1,12 +1,4 @@
-/**
- * Function uses some workaround in order to save .json file.
- * File is saved on local disk in "Downloaded" directory.
- * Download bar at the bottom of browser window becomes visible when file is saved.
- * @param {object} obj 
- * @param {string} filename 
- * @returns true
-*/
-export const save_json = function(obj, filename) {
+export const save_json = (obj:object, filename:string) => {
     try{
         const data = JSON.stringify(obj, null, 2);
         const blob = new Blob( [ data ], {
