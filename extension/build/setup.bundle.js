@@ -42149,13 +42149,18 @@ var STORAGE_DEFAULT = {
         stats_invisible: false,
         bitrate_interval_ms: 2.5 * 60 * 1000,
         assessment_interval_ms: 2.5 * 60 * 1000,
-        config: null
+        config: null,
+        device_id: "dev_device_id",
+        subject_id: "",
+        subject_sex: "",
+        subject_age: "",
+        subject_netflix_familiarity: "",
+        subject_selected_content: "",
+        content_continuation: ""
     },
     experiment_variables: {
         database_experiment_id: -1,
         database_video_id: -1,
-        device_id: "dev_device_id",
-        subject_id: "",
         extension_running: false,
         extension_mode: "",
         video_index: 0
@@ -46374,7 +46379,7 @@ function _objectWithoutPropertiesLoose(source, excluded) {
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("c22303932ae78505a01d")
+/******/ 		__webpack_require__.h = () => ("52ff6cf29324819b19b1")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */

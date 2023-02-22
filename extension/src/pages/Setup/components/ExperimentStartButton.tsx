@@ -24,7 +24,7 @@ const ExperimentStartButton = (props : T_PROPS) => {
 
         // Create experiment
         const database_experiment_id = await post_new_experiment({
-            subject_id: variables.subject_id, 
+            subject_id: settings.subject_id, 
             started: timestamp,
             urls: JSON.stringify(settings.config?.videos.map(video => video.url)),
             settings: JSON.stringify(settings)
