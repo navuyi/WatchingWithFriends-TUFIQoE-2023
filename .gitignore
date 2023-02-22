@@ -102,3 +102,16 @@ dist
 
 # TernJS port file
 .tern-port
+
+
+
+
+extension/build
+extension/build/*
+./extension/build/*
+
+backend/venv
+backend/venv/*
+
+backend/database/database.db
+backend/database/database-backup.db
