@@ -1,1 +1,48 @@
-@import "../../../../config/style.config.scss"
+@import "../../../../config/style.config.scss";
+
+
+.experiment_setup{
+    background-color: $netflix-dark;
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 2em;
+}
+
+.header{
+    font-size: $font-size-large;
+    color: white;
+    
+    font-family: ubuntu-medium;
+    text-align: left;
+}
+.sub_header{
+    font-size: $font-size-medium;
+    color: white;
+    filter: brightness(0.8);
+    font-family: ubuntu-regular;
+}
+
+
+.wrapper{
+    width: 100%;
+    margin: 1em 0;;
+}
+.wrapper_row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}

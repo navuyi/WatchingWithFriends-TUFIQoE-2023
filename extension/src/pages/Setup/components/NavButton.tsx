@@ -11,7 +11,9 @@ const NavButton = (props : T_PROPS) => {
     const navigate = useNavigate()
 
     const handleClick = () => {
-        navigate(props.to)
+        navigate(props.to, {
+            replace: false
+        })
     }
 
     return(

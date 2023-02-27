@@ -42,13 +42,14 @@ var STORAGE_DEFAULT = {
         bitrate_interval_ms: 2.5 * 60 * 1000,
         assessment_interval_ms: 2.5 * 60 * 1000,
         config: null,
-        device_id: "dev_device_id",
+        device_id: 106,
         subject_id: "",
         subject_sex: "",
         subject_age: "",
         subject_netflix_familiarity: "",
         subject_selected_content: "",
-        content_continuation: ""
+        content_continuation: "",
+        session_type: ""
     },
     experiment_variables: {
         database_experiment_id: -1,
@@ -731,7 +732,7 @@ var get_local_datetime_and_timezone = function (object) {
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("52ff6cf29324819b19b1")
+/******/ 		__webpack_require__.h = () => ("38e29e8ea3c0d6217956")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */

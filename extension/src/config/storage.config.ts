@@ -9,13 +9,14 @@ export type T_EXPERIMENT_SETTINGS = {
     assessment_interval_ms: number,
     config: T_CONFIG | null,
 
-    device_id: number | string,
-    subject_id: number | string,
-    subject_age : number | string,
-    subject_sex : string,
-    subject_netflix_familiarity : string | boolean,
-    subject_selected_content: boolean | string,
-    content_continuation : boolean | string
+    device_id: "" | 106 | 107,
+    subject_id: "" | number,
+    subject_age : "" | number,
+    subject_sex : "" | "male" | "female" | "undisclosed",
+    subject_netflix_familiarity : "" | boolean,
+    subject_selected_content: "" | boolean,
+    content_continuation : "" | boolean,
+    session_type : "" | "alone" | "together"
 }
 
 export type T_EXPERIMENT_VARIABLES = {
@@ -41,13 +42,14 @@ export const STORAGE_DEFAULT : T_STORAGE = {
         assessment_interval_ms: 2.5 * 60 * 1000, // default 2.5min=150sec=150*1000
         config: null,
 
-        device_id: "dev_device_id",
+        device_id: 106,
         subject_id: "",
         subject_sex: "",
         subject_age: "",
         subject_netflix_familiarity: "",
         subject_selected_content: "",
-        content_continuation: ""
+        content_continuation: "",
+        session_type: ""
     },
     experiment_variables: {
         database_experiment_id: -1,

@@ -5,14 +5,15 @@ import style from "./style.module.scss"
 type T_PROPS = {
     label: string
     type?: string
-    value: string
+    value: string | number
     handleChange: Function
+    style?: Object
 }
 
 const Input = (props : T_PROPS) => {
 
     return(
-        <div className={style.wrapper}>
+        <div className={style.wrapper} style={props.style}>
             <span className={style.label}>{props.label}</span>
             <input 
                 className={style.input}

@@ -58,8 +58,5 @@ export abstract class ChromeStorage{
         settings[key] = value
         await ChromeStorage.set_experiment_settings(settings)
     }
-
-
-
 }
 
