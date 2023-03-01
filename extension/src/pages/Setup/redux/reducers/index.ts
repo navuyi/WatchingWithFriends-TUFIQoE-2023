@@ -1,11 +1,10 @@
 import { combineReducers } from "redux";
 import configReducer from "./configReducer";
-
-import subjectIDReducer from "./subjectIDReducer";
+import setupFormReducer from "./setupFormReducer";
 
 const rootReducer = combineReducers({
     config: configReducer,
-    subject_id: subjectIDReducer
+    setupForm: setupFormReducer
 })
 
 

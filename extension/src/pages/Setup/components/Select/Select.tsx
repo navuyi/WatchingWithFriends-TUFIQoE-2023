@@ -3,8 +3,9 @@ import { T_EXPERIMENT_SETTINGS } from "../../../../config/storage.config";
 import style from "./style.module.scss"
 import { useSelect } from "./useSelect";
 
+
 type T_PROPS = {
-    key: keyof T_EXPERIMENT_SETTINGS
+    id: keyof T_EXPERIMENT_SETTINGS
     label: string
     options: Array<{label:string, value:string|number|boolean}>
     style?: Object
@@ -17,7 +18,7 @@ type T_PROPS = {
  * @returns {ReactElement}
 */
 const Select = (props:T_PROPS) => {
-    const {value, handleChange, init} = useSelect(props.key)
+    const {value, handleChange, init} = useSelect(props.id)
 
     useLayoutEffect(() => {
         // Init state value with settings saved in ChromeStorage
@@ -27,7 +28,8 @@ const Select = (props:T_PROPS) => {
     return(
         <div className={style.select_container} style={props.style}>
             <span className={style.label}>{props.label}</span>
-            <select className={style.select} onChange={(e) => handleChange(e.currentTarget.value)} value={value}>
+            <select className={style.select} onChange={(e) => handleChange(e.currentTarget.value)} value={value as string}>
+            <option disabled value="">...</option>
                 {
                     props.options.map((option,index) => {
                         return <option key={index} value={option.value.toString()}>{option.label}</option>

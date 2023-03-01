@@ -30763,7 +30763,7 @@ var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_g
 var ___CSS_LOADER_URL_REPLACEMENT_2___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_2___);
 var ___CSS_LOADER_URL_REPLACEMENT_3___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_3___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "@font-face {\n  font-family: \"ubuntu-medium\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") format(\"truetype\");\n}\n@font-face {\n  font-family: \"ubuntu-bold\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") format(\"truetype\");\n}\n@font-face {\n  font-family: \"ubuntu-light\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ") format(\"truetype\");\n}\n@font-face {\n  font-family: \"ubuntu-regular\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + ") format(\"truetype\");\n}\n.wrapper--CX1LpX36dx--src-pages-Setup-components-Input- {\n  display: flex;\n  flex-direction: column;\n  align-items: flex-start;\n  justify-content: center;\n  width: 100%;\n}\n\n.label--gswQ2HGe1f--src-pages-Setup-components-Input- {\n  font-size: 16px;\n  font-family: ubuntu-regular;\n  margin-bottom: 1px;\n  color: white;\n}\n\n.input--d8sXUPmBDl--src-pages-Setup-components-Input- {\n  width: 100%;\n  font-size: 16px;\n  font-family: ubuntu-regular;\n  padding: 5px 10px;\n  margin-bottom: 5px;\n  border-radius: 5px;\n  outline: none;\n  border: 2px solid rga(1, 1, 1, 0);\n  box-sizing: border-box;\n}\n\n.input--d8sXUPmBDl--src-pages-Setup-components-Input-:focus {\n  border: 2px solid #DB0000;\n}", "",{"version":3,"sources":["webpack://./src/config/style.config.scss","webpack://./src/pages/Setup/components/Input/style.module.scss"],"names":[],"mappings":"AAAA;EACI,4BAAA;EACA,+DAAA;ACCJ;ADCA;EACI,0BAAA;EACA,+DAAA;ACCJ;ADCA;EACI,2BAAA;EACA,+DAAA;ACCJ;ADCA;EACI,6BAAA;EACA,+DAAA;ACCJ;AAXA;EACI,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,uBAAA;EAEA,WAAA;AAYJ;;AATA;EACI,eDMc;ECLd,2BAAA;EACA,kBAAA;EACA,YAAA;AAYJ;;AAVA;EACI,WAAA;EACA,eDDc;ECEd,2BAAA;EAEA,iBAAA;EACA,kBAAA;EACA,kBAAA;EAEA,aAAA;EACA,iCAAA;EACA,sBAAA;AAWJ;;AATA;EACI,yBAAA;AAYJ","sourcesContent":["@font-face{\n    font-family: \"ubuntu-medium\";\n    src: url(\"/src/assets/fonts/Ubuntu/Ubuntu-Medium.ttf\") format(\"truetype\");\n}\n@font-face{\n    font-family: \"ubuntu-bold\";\n    src: url(\"/src/assets/fonts/Ubuntu/Ubuntu-Bold.ttf\") format(\"truetype\");\n}\n@font-face{\n    font-family: \"ubuntu-light\";\n    src: url(\"/src/assets/fonts/Ubuntu/Ubuntu-Light.ttf\") format(\"truetype\");\n}\n@font-face{\n    font-family: \"ubuntu-regular\";\n    src: url(\"/src/assets/fonts/Ubuntu/Ubuntu-Regular.ttf\") format(\"truetype\");\n}\n\n\n$font-size-large: 24px;\n$font-size-medium: 20px;\n$font-size-small: 16px;\n\n$netflix-dark: #222222;\n$netflix-red: #DB0000;\n$netflix-gray: #564D4D;\n$netflix-white: #FFFFFF;\n$netflix-dark-red: #831010;\n\n$primary: #02C39A;\n$secondary: #00A896;\n$support: #3185FC;\n\n\n\n\n\n","@import \"../../../../config/style.config.scss\";\n$border-width: 2px;\n\n\n.wrapper{\n    display: flex;\n    flex-direction: column;\n    align-items: flex-start;\n    justify-content: center;\n\n    width: 100%;\n}\n\n.label{\n    font-size: $font-size-small;\n    font-family: ubuntu-regular;\n    margin-bottom: 1px;\n    color: white;\n}\n.input{\n    width: 100%;\n    font-size: $font-size-small;\n    font-family: ubuntu-regular;\n\n    padding: 5px 10px;\n    margin-bottom: 5px;\n    border-radius: 5px;\n    \n    outline: none;\n    border: $border-width solid rga(1,1,1,0);\n    box-sizing: border-box;\n}\n.input:focus{\n    border: $border-width solid $netflix-red;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "@font-face {\n  font-family: \"ubuntu-medium\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") format(\"truetype\");\n}\n@font-face {\n  font-family: \"ubuntu-bold\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") format(\"truetype\");\n}\n@font-face {\n  font-family: \"ubuntu-light\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ") format(\"truetype\");\n}\n@font-face {\n  font-family: \"ubuntu-regular\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + ") format(\"truetype\");\n}\n.wrapper--CX1LpX36dx--src-pages-Setup-components-Input- {\n  display: flex;\n  flex-direction: column;\n  align-items: flex-start;\n  justify-content: center;\n  width: 100%;\n}\n\n.label--gswQ2HGe1f--src-pages-Setup-components-Input- {\n  color: white;\n  font-family: ubuntu-regular;\n  font-size: 16px;\n  margin-bottom: 3px;\n}\n\n.input--d8sXUPmBDl--src-pages-Setup-components-Input- {\n  font-size: 16px;\n  outline: none;\n  border: none;\n  padding: 5px 10px;\n  border-radius: 5px;\n  border: 2px solid rgba(1, 1, 1, 0);\n}\n\n.input--d8sXUPmBDl--src-pages-Setup-components-Input-:focus {\n  border: 2px solid #DB0000;\n}", "",{"version":3,"sources":["webpack://./src/config/style.config.scss","webpack://./src/pages/Setup/components/Input/style.module.scss"],"names":[],"mappings":"AAAA;EACI,4BAAA;EACA,+DAAA;ACCJ;ADCA;EACI,0BAAA;EACA,+DAAA;ACCJ;ADCA;EACI,2BAAA;EACA,+DAAA;ACCJ;ADCA;EACI,6BAAA;EACA,+DAAA;ACCJ;AAXA;EACI,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,uBAAA;EAEA,WAAA;AAYJ;;AATA;EACI,YAAA;EACA,2BAAA;EACA,eDIc;ECHd,kBAAA;AAYJ;;AAVA;EACI,eAAA;EACA,aAAA;EACA,YAAA;EACA,iBAAA;EAEA,kBAAA;EACA,kCAAA;AAYJ;;AAVA;EACI,yBAAA;AAaJ","sourcesContent":["@font-face{\n    font-family: \"ubuntu-medium\";\n    src: url(\"/src/assets/fonts/Ubuntu/Ubuntu-Medium.ttf\") format(\"truetype\");\n}\n@font-face{\n    font-family: \"ubuntu-bold\";\n    src: url(\"/src/assets/fonts/Ubuntu/Ubuntu-Bold.ttf\") format(\"truetype\");\n}\n@font-face{\n    font-family: \"ubuntu-light\";\n    src: url(\"/src/assets/fonts/Ubuntu/Ubuntu-Light.ttf\") format(\"truetype\");\n}\n@font-face{\n    font-family: \"ubuntu-regular\";\n    src: url(\"/src/assets/fonts/Ubuntu/Ubuntu-Regular.ttf\") format(\"truetype\");\n}\n\n\n$font-size-large: 24px;\n$font-size-medium: 20px;\n$font-size-small: 16px;\n\n$netflix-dark: #222222;\n$netflix-red: #DB0000;\n$netflix-gray: #564D4D;\n$netflix-white: #FFFFFF;\n$netflix-dark-red: #831010;\n\n$primary: #02C39A;\n$secondary: #00A896;\n$support: #3185FC;\n\n\n\n\n\n","@import \"../../../../config/style.config.scss\";\n$border-width: 2px;\n\n\n.wrapper{\n    display: flex;\n    flex-direction: column;\n    align-items: flex-start;\n    justify-content: center;\n\n    width: 100%;\n}\n\n.label{\n    color: white;\n    font-family: ubuntu-regular;\n    font-size: $font-size-small;\n    margin-bottom: 3px;\n}\n.input{\n    font-size: $font-size-small;\n    outline: none;\n    border: none;\n    padding: 5px 10px;\n\n    border-radius: 5px;\n    border: $border-width solid rgba(1,1,1,0);\n}\n.input:focus{\n    border: $border-width solid $netflix-red;\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"wrapper": "wrapper--CX1LpX36dx--src-pages-Setup-components-Input-",
@@ -30806,7 +30806,7 @@ var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_g
 var ___CSS_LOADER_URL_REPLACEMENT_2___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_2___);
 var ___CSS_LOADER_URL_REPLACEMENT_3___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_3___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "@font-face {\n  font-family: \"ubuntu-medium\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") format(\"truetype\");\n}\n@font-face {\n  font-family: \"ubuntu-bold\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") format(\"truetype\");\n}\n@font-face {\n  font-family: \"ubuntu-light\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ") format(\"truetype\");\n}\n@font-face {\n  font-family: \"ubuntu-regular\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + ") format(\"truetype\");\n}\n.select_container--kZC4svBrYd--src-pages-Setup-components-Select- {\n  display: flex;\n  flex-direction: column;\n  margin-bottom: 1em;\n  width: 100%;\n}\n\n.label--ORJfxBqLqY--src-pages-Setup-components-Select- {\n  color: white;\n  font-size: 16px;\n  margin-bottom: 5px;\n}\n\n.select--moIgD7xuqF--src-pages-Setup-components-Select- {\n  font-size: 16px;\n  outline: none;\n  border: none;\n  padding: 5px 10px;\n  border-radius: 5px;\n  border: 2px solid rgba(1, 1, 1, 0);\n}", "",{"version":3,"sources":["webpack://./src/config/style.config.scss","webpack://./src/pages/Setup/components/Select/style.module.scss"],"names":[],"mappings":"AAAA;EACI,4BAAA;EACA,+DAAA;ACCJ;ADCA;EACI,0BAAA;EACA,+DAAA;ACCJ;ADCA;EACI,2BAAA;EACA,+DAAA;ACCJ;ADCA;EACI,6BAAA;EACA,+DAAA;ACCJ;AAZA;EACI,aAAA;EACA,sBAAA;EAEA,kBAAA;EACA,WAAA;AAaJ;;AAVA;EACI,YAAA;EACA,eDOc;ECNd,kBAAA;AAaJ;;AAVA;EACI,eDEc;ECDd,aAAA;EACA,YAAA;EACA,iBAAA;EAEA,kBAAA;EACA,kCAAA;AAYJ","sourcesContent":["@font-face{\n    font-family: \"ubuntu-medium\";\n    src: url(\"/src/assets/fonts/Ubuntu/Ubuntu-Medium.ttf\") format(\"truetype\");\n}\n@font-face{\n    font-family: \"ubuntu-bold\";\n    src: url(\"/src/assets/fonts/Ubuntu/Ubuntu-Bold.ttf\") format(\"truetype\");\n}\n@font-face{\n    font-family: \"ubuntu-light\";\n    src: url(\"/src/assets/fonts/Ubuntu/Ubuntu-Light.ttf\") format(\"truetype\");\n}\n@font-face{\n    font-family: \"ubuntu-regular\";\n    src: url(\"/src/assets/fonts/Ubuntu/Ubuntu-Regular.ttf\") format(\"truetype\");\n}\n\n\n$font-size-large: 24px;\n$font-size-medium: 20px;\n$font-size-small: 16px;\n\n$netflix-dark: #222222;\n$netflix-red: #DB0000;\n$netflix-gray: #564D4D;\n$netflix-white: #FFFFFF;\n$netflix-dark-red: #831010;\n\n$primary: #02C39A;\n$secondary: #00A896;\n$support: #3185FC;\n\n\n\n\n\n","@import \"../../../../config/style.config.scss\";\n$border-thickness: 2px;\n\n.select_container{\n    display: flex;\n    flex-direction: column;\n\n    margin-bottom: 1em;\n    width: 100%;\n}\n\n.label{\n    color: white;\n    font-size: $font-size-small;\n    margin-bottom: 5px;\n}\n\n.select{\n    font-size: $font-size-small;\n    outline: none;\n    border: none;\n    padding: 5px 10px;\n\n    border-radius: 5px;\n    border: $border-thickness solid rgba(1,1,1,0);\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "@font-face {\n  font-family: \"ubuntu-medium\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") format(\"truetype\");\n}\n@font-face {\n  font-family: \"ubuntu-bold\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") format(\"truetype\");\n}\n@font-face {\n  font-family: \"ubuntu-light\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ") format(\"truetype\");\n}\n@font-face {\n  font-family: \"ubuntu-regular\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + ") format(\"truetype\");\n}\n.select_container--kZC4svBrYd--src-pages-Setup-components-Select- {\n  display: flex;\n  flex-direction: column;\n  width: 100%;\n}\n\n.label--ORJfxBqLqY--src-pages-Setup-components-Select- {\n  color: white;\n  font-family: ubuntu-regular;\n  font-size: 16px;\n  margin-bottom: 3px;\n}\n\n.select--moIgD7xuqF--src-pages-Setup-components-Select- {\n  font-size: 16px;\n  outline: none;\n  border: none;\n  padding: 5px 10px;\n  border-radius: 5px;\n  border: 2px solid rgba(1, 1, 1, 0);\n}", "",{"version":3,"sources":["webpack://./src/config/style.config.scss","webpack://./src/pages/Setup/components/Select/style.module.scss"],"names":[],"mappings":"AAAA;EACI,4BAAA;EACA,+DAAA;ACCJ;ADCA;EACI,0BAAA;EACA,+DAAA;ACCJ;ADCA;EACI,2BAAA;EACA,+DAAA;ACCJ;ADCA;EACI,6BAAA;EACA,+DAAA;ACCJ;AAZA;EACI,aAAA;EACA,sBAAA;EAEA,WAAA;AAaJ;;AAVA;EACI,YAAA;EACA,2BAAA;EACA,eDOc;ECNd,kBAAA;AAaJ;;AAVA;EACI,eDEc;ECDd,aAAA;EACA,YAAA;EACA,iBAAA;EAEA,kBAAA;EACA,kCAAA;AAYJ","sourcesContent":["@font-face{\n    font-family: \"ubuntu-medium\";\n    src: url(\"/src/assets/fonts/Ubuntu/Ubuntu-Medium.ttf\") format(\"truetype\");\n}\n@font-face{\n    font-family: \"ubuntu-bold\";\n    src: url(\"/src/assets/fonts/Ubuntu/Ubuntu-Bold.ttf\") format(\"truetype\");\n}\n@font-face{\n    font-family: \"ubuntu-light\";\n    src: url(\"/src/assets/fonts/Ubuntu/Ubuntu-Light.ttf\") format(\"truetype\");\n}\n@font-face{\n    font-family: \"ubuntu-regular\";\n    src: url(\"/src/assets/fonts/Ubuntu/Ubuntu-Regular.ttf\") format(\"truetype\");\n}\n\n\n$font-size-large: 24px;\n$font-size-medium: 20px;\n$font-size-small: 16px;\n\n$netflix-dark: #222222;\n$netflix-red: #DB0000;\n$netflix-gray: #564D4D;\n$netflix-white: #FFFFFF;\n$netflix-dark-red: #831010;\n\n$primary: #02C39A;\n$secondary: #00A896;\n$support: #3185FC;\n\n\n\n\n\n","@import \"../../../../config/style.config.scss\";\n$border-thickness: 2px;\n\n.select_container{\n    display: flex;\n    flex-direction: column;\n    \n    width: 100%;\n}\n\n.label{\n    color: white;\n    font-family: ubuntu-regular;\n    font-size: $font-size-small;\n    margin-bottom: 3px;\n}\n\n.select{\n    font-size: $font-size-small;\n    outline: none;\n    border: none;\n    padding: 5px 10px;\n\n    border-radius: 5px;\n    border: $border-thickness solid rgba(1,1,1,0);\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"select_container": "select_container--kZC4svBrYd--src-pages-Setup-components-Select-",
@@ -30973,7 +30973,7 @@ var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_g
 var ___CSS_LOADER_URL_REPLACEMENT_2___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_2___);
 var ___CSS_LOADER_URL_REPLACEMENT_3___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_3___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "@font-face {\n  font-family: \"ubuntu-medium\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") format(\"truetype\");\n}\n@font-face {\n  font-family: \"ubuntu-bold\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") format(\"truetype\");\n}\n@font-face {\n  font-family: \"ubuntu-light\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ") format(\"truetype\");\n}\n@font-face {\n  font-family: \"ubuntu-regular\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + ") format(\"truetype\");\n}\n.experiment_setup--wxj7NNV_yT--src-pages-Setup-views-ExperimentSetup- {\n  background-color: #222222;\n  width: 100%;\n  min-height: 100vh;\n  display: flex;\n  flex-direction: column;\n  justify-content: flex-start;\n  align-items: center;\n}\n\n.container--Rhnun73Q88--src-pages-Setup-views-ExperimentSetup- {\n  display: flex;\n  flex-direction: column;\n  align-items: flex-start;\n  padding: 2em;\n}\n\n.header--GhaQCNCOkZ--src-pages-Setup-views-ExperimentSetup- {\n  font-size: 24px;\n  color: white;\n  font-family: ubuntu-medium;\n  text-align: left;\n}\n\n.sub_header--VuhG22MRQy--src-pages-Setup-views-ExperimentSetup- {\n  font-size: 20px;\n  color: white;\n  filter: brightness(0.8);\n  font-family: ubuntu-regular;\n}\n\n.wrapper--kvMVu6AojT--src-pages-Setup-views-ExperimentSetup- {\n  width: 100%;\n  margin: 1em 0;\n}\n\n.wrapper_row--alvQHQemzT--src-pages-Setup-views-ExperimentSetup- {\n  width: 100%;\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  justify-content: space-around;\n}", "",{"version":3,"sources":["webpack://./src/config/style.config.scss","webpack://./src/pages/Setup/views/ExperimentSetup/style.module.scss"],"names":[],"mappings":"AAAA;EACI,4BAAA;EACA,+DAAA;ACCJ;ADCA;EACI,0BAAA;EACA,+DAAA;ACCJ;ADCA;EACI,2BAAA;EACA,+DAAA;ACCJ;ADCA;EACI,6BAAA;EACA,+DAAA;ACCJ;AAZA;EACI,yBDkBW;ECjBX,WAAA;EACA,iBAAA;EAEA,aAAA;EACA,sBAAA;EACA,2BAAA;EACA,mBAAA;AAaJ;;AAVA;EACI,aAAA;EACA,sBAAA;EACA,uBAAA;EAEA,YAAA;AAYJ;;AATA;EACI,eDLc;ECMd,YAAA;EAEA,0BAAA;EACA,gBAAA;AAWJ;;AATA;EACI,eDXe;ECYf,YAAA;EACA,uBAAA;EACA,2BAAA;AAYJ;;AARA;EACI,WAAA;EACA,aAAA;AAWJ;;AATA;EACI,WAAA;EACA,aAAA;EACA,mBAAA;EACA,mBAAA;EACA,6BAAA;AAYJ","sourcesContent":["@font-face{\n    font-family: \"ubuntu-medium\";\n    src: url(\"/src/assets/fonts/Ubuntu/Ubuntu-Medium.ttf\") format(\"truetype\");\n}\n@font-face{\n    font-family: \"ubuntu-bold\";\n    src: url(\"/src/assets/fonts/Ubuntu/Ubuntu-Bold.ttf\") format(\"truetype\");\n}\n@font-face{\n    font-family: \"ubuntu-light\";\n    src: url(\"/src/assets/fonts/Ubuntu/Ubuntu-Light.ttf\") format(\"truetype\");\n}\n@font-face{\n    font-family: \"ubuntu-regular\";\n    src: url(\"/src/assets/fonts/Ubuntu/Ubuntu-Regular.ttf\") format(\"truetype\");\n}\n\n\n$font-size-large: 24px;\n$font-size-medium: 20px;\n$font-size-small: 16px;\n\n$netflix-dark: #222222;\n$netflix-red: #DB0000;\n$netflix-gray: #564D4D;\n$netflix-white: #FFFFFF;\n$netflix-dark-red: #831010;\n\n$primary: #02C39A;\n$secondary: #00A896;\n$support: #3185FC;\n\n\n\n\n\n","@import \"../../../../config/style.config.scss\";\n\n\n.experiment_setup{\n    background-color: $netflix-dark;\n    width: 100%;\n    min-height: 100vh;\n\n    display: flex;\n    flex-direction: column;\n    justify-content: flex-start;\n    align-items: center;\n}\n\n.container{\n    display: flex;\n    flex-direction: column;\n    align-items: flex-start;\n\n    padding: 2em;\n}\n\n.header{\n    font-size: $font-size-large;\n    color: white;\n    \n    font-family: ubuntu-medium;\n    text-align: left;\n}\n.sub_header{\n    font-size: $font-size-medium;\n    color: white;\n    filter: brightness(0.8);\n    font-family: ubuntu-regular;\n}\n\n\n.wrapper{\n    width: 100%;\n    margin: 1em 0;;\n}\n.wrapper_row{\n    width: 100%;\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    justify-content: space-around;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "@font-face {\n  font-family: \"ubuntu-medium\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") format(\"truetype\");\n}\n@font-face {\n  font-family: \"ubuntu-bold\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") format(\"truetype\");\n}\n@font-face {\n  font-family: \"ubuntu-light\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ") format(\"truetype\");\n}\n@font-face {\n  font-family: \"ubuntu-regular\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + ") format(\"truetype\");\n}\n.experiment_setup--wxj7NNV_yT--src-pages-Setup-views-ExperimentSetup- {\n  background-color: #222222;\n  width: 100%;\n  min-height: 100vh;\n  display: flex;\n  flex-direction: column;\n  justify-content: flex-start;\n  align-items: center;\n}\n\n.container--Rhnun73Q88--src-pages-Setup-views-ExperimentSetup- {\n  width: 30%;\n  display: flex;\n  flex-direction: column;\n  align-items: flex-start;\n  padding: 2em;\n}\n\n.header--GhaQCNCOkZ--src-pages-Setup-views-ExperimentSetup- {\n  font-size: 24px;\n  color: white;\n  font-family: ubuntu-medium;\n  text-align: left;\n}\n\n.sub_header--VuhG22MRQy--src-pages-Setup-views-ExperimentSetup- {\n  font-size: 20px;\n  color: white;\n  filter: brightness(0.8);\n  font-family: ubuntu-regular;\n}\n\n.wrapper--kvMVu6AojT--src-pages-Setup-views-ExperimentSetup- {\n  width: 100%;\n  margin: 5em 0;\n}\n\n.wrapper_row--alvQHQemzT--src-pages-Setup-views-ExperimentSetup- {\n  width: 100%;\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  justify-content: space-around;\n  margin: 1em 0;\n}", "",{"version":3,"sources":["webpack://./src/config/style.config.scss","webpack://./src/pages/Setup/views/ExperimentSetup/style.module.scss"],"names":[],"mappings":"AAAA;EACI,4BAAA;EACA,+DAAA;ACCJ;ADCA;EACI,0BAAA;EACA,+DAAA;ACCJ;ADCA;EACI,2BAAA;EACA,+DAAA;ACCJ;ADCA;EACI,6BAAA;EACA,+DAAA;ACCJ;AAZA;EACI,yBDkBW;ECjBX,WAAA;EACA,iBAAA;EAEA,aAAA;EACA,sBAAA;EACA,2BAAA;EACA,mBAAA;AAaJ;;AAVA;EACI,UAAA;EAEA,aAAA;EACA,sBAAA;EACA,uBAAA;EAEA,YAAA;AAWJ;;AARA;EACI,eDPc;ECQd,YAAA;EAEA,0BAAA;EACA,gBAAA;AAUJ;;AARA;EACI,eDbe;ECcf,YAAA;EACA,uBAAA;EACA,2BAAA;AAWJ;;AAPA;EACI,WAAA;EACA,aAAA;AAUJ;;AARA;EACI,WAAA;EACA,aAAA;EACA,mBAAA;EACA,mBAAA;EACA,6BAAA;EAEA,aAAA;AAUJ","sourcesContent":["@font-face{\n    font-family: \"ubuntu-medium\";\n    src: url(\"/src/assets/fonts/Ubuntu/Ubuntu-Medium.ttf\") format(\"truetype\");\n}\n@font-face{\n    font-family: \"ubuntu-bold\";\n    src: url(\"/src/assets/fonts/Ubuntu/Ubuntu-Bold.ttf\") format(\"truetype\");\n}\n@font-face{\n    font-family: \"ubuntu-light\";\n    src: url(\"/src/assets/fonts/Ubuntu/Ubuntu-Light.ttf\") format(\"truetype\");\n}\n@font-face{\n    font-family: \"ubuntu-regular\";\n    src: url(\"/src/assets/fonts/Ubuntu/Ubuntu-Regular.ttf\") format(\"truetype\");\n}\n\n\n$font-size-large: 24px;\n$font-size-medium: 20px;\n$font-size-small: 16px;\n\n$netflix-dark: #222222;\n$netflix-red: #DB0000;\n$netflix-gray: #564D4D;\n$netflix-white: #FFFFFF;\n$netflix-dark-red: #831010;\n\n$primary: #02C39A;\n$secondary: #00A896;\n$support: #3185FC;\n\n\n\n\n\n","@import \"../../../../config/style.config.scss\";\n\n\n.experiment_setup{\n    background-color: $netflix-dark;\n    width: 100%;\n    min-height: 100vh;\n\n    display: flex;\n    flex-direction: column;\n    justify-content: flex-start;\n    align-items: center;\n}\n\n.container{\n    width: 30%;\n\n    display: flex;\n    flex-direction: column;\n    align-items: flex-start;\n\n    padding: 2em;\n}\n\n.header{\n    font-size: $font-size-large;\n    color: white;\n    \n    font-family: ubuntu-medium;\n    text-align: left;\n}\n.sub_header{\n    font-size: $font-size-medium;\n    color: white;\n    filter: brightness(0.8);\n    font-family: ubuntu-regular;\n}\n\n\n.wrapper{\n    width: 100%;\n    margin: 5em 0;;\n}\n.wrapper_row{\n    width: 100%;\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    justify-content: space-around;\n\n    margin: 1em 0;\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"experiment_setup": "experiment_setup--wxj7NNV_yT--src-pages-Setup-views-ExperimentSetup-",
@@ -42866,7 +42866,7 @@ var Dropzone = function () {
         }
     };
     return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _style_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].dropzone, onDragOver: handleDragOver, onDragEnter: handleDragEnter, onDragLeave: handleDragLeave, onDrop: handleDrop },
-        react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _style_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].text }, "Drop config file here to continue")));
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _style_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].text }, "Drop configuration file here to continue")));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Dropzone);
 
@@ -43047,16 +43047,18 @@ __webpack_require__.r(__webpack_exports__);
  * @returns {ReactElement}
 */
 var Select = function (props) {
-    var _a = (0,_useSelect__WEBPACK_IMPORTED_MODULE_2__.useSelect)(props.key), value = _a.value, handleChange = _a.handleChange, init = _a.init;
+    var _a = (0,_useSelect__WEBPACK_IMPORTED_MODULE_2__.useSelect)(props.id), value = _a.value, handleChange = _a.handleChange, init = _a.init;
     (0,react__WEBPACK_IMPORTED_MODULE_0__.useLayoutEffect)(function () {
         // Init state value with settings saved in ChromeStorage
         init();
     }, []);
     return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _style_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].select_container, style: props.style },
         react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _style_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label }, props.label),
-        react__WEBPACK_IMPORTED_MODULE_0__.createElement("select", { className: _style_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].select, onChange: function (e) { return handleChange(e.currentTarget.value); }, value: value }, props.options.map(function (option, index) {
-            return react__WEBPACK_IMPORTED_MODULE_0__.createElement("option", { key: index, value: option.value.toString() }, option.label);
-        }))));
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement("select", { className: _style_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].select, onChange: function (e) { return handleChange(e.currentTarget.value); }, value: value },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("option", { disabled: true, value: "" }, "..."),
+            props.options.map(function (option, index) {
+                return react__WEBPACK_IMPORTED_MODULE_0__.createElement("option", { key: index, value: option.value.toString() }, option.label);
+            }))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Select);
 
@@ -43074,8 +43076,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "useSelect": () => (/* binding */ useSelect)
 /* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _utils_custom_ChromeStorage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../utils/custom/ChromeStorage */ "./src/utils/custom/ChromeStorage.ts");
+/* harmony import */ var _utils_custom_ChromeStorage__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../utils/custom/ChromeStorage */ "./src/utils/custom/ChromeStorage.ts");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -43114,16 +43116,24 @@ var __generator = (undefined && undefined.__generator) || function (thisArg, bod
 };
 
 
+
 var useSelect = function (key) {
-    var _a = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(""), value = _a[0], setValue = _a[1];
+    var value = (0,react_redux__WEBPACK_IMPORTED_MODULE_1__.useSelector)(function (state) { return state.setupForm[key]; });
+    var dispatch = (0,react_redux__WEBPACK_IMPORTED_MODULE_1__.useDispatch)();
     var init = function () { return __awaiter(void 0, void 0, void 0, function () {
         var settings;
         return __generator(this, function (_a) {
             switch (_a.label) {
-                case 0: return [4 /*yield*/, _utils_custom_ChromeStorage__WEBPACK_IMPORTED_MODULE_1__.ChromeStorage.get_experiment_settings()];
+                case 0: return [4 /*yield*/, _utils_custom_ChromeStorage__WEBPACK_IMPORTED_MODULE_0__.ChromeStorage.get_experiment_settings()];
                 case 1:
                     settings = _a.sent();
-                    setValue(settings[key]);
+                    dispatch({
+                        type: "UPDATE_SETUP_FORM_ACTION",
+                        payload: {
+                            key: key,
+                            value: settings[key]
+                        }
+                    });
                     return [2 /*return*/];
             }
         });
@@ -43132,8 +43142,14 @@ var useSelect = function (key) {
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
-                    setValue(value);
-                    return [4 /*yield*/, _utils_custom_ChromeStorage__WEBPACK_IMPORTED_MODULE_1__.ChromeStorage.update_experiment_settings_property(key, value)];
+                    dispatch({
+                        type: "UPDATE_SETUP_FORM_ACTION",
+                        payload: {
+                            key: key,
+                            value: value
+                        }
+                    });
+                    return [4 /*yield*/, _utils_custom_ChromeStorage__WEBPACK_IMPORTED_MODULE_0__.ChromeStorage.update_experiment_settings_property(key, value)];
                 case 1:
                     _a.sent();
                     return [2 /*return*/];
@@ -43164,6 +43180,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _Input_Input__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Input/Input */ "./src/pages/Setup/components/Input/Input.tsx");
 /* harmony import */ var _utils_custom_ChromeStorage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../utils/custom/ChromeStorage */ "./src/utils/custom/ChromeStorage.ts");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -43204,8 +43221,31 @@ var __generator = (undefined && undefined.__generator) || function (thisArg, bod
 
 
 
+
 var SubjectAgeInput = function () {
-    var _a = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(""), value = _a[0], setValue = _a[1];
+    var subject_age = (0,react_redux__WEBPACK_IMPORTED_MODULE_3__.useSelector)(function (state) { return state.setupForm.subject_age; });
+    var dispatch = (0,react_redux__WEBPACK_IMPORTED_MODULE_3__.useDispatch)();
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useLayoutEffect)(function () {
+        init();
+    }, []);
+    var init = function () { return __awaiter(void 0, void 0, void 0, function () {
+        var subject_age;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0: return [4 /*yield*/, _utils_custom_ChromeStorage__WEBPACK_IMPORTED_MODULE_2__.ChromeStorage.get_experiment_settings()];
+                case 1:
+                    subject_age = (_a.sent()).subject_age;
+                    dispatch({
+                        type: "UPDATE_SETUP_FORM_ACTION",
+                        payload: {
+                            key: "subject_age",
+                            value: subject_age
+                        }
+                    });
+                    return [2 /*return*/];
+            }
+        });
+    }); };
     var handleChange = function (value) { return __awaiter(void 0, void 0, void 0, function () {
         var new_value;
         return __generator(this, function (_a) {
@@ -43215,8 +43255,13 @@ var SubjectAgeInput = function () {
                     if (isNaN(new_value) === true) {
                         return [2 /*return*/];
                     }
-                    //TODO add regex for XXX - three digit number
-                    setValue(new_value);
+                    dispatch({
+                        type: "UPDATE_SETUP_FORM_ACTION",
+                        payload: {
+                            key: "subject_age",
+                            value: new_value
+                        }
+                    });
                     return [4 /*yield*/, _utils_custom_ChromeStorage__WEBPACK_IMPORTED_MODULE_2__.ChromeStorage.update_experiment_settings_property("subject_age", new_value)];
                 case 1:
                     _a.sent();
@@ -43225,9 +43270,121 @@ var SubjectAgeInput = function () {
         });
     }); };
     return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null,
-        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Input_Input__WEBPACK_IMPORTED_MODULE_1__["default"], { label: "Subject Age", value: value, handleChange: handleChange })));
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Input_Input__WEBPACK_IMPORTED_MODULE_1__["default"], { label: "Subject Age", value: subject_age, handleChange: handleChange })));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SubjectAgeInput);
+
+
+/***/ }),
+
+/***/ "./src/pages/Setup/components/SubjectDataInputs/SubjectIDInput.tsx":
+/*!*************************************************************************!*\
+  !*** ./src/pages/Setup/components/SubjectDataInputs/SubjectIDInput.tsx ***!
+  \*************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var _utils_custom_ChromeStorage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../utils/custom/ChromeStorage */ "./src/utils/custom/ChromeStorage.ts");
+/* harmony import */ var _Input_Input__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../Input/Input */ "./src/pages/Setup/components/Input/Input.tsx");
+var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (undefined && undefined.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+
+
+
+
+
+var SubjectIDInput = function () {
+    var subject_id = (0,react_redux__WEBPACK_IMPORTED_MODULE_1__.useSelector)(function (state) { return state.setupForm.subject_id; });
+    var dispatch = (0,react_redux__WEBPACK_IMPORTED_MODULE_1__.useDispatch)();
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useLayoutEffect)(function () {
+        init();
+    }, []);
+    var init = function () { return __awaiter(void 0, void 0, void 0, function () {
+        var id;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0: return [4 /*yield*/, _utils_custom_ChromeStorage__WEBPACK_IMPORTED_MODULE_2__.ChromeStorage.get_experiment_settings()];
+                case 1:
+                    id = (_a.sent()).subject_id;
+                    dispatch({
+                        type: "UPDATE_SETUP_FORM_ACTION",
+                        payload: {
+                            key: "subject_id",
+                            value: id
+                        }
+                    });
+                    return [2 /*return*/];
+            }
+        });
+    }); };
+    var handleChange = function (value) { return __awaiter(void 0, void 0, void 0, function () {
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    if (isNaN(Number(value)) === true) {
+                        return [2 /*return*/];
+                    }
+                    // Allow only XXX - where X is a digit 
+                    if ((/^[0-9]{1,3}$/gm).test(value) === false) {
+                        return [2 /*return*/];
+                    }
+                    dispatch({
+                        type: "UPDATE_SETUP_FORM_ACTION",
+                        payload: {
+                            key: "subject_id",
+                            value: Number(value)
+                        }
+                    });
+                    return [4 /*yield*/, _utils_custom_ChromeStorage__WEBPACK_IMPORTED_MODULE_2__.ChromeStorage.update_experiment_settings_property("subject_id", Number(value))];
+                case 1:
+                    _a.sent();
+                    return [2 /*return*/];
+            }
+        });
+    }); };
+    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Input_Input__WEBPACK_IMPORTED_MODULE_3__["default"], { label: "Subject ID", value: subject_id, handleChange: handleChange }));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SubjectIDInput);
 
 
 /***/ }),
@@ -43495,22 +43652,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! redux */ "./node_modules/redux/es/redux.js");
 /* harmony import */ var _configReducer__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./configReducer */ "./src/pages/Setup/redux/reducers/configReducer.ts");
-/* harmony import */ var _subjectIDReducer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./subjectIDReducer */ "./src/pages/Setup/redux/reducers/subjectIDReducer.ts");
+/* harmony import */ var _setupFormReducer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./setupFormReducer */ "./src/pages/Setup/redux/reducers/setupFormReducer.ts");
 
 
 
 var rootReducer = (0,redux__WEBPACK_IMPORTED_MODULE_2__.combineReducers)({
     config: _configReducer__WEBPACK_IMPORTED_MODULE_0__["default"],
-    subject_id: _subjectIDReducer__WEBPACK_IMPORTED_MODULE_1__["default"]
+    setupForm: _setupFormReducer__WEBPACK_IMPORTED_MODULE_1__["default"]
 });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (rootReducer);
 
 
 /***/ }),
 
-/***/ "./src/pages/Setup/redux/reducers/subjectIDReducer.ts":
+/***/ "./src/pages/Setup/redux/reducers/setupFormReducer.ts":
 /*!************************************************************!*\
-  !*** ./src/pages/Setup/redux/reducers/subjectIDReducer.ts ***!
+  !*** ./src/pages/Setup/redux/reducers/setupFormReducer.ts ***!
   \************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -43519,17 +43676,39 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-var initialState = "";
-var subjectIDReducer = function (state, actions) {
+var __assign = (undefined && undefined.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var initialState = {
+    device_id: "",
+    subject_id: "",
+    session_type: "",
+    subject_age: "",
+    subject_sex: "",
+    subject_netflix_familiarity: "",
+    subject_selected_content: ""
+};
+var setupFormReducer = function (state, actions) {
+    var _a;
     if (state === void 0) { state = initialState; }
     switch (actions.type) {
-        case 'SET_ID':
+        case "UPDATE_SETUP_FORM_ACTION":
+            return __assign(__assign({}, state), (_a = {}, _a[actions.payload.key] = actions.payload.value, _a));
+        case "SET_SETUP_FORM_ACTION":
             return actions.payload;
         default:
             return state;
     }
 };
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (subjectIDReducer);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (setupFormReducer);
 
 
 /***/ }),
@@ -43642,20 +43821,100 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.module.scss */ "./src/pages/Setup/views/ExperimentSetup/style.module.scss");
 /* harmony import */ var _components_Select_Select__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/Select/Select */ "./src/pages/Setup/components/Select/Select.tsx");
 /* harmony import */ var _components_SubjectDataInputs_SubjectAgeInput__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/SubjectDataInputs/SubjectAgeInput */ "./src/pages/Setup/components/SubjectDataInputs/SubjectAgeInput.tsx");
+/* harmony import */ var _components_SubjectDataInputs_SubjectIDInput__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/SubjectDataInputs/SubjectIDInput */ "./src/pages/Setup/components/SubjectDataInputs/SubjectIDInput.tsx");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var _components_ConfigDetected_ConfigDetected__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../components/ConfigDetected/ConfigDetected */ "./src/pages/Setup/components/ConfigDetected/ConfigDetected.tsx");
+/* harmony import */ var _components_Dropzone_Dropzone__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../components/Dropzone/Dropzone */ "./src/pages/Setup/components/Dropzone/Dropzone.tsx");
+/* harmony import */ var _utils_custom_ChromeStorage__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../../utils/custom/ChromeStorage */ "./src/utils/custom/ChromeStorage.ts");
+var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (undefined && undefined.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+
+
+
+
+
+
 
 
 
 
 var ExperimentSetup = function () {
+    var session_type = (0,react_redux__WEBPACK_IMPORTED_MODULE_5__.useSelector)(function (state) { return state.setupForm.session_type; });
+    var _a = (0,react_redux__WEBPACK_IMPORTED_MODULE_5__.useSelector)(function (state) { return state.config; }), experiment_applicable = _a.experiment_applicable, config = _a.value;
+    var dispatch = (0,react_redux__WEBPACK_IMPORTED_MODULE_5__.useDispatch)();
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+        if (session_type === "together") {
+            var update = function () { return __awaiter(void 0, void 0, void 0, function () {
+                var settings;
+                return __generator(this, function (_a) {
+                    switch (_a.label) {
+                        case 0: return [4 /*yield*/, _utils_custom_ChromeStorage__WEBPACK_IMPORTED_MODULE_8__.ChromeStorage.get_experiment_settings()];
+                        case 1:
+                            settings = _a.sent();
+                            settings.subject_age = "";
+                            settings.subject_netflix_familiarity = "";
+                            settings.subject_sex = "";
+                            settings.subject_selected_content = "";
+                            return [4 /*yield*/, _utils_custom_ChromeStorage__WEBPACK_IMPORTED_MODULE_8__.ChromeStorage.set_experiment_settings(settings)];
+                        case 2:
+                            _a.sent();
+                            return [2 /*return*/];
+                    }
+                });
+            }); };
+            update();
+        }
+    }, [session_type]);
     return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _style_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].experiment_setup },
         react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _style_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].container },
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _style_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].header }, "WatchingWithFriends Experiment"),
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _style_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].sub_header }, "WatchingWithFriends Experiment"),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _style_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].sub_header }, "Experiment Setup"),
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _style_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].wrapper },
-                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Select_Select__WEBPACK_IMPORTED_MODULE_2__["default"], { label: "Device ID", key: "device_id", options: [{ label: "106", value: 106 }, { label: "107", value: 107 }] }),
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Select_Select__WEBPACK_IMPORTED_MODULE_2__["default"], { label: "Device ID", id: "device_id", options: [{ label: "106", value: 106 }, { label: "107", value: 107 }] }),
                 react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _style_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].wrapper_row },
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_SubjectDataInputs_SubjectAgeInput__WEBPACK_IMPORTED_MODULE_3__["default"], null),
-                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Select_Select__WEBPACK_IMPORTED_MODULE_2__["default"], { label: "Session type", key: "session_type", options: [{ label: "alone", value: "alone" }, { label: "together", value: "together" }], style: { width: "40%" } }))))));
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_SubjectDataInputs_SubjectIDInput__WEBPACK_IMPORTED_MODULE_4__["default"], null),
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Select_Select__WEBPACK_IMPORTED_MODULE_2__["default"], { label: "Session type", id: "session_type", options: [{ label: "alone", value: "alone" }, { label: "together", value: "together" }], style: { width: "40%" } })),
+                session_type === "alone" ?
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _style_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].wrapper },
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_SubjectDataInputs_SubjectAgeInput__WEBPACK_IMPORTED_MODULE_3__["default"], null),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Select_Select__WEBPACK_IMPORTED_MODULE_2__["default"], { label: "Subject sex", id: "subject_sex", options: [{ label: "Male", value: "male" }, { label: "Female", value: "female" }, { label: "Prefer not to disclose", value: "undisclosed" }], style: { marginTop: "1em" } }),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Select_Select__WEBPACK_IMPORTED_MODULE_2__["default"], { label: "Netflix familiarity", id: "subject_netflix_familiarity", options: [{ label: "Familiar", value: true }, { label: "Unfamiliar", value: false }], style: { marginTop: "1em" } }),
+                        react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Select_Select__WEBPACK_IMPORTED_MODULE_2__["default"], { label: "Who selected content", id: "subject_selected_content", options: [{ label: "Subject", value: true }, { label: "Administrator", value: "false" }], style: { marginTop: "1em" } })) : null,
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _style_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].wrapper }, config != null ? react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_ConfigDetected_ConfigDetected__WEBPACK_IMPORTED_MODULE_6__["default"], null) : react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Dropzone_Dropzone__WEBPACK_IMPORTED_MODULE_7__["default"], null))))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ExperimentSetup);
 
@@ -46947,7 +47206,7 @@ function _objectWithoutPropertiesLoose(source, excluded) {
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("38e29e8ea3c0d6217956")
+/******/ 		__webpack_require__.h = () => ("3936df3f0b89fb37e3d7")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */

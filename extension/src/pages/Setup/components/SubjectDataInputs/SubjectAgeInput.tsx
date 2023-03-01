@@ -1,11 +1,30 @@
-import React from "react";
+import React, { useEffect, useLayoutEffect } from "react";
 import Input from "../Input/Input";
-import { useState } from "react";
 import { ChromeStorage } from "../../../../utils/custom/ChromeStorage";
-
+import { useSelector } from "react-redux";
+import { T_APP_STATE } from "../../redux/reducers";
+import { useDispatch } from "react-redux";
+import { Dispatch } from "redux";
+import { T_SETUP_FORM_ACTIONS } from "../../redux/actions/setupFormActions";
 
 const SubjectAgeInput = () => {
-    const [value, setValue] = useState<"" | number>("")
+    const subject_age = useSelector((state:T_APP_STATE) => state.setupForm.subject_age)
+    const dispatch = useDispatch<Dispatch<T_SETUP_FORM_ACTIONS>>()
+
+    useLayoutEffect(() => {
+        init()
+    }, [])
+
+    const init = async () : Promise<void> => {
+        const {subject_age} = await ChromeStorage.get_experiment_settings()
+        dispatch({
+            type: "UPDATE_SETUP_FORM_ACTION",
+            payload: {
+                key: "subject_age",
+                value: subject_age
+            }
+        })
+    }
 
     const handleChange = async (value:string) => {
         const new_value = Number(value) 
@@ -13,9 +32,13 @@ const SubjectAgeInput = () => {
             return
         }
 
-        //TODO add regex for XXX - three digit number
-
-        setValue(new_value)
+        dispatch({
+            type: "UPDATE_SETUP_FORM_ACTION",
+            payload: {
+                key: "subject_age",
+                value: new_value
+            }
+        })
         await ChromeStorage.update_experiment_settings_property("subject_age", new_value)
     }
 
@@ -23,7 +46,7 @@ const SubjectAgeInput = () => {
         <>
             <Input 
                 label="Subject Age"
-                value={value}
+                value={subject_age}
                 handleChange={handleChange}
             />
         </>

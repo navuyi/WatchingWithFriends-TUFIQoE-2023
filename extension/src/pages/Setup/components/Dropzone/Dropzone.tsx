@@ -50,7 +50,7 @@ const Dropzone = () => {
     
     return(
         <div className={style.dropzone} onDragOver={handleDragOver} onDragEnter={handleDragEnter} onDragLeave={handleDragLeave} onDrop={handleDrop}>
-            <span className={style.text}>Drop config file here to continue</span>
+            <span className={style.text}>Drop configuration file here to continue</span>
         </div>
     )
 }

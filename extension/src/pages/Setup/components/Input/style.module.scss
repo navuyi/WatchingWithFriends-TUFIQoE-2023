@@ -12,23 +12,19 @@ $border-width: 2px;
 }
 
 .label{
-    font-size: $font-size-small;
-    font-family: ubuntu-regular;
-    margin-bottom: 1px;
     color: white;
+    font-family: ubuntu-regular;
+    font-size: $font-size-small;
+    margin-bottom: 3px;
 }
 .input{
-    width: 100%;
     font-size: $font-size-small;
-    font-family: ubuntu-regular;
-
-    padding: 5px 10px;
-    margin-bottom: 5px;
-    border-radius: 5px;
-    
     outline: none;
-    border: $border-width solid rga(1,1,1,0);
-    box-sizing: border-box;
+    border: none;
+    padding: 5px 10px;
+
+    border-radius: 5px;
+    border: $border-width solid rgba(1,1,1,0);
 }
 .input:focus{
     border: $border-width solid $netflix-red;
