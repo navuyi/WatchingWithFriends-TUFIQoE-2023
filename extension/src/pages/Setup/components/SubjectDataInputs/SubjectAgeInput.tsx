@@ -32,6 +32,7 @@ const SubjectAgeInput = () => {
             return
         }
 
+        await ChromeStorage.update_experiment_settings_property("subject_age", new_value)
         dispatch({
             type: "UPDATE_SETUP_FORM_ACTION",
             payload: {
@@ -39,7 +40,6 @@ const SubjectAgeInput = () => {
                 value: new_value
             }
         })
-        await ChromeStorage.update_experiment_settings_property("subject_age", new_value)
     }
 
     return(

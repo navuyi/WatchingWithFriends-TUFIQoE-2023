@@ -62,9 +62,6 @@ export const useConfig = () => {
         })
         const {error} = configSchema.validate(config)
         if(error){
-            console.log(error)
-            console.log(error.cause)
-            console.log(error.details)
             return false
         }else{
             return true
@@ -98,15 +95,11 @@ export const useConfig = () => {
         })
         const {error} = configSchema.validate(config)
         if(error){
-            console.log(error)
-            console.log(error.cause)
-            console.log(error.details)
             return false
         }else{
             return true
         }
     }
-
 
     return {
         save_config,

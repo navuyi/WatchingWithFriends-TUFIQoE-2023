@@ -34,10 +34,11 @@ const SubjectIDInput = () => {
         }
 
         // Allow only XXX - where X is a digit 
-        if((/^[0-9]{1,3}$/gm).test(value) === false){
+        if((/^$|^[0-9]{1,3}$/gm).test(value) === false){
             return
         }
-
+        
+        await ChromeStorage.update_experiment_settings_property("subject_id", Number(value))
         dispatch({
             type: "UPDATE_SETUP_FORM_ACTION",
             payload: {
@@ -45,7 +46,6 @@ const SubjectIDInput = () => {
                 value: Number(value)
             }
         })
-        await ChromeStorage.update_experiment_settings_property("subject_id", Number(value))
     }
 
 

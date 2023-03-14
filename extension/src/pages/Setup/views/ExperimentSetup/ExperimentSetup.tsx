@@ -7,18 +7,18 @@ import { useSelector } from "react-redux";
 import { T_APP_STATE } from "../../redux/reducers";
 import ConfigDetected from "../../components/ConfigDetected/ConfigDetected";
 import Dropzone from "../../components/Dropzone/Dropzone";
-import { useDispatch } from "react-redux";
-import { Dispatch } from "redux";
-import { T_SETUP_FORM_ACTIONS } from "../../redux/actions/setupFormActions";
 import { ChromeStorage } from "../../../../utils/custom/ChromeStorage";
+import ExperimentStartButton from "../../components/ExperimentStartButton";
+
+
+
 
 const ExperimentSetup = () => {
     const session_type = useSelector((state: T_APP_STATE) => state.setupForm.session_type)
     const {experiment_applicable, value:config} = useSelector((state:T_APP_STATE) => state.config)
 
-    const dispatch = useDispatch<Dispatch<T_SETUP_FORM_ACTIONS>>()
-
     useEffect(() => {
+        // If session switched to "together" then erase some form data - subject data
         if(session_type === "together"){
             const update = async () : Promise<void> => {
                 const settings = await ChromeStorage.get_experiment_settings()
@@ -31,6 +31,7 @@ const ExperimentSetup = () => {
             }
             update()
         } 
+        
     }, [session_type])
 
 
@@ -57,32 +58,54 @@ const ExperimentSetup = () => {
                     </div>
 
                     { 
-                    session_type === "alone" ? 
-                        <div className={style.wrapper}>
-                            <SubjectAgeInput />
-                            <Select 
-                                label="Subject sex"
-                                id="subject_sex"
-                                options={[{label: "Male", value: "male"}, {label: "Female", value: "female"}, {label: "Prefer not to disclose", value: "undisclosed"}]}
-                                style={{marginTop: "1em"}}
-                            />
-                            <Select 
-                                label="Netflix familiarity"
-                                id="subject_netflix_familiarity"
-                                options={[{label: "Familiar", value: true}, {label: "Unfamiliar", value: false}]}
-                                style={{marginTop: "1em"}}
-                            />
-                            <Select 
-                                label="Who selected content"
-                                id="subject_selected_content"
-                                options={[{label: "Subject", value: true}, {label: "Administrator", value: "false"}]}
-                                style={{marginTop: "1em"}}
-                            />
-                        </div> : null
+                        session_type === "alone" ? 
+                            <div className={style.wrapper}>
+                                <SubjectAgeInput />
+                                <Select 
+                                    label="Subject sex"
+                                    id="subject_sex"
+                                    options={[{label: "Male", value: "male"}, {label: "Female", value: "female"}, {label: "Prefer not to disclose", value: "undisclosed"}]}
+                                    style={{marginTop: "1em"}}
+                                />
+                                <Select 
+                                    label="Netflix familiarity"
+                                    id="subject_netflix_familiarity"
+                                    options={[{label: "Familiar", value: true}, {label: "Unfamiliar", value: false}]}
+                                    style={{marginTop: "1em"}}
+                                />
+                                <Select 
+                                    label="Who selected content"
+                                    id="subject_selected_content"
+                                    options={[{label: "Subject", value: true}, {label: "Administrator", value: "false"}]}
+                                    style={{marginTop: "1em"}}
+                                />
+                            </div> : null
                     }
                     <div className={style.wrapper}>
                         {
-                            config != null ? <ConfigDetected /> : <Dropzone />
+                            // Render config file components only if session type is already selected
+                            session_type ? <>
+                            {
+                                config != null ? <ConfigDetected /> : <Dropzone />
+                            }
+                            </> : <></>
+                        }
+                        {
+                            config != null && experiment_applicable === true ? 
+                            <>
+                                {
+                                    session_type === "together" ? 
+                                    <>
+                                        <ExperimentStartButton 
+                                            title="Start Experiment"
+                                        />
+                                    </>
+                                        :
+                                    <>
+                                        Scheduler
+                                    </>
+                                }
+                            </> : <></>
                         }
                     </div>
                 </div>

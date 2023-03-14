@@ -1,44 +1,92 @@
 /*DROP TABLES*/
-DROP TABLE IF EXISTS mouse_event;
-DROP TABLE IF EXISTS keyboard_event;
+DROP TABLE IF EXISTS bitrate;
+DROP TABLE IF EXISTS experiment;
+DROP TABLE IF EXISTS video;
+DROP TABLE IF EXISTS playback_data;
+DROP TABLE IF EXISTS assessment;
+DROP TABLE IF EXISTS archive;
 
 
-CREATE TABLE IF NOT EXISTS mouse_event(
+CREATE TABLE IF NOT EXISTS experiment(
     id INTEGER NOT NULL PRIMARY KEY,
+    
+    started TEXT NOT NULL,
+    ended TEXT DEFAULT NULL,
+    
     subject_id TEXT NOT NULL,
-    target_class_name TEXT,
-    target_class_list TEXT,
-    target_id TEXT,
-    target_inner_text TEXT,
-    target_node_name TEXT,
+    device_id INTEGER NOT NULL,
+    session_type TEXT NOT NULL,
 
-    type TEXT,
-    path TEXT,
-    which INTEGER,
-    timestamp TEXT,
+    subject_age INTEGER DEFAULT NULL,
+    subject_sex TEXT DEFAULT NULL,
+    subject_netflix_familiarity BOOLEAN DEFAULT NULL,
+    subject_selected_content BOOLEAN DEFAULT NULL,
+    content_continuation BOOLEAN DEFAULT NULL,
 
-    clientX INTEGER,
-    clientY INTEGER,
-    offsetX INTEGER, 
-    offsetY INTEGER,
-    pageX INTEGER, 
-    pageY INTEGER,
-    screenX INTEGER,
-    screenY INTEGER
+    settings TEXT NOT NULL,
+    urls TEXT NOT NULL        
 );
 
 
-CREATE TABLE IF NOT EXISTS keyboard_event(
+CREATE TABLE IF NOT EXISTS video(
     id INTEGER NOT NULL PRIMARY KEY,
-    subject_id TEXT NOT NULL,
-    code TEXT,
-    key TEXT,
-    alt_key INTEGER,
-    ctrl_key INTEGER,
-    shift_key INTEGER,
-    repeat INTEGER,
-    key_code INTEGER,
-    type TEXT,
-    which INTEGER,
-    timestamp TEXT
+    
+    started TEXT NOT NULL,  
+    ended TEXT DEFAULT NULL,    
+
+    experiment_id INTEGER NOT NULL,
+    url TEXT NOT NULL,
+
+    FOREIGN KEY(experiment_id) REFERENCES experiment(id)
+);
+
+
+CREATE TABLE IF NOT EXISTS playback_data(
+    id INTEGER NOT NULL PRIMARY KEY,
+    video_id INTEGER NOT NULL,
+
+    buffering_bitrate_audio TEXT,
+    buffering_bitrate_video TEXT,
+    buffering_state TEXT,
+    buffering_vmaf TEXT,
+    duration TEXT,
+    framerate TEXT,
+    player_state TEXT,
+    playing_bitrate_video TEXT,
+    playing_bitrate_audio TEXT,
+    playing_vmaf TEXT,
+    position TEXT,
+    rendering_state TEXT,
+    resolution TEXT,
+    segment_position TEXT,
+    timestamp TEXT,
+    total_corrupted_frames TEXT,
+    total_dropped_frames TEXT,
+    total_frames TEXT,
+    volume TEXT,
+
+    FOREIGN KEY(video_id) REFERENCES video(id)
+);
+
+CREATE TABLE IF NOT EXISTS archive(
+    id INTEGER NOT NULL PRIMARY KEY,
+    video_id INTEGER NOT NULL,
+
+    data TEXT NOT NULL,
+    timestamp TEXT NOT NULL,
+
+    FOREIGN KEY(video_id) REFERENCES video(id)
+);
+
+CREATE TABLE IF NOT EXISTS assessment(
+    id INTEGER NOT NULL PRIMARY KEY,
+    video_id INTEGER NOT NULL,
+
+    value INTEGER NO NULL,
+    description TEXT NOT NULL,
+    started TEXT NOT NULL,
+    timestamp TEXT NOT NULL,
+    duration REAL NOT NULL,
+
+    FOREIGN KEY(video_id) REFERENCES video(id)
 );

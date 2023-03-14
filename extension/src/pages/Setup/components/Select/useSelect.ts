@@ -27,6 +27,7 @@ export const useSelect = (key:keyof T_EXPERIMENT_SETTINGS) => {
     }
 
     const handleChange = async (value:string) : Promise<void> => {
+        await ChromeStorage.update_experiment_settings_property(key, value)
         dispatch({
             type: "UPDATE_SETUP_FORM_ACTION",
             payload: {
@@ -34,7 +35,6 @@ export const useSelect = (key:keyof T_EXPERIMENT_SETTINGS) => {
                 value: value
             }
         })
-        await ChromeStorage.update_experiment_settings_property(key, value)
     }
 
     return{
