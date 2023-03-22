@@ -39,7 +39,11 @@
 
 .wrapper{
     width: 100%;
-    margin: 5em 0;;
+    margin: 5em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .wrapper_row{
     width: 100%;

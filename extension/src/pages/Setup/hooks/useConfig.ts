@@ -1,18 +1,16 @@
-import { useSelector } from "react-redux"
-import { T_APP_STATE } from "../redux/reducers"
 import { ChromeStorage } from "../../../utils/custom/ChromeStorage"
 import { T_CONFIG } from "../../../config/types/data-structures.type"
 import { useDispatch } from "react-redux"
 import { Dispatch } from "redux"
 import { T_CONFIG_ACTIONS } from "../redux/actions/configActions"
-import Joi from 'joi';
-import { getAllJSDocTagsOfKind, isJSDocOptionalType } from "typescript"
+import { is_config_experiment_applicable } from "../../../utils/validation/validate_config"
+import { is_config_mapping_applicable } from "../../../utils/validation/validate_config"
+
 
 
 export const useConfig = () => {
-    const config = useSelector((state:T_APP_STATE) => state.config)
     const configDispatch = useDispatch<Dispatch<T_CONFIG_ACTIONS>>()
-
+    
     const save_config = async (config : T_CONFIG) => {
         // Update storage
         const settings = await ChromeStorage.get_experiment_settings()
@@ -35,75 +33,7 @@ export const useConfig = () => {
         })
     }
 
-    const is_config_mapping_applicable = async (config : any) : Promise<boolean> => {
-        const configSchema = Joi.object({
-            title: Joi.string().allow("").required(),
-            description: Joi.string().allow("").required(),
-            assessment_interval: Joi.number().not(0).required(),
-            bitrate_interval: Joi.number().greater(0).required(),
-            videos: Joi.array().items(
-                Joi.object({
-                    name: Joi.string().allow("").required(),
-                    description: Joi.string().allow("").required(),
-                    url: Joi.string().pattern(/https:\/\/www.netflix.com\/watch\/[0-9]+.+/m).required(),
-                    vmaf_template_scenario: Joi.array().min(1).items(Joi.number()).required(),
-                    bitrate_vmaf_map: Joi.array().items(Joi.object({
-                        vmaf: Joi.number().required(),
-                        bitrate: Joi.number().required()
-                    })).optional(),
-                    scenario: Joi.array().items(Joi.object({
-                        bitrate: Joi.number().required(),
-                        vmaf: Joi.number().required(),
-                        vmaf_diff: Joi.number().required(),
-                        vmaf_template: Joi.number().required()
-                    })).optional()
-                })
-            )
-        })
-        const {error} = configSchema.validate(config)
-        if(error){
-            return false
-        }else{
-            return true
-        }
-    }
-
-    const is_config_experiment_applicable = async (config : any) : Promise<boolean> => {
-        const configSchema = Joi.object({
-            title: Joi.string().allow("").required(),
-            description: Joi.string().allow("").required(),
-            assessment_interval: Joi.number().not(0).required(),
-            bitrate_interval: Joi.number().greater(0).required(),
-            videos: Joi.array().items(
-                Joi.object({
-                    name: Joi.string().allow("").required(),
-                    description: Joi.string().allow("").required(),
-                    url: Joi.string().pattern(/https:\/\/www.netflix.com\/watch\/[0-9]+.+/m).required(),
-                    vmaf_template_scenario: Joi.array().min(1).items(Joi.number()).required(),
-                    bitrate_vmaf_map: Joi.array().items(Joi.object({
-                        vmaf: Joi.number().required(),
-                        bitrate: Joi.number().required()
-                    })).required(),
-                    scenario: Joi.array().items(Joi.object({
-                        bitrate: Joi.number().required(),
-                        vmaf: Joi.number().required(),
-                        vmaf_diff: Joi.number().required(),
-                        vmaf_template: Joi.number().required()
-                    })).required()
-                })
-            )
-        })
-        const {error} = configSchema.validate(config)
-        if(error){
-            return false
-        }else{
-            return true
-        }
-    }
-
     return {
-        save_config,
-        is_config_experiment_applicable,
-        is_config_mapping_applicable
+        save_config  
     }
 }

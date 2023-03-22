@@ -15,37 +15,25 @@ import ExperimentSetup from './views/ExperimentSetup/ExperimentSetup';
 import About from './views/About/About';
 
 import "./style.module.scss";
-
+import { is_config_experiment_applicable } from '../../utils/validation/validate_config';
+import { is_config_mapping_applicable } from '../../utils/validation/validate_config';
 
 
 const App = () => {
-  const config = useSelector((state:T_APP_STATE) => state.config)
   const configDispatch = useDispatch<Dispatch<T_CONFIG_ACTIONS>>()
   
-  const {is_config_experiment_applicable, is_config_mapping_applicable} = useConfig()
-
-  console.log("Hello from Setup")
- 
   // Update before rendering
   useLayoutEffect(() => {
     const init = async () => {
       const settings = await ChromeStorage.get_experiment_settings()
-      const experiment_applicable = await is_config_experiment_applicable(settings.config)
-      const mapping_applicable = await is_config_mapping_applicable(settings.config)
+      const experiment_applicable = is_config_experiment_applicable(settings.config)
+      const mapping_applicable = is_config_mapping_applicable(settings.config)
 
-      configDispatch({
-        type: "SET_VALUE",
-        payload: settings.config
-      })
-      configDispatch({
-        type: "SET_EXPERIMENT_APPLICABLE",
-        payload: experiment_applicable
-      })
-      configDispatch({
-        type: "SET_MAPPING_APPLICABLE",
-        payload: mapping_applicable
-      })
+      configDispatch({type: "SET_VALUE",payload: settings.config})
+      configDispatch({type: "SET_EXPERIMENT_APPLICABLE",payload: experiment_applicable})
+      configDispatch({type: "SET_MAPPING_APPLICABLE",payload: mapping_applicable})
     }
+    
     init()
   }, [])
 

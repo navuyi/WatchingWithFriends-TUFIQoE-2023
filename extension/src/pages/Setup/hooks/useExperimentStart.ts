@@ -1,16 +1,19 @@
 import { ChromeStorage } from "../../../utils/custom/ChromeStorage"
-import Joi from "joi"
 import { post_new_experiment } from "../../../utils/http_requests/post_new_experiment"
 import { get_local_datetime } from "../../../utils/time_utils"
 import { post_new_video } from "../../../utils/http_requests/post_new_video"
+import { useState } from "react"
 
 export const useExperimentStart = () => {
+    const [experimentStarting, setExperimentStarting] = useState(false)
 
-    const start_immediately = async () : Promise<void> => {
+    const start_experiment = async () : Promise<void> => {
         const settings = await ChromeStorage.get_experiment_settings()
         const variables = await ChromeStorage.get_experiment_variables()
 
         const timestamp = get_local_datetime(new Date())
+
+        setExperimentStarting(true)
 
         // Create new experiment entry in database
         const database_experiment_id = await post_new_experiment({
@@ -28,6 +31,11 @@ export const useExperimentStart = () => {
             urls: JSON.stringify(settings.config?.videos.map(video => video.url)),
             settings: JSON.stringify(settings)
         })
+        if(database_experiment_id == null){
+            setExperimentStarting(false)
+            window.alert("Could not create experiment entry. Check server connection.")
+            return
+        }
 
         // Update experiment id variable
         await ChromeStorage.update_experiment_variables_property("database_experiment_id", database_experiment_id)
@@ -39,6 +47,12 @@ export const useExperimentStart = () => {
             url: settings.config?.videos[variables.video_index].url as string
         })
 
+        if(database_video_id == null){
+            setExperimentStarting(false)
+            window.alert("Could not create video entry. Check server connection.")
+            return
+        }
+
         // Update video id variable
         await ChromeStorage.update_experiment_variables_property("database_video_id", database_video_id)
 
@@ -48,67 +62,9 @@ export const useExperimentStart = () => {
         window.location.href = settings.config?.videos[variables.video_index].url as string
     }
 
-    const start_scheduled = () => {
-        // Schedule start
-    }
-
-    const validate_setup_form = async () : Promise<boolean> => {
-        const {subject_age, subject_id, subject_sex, 
-            subject_netflix_familiarity, subject_selected_content, device_id, 
-            session_type} = await ChromeStorage.get_experiment_settings()
-
-        // Essential fields
-        const schema = Joi.object({
-            device_id: Joi.number().valid(106, 107).required(),
-            subject_id: Joi.number().min(100).max(999).required(),
-            session_type: Joi.string().valid("alone", "together").required()
-        })
-        const {error} = schema.validate({device_id, subject_id, session_type})
-        if(error){
-            console.log(error)
-            return false
-        }
-        
-        // Fields in alone session
-        if(session_type === "alone"){
-            // Validate all
-            const schema = Joi.object({
-                subject_age: Joi.number().greater(0).required(),
-                subject_sex: Joi.string().valid("male", "female", "undisclosed").required(),
-                subject_netflix_familiarity: Joi.boolean().required(),
-                subject_selected_content: Joi.boolean().required()
-            })
-            const {error} = schema.validate({subject_age, subject_sex, subject_netflix_familiarity, subject_selected_content})
-            if(error){
-                console.log(error)
-                return false
-            }
-        }
-        else if(session_type === "together"){
-            const schema = Joi.object({
-                subject_age: Joi.equal("").required(),
-                subject_sex: Joi.equal("").required(),
-                subject_netflix_familiarity: Joi.equal("").required(),
-                subject_selected_content: Joi.equal("").required()
-            })
-            const {error} = schema.validate({subject_age, subject_sex, subject_netflix_familiarity, subject_selected_content})
-            if(error){
-                console.log(error)
-                return false
-            }
-        }
-
-        // Validated
-        return true
-    }
-
-
-
 
     return {
-        validate_setup_form,
-        start_immediately
+        experimentStarting,
+        start_experiment
     }
-
-
 }

@@ -1,14 +1,15 @@
 import React from "react";
-import { ChromeStorage } from "../../../utils/custom/ChromeStorage";
+import { validate_setup_form } from "../../../utils/validation/validate_setup_form";
 import { useExperimentStart } from "../hooks/useExperimentStart";
 import Button from "./Button/Button";
+import { CircularProgress } from "@mui/material";
 
 type T_PROPS = {
     title: string
 }
 
 const ExperimentStartButton = (props:T_PROPS) => {
-    const {validate_setup_form, start_immediately} = useExperimentStart()
+    const {start_experiment, experimentStarting} = useExperimentStart()
 
     const handleStart = async () => {
         const formValid = await validate_setup_form()
@@ -18,21 +19,20 @@ const ExperimentStartButton = (props:T_PROPS) => {
             return
         }
 
-        const settings = await ChromeStorage.get_experiment_settings()
-        console.log(settings)
-
-        await start_immediately()
+        await start_experiment()
     }
 
     return(
-        <Button 
-            text={props.title}
-            handleClick={() => {handleStart()}}
-
-            style={{
-                marginTop: "5em"
-            }}
-        />
+        <>
+            {
+                experimentStarting ? <CircularProgress variant="indeterminate" thickness={5} size={50}/> : 
+                <Button 
+                    text={props.title}
+                    handleClick={() => {handleStart()}}
+                />
+            }
+        </>
+        
     )
 }
 

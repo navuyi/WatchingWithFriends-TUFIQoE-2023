@@ -18,7 +18,7 @@ type T_INPUT_DATA = {
     urls : string
 }
 
-export const post_new_experiment = async (data : T_INPUT_DATA) : Promise<number|undefined> => {
+export const post_new_experiment = async (data : T_INPUT_DATA) : Promise<number|null> => {
     try{
         const response = await axios.post(backend_urls.experiment, data)
         return response.data.experiment_id
@@ -30,6 +30,7 @@ export const post_new_experiment = async (data : T_INPUT_DATA) : Promise<number|
         } else {
             // Anything else
         }
+        return null
     }
 }
 
