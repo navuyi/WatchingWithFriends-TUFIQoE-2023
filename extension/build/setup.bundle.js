@@ -39990,7 +39990,7 @@ var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_g
 var ___CSS_LOADER_URL_REPLACEMENT_2___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_2___);
 var ___CSS_LOADER_URL_REPLACEMENT_3___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_3___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "@font-face {\n  font-family: \"ubuntu-medium\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") format(\"truetype\");\n}\n@font-face {\n  font-family: \"ubuntu-bold\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") format(\"truetype\");\n}\n@font-face {\n  font-family: \"ubuntu-light\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ") format(\"truetype\");\n}\n@font-face {\n  font-family: \"ubuntu-regular\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + ") format(\"truetype\");\n}\n.button--ZIqzS6UuVN--src-pages-Setup-components-Button- {\n  width: 100%;\n  outline: none;\n  border: none;\n  border-radius: 5px;\n  font-size: 16px;\n  font-family: ubuntu-regular;\n  color: whitesmoke;\n  padding: 1em 1em;\n  filter: brightness(0.9);\n  cursor: pointer;\n  transition-duration: 0.5s;\n  background-color: #02C39A;\n}\n\n.button--ZIqzS6UuVN--src-pages-Setup-components-Button-:hover {\n  filter: brightness(1);\n}\n\n.button--ZIqzS6UuVN--src-pages-Setup-components-Button-:active {\n  transition-duration: 50ms;\n  box-shadow: 0px 0px 10px 1px white;\n}\n\n.button--ZIqzS6UuVN--src-pages-Setup-components-Button-[disabled] {\n  filter: brightness(0.3);\n  pointer-events: none;\n  cursor: not-allowed;\n}", "",{"version":3,"sources":["webpack://./src/config/style.config.scss","webpack://./src/pages/Setup/components/Button/style.module.scss"],"names":[],"mappings":"AAAA;EACI,4BAAA;EACA,+DAAA;ACCJ;ADCA;EACI,0BAAA;EACA,+DAAA;ACCJ;ADCA;EACI,2BAAA;EACA,+DAAA;ACCJ;ADCA;EACI,6BAAA;EACA,+DAAA;ACCJ;AAZA;EACI,WAAA;EAEA,aAAA;EACA,YAAA;EACA,kBAAA;EAEA,eDUc;ECTd,2BAAA;EACA,iBAAA;EAEA,gBAAA;EAEA,uBAAA;EACA,eAAA;EACA,yBAAA;EAEA,yBDQM;ACCV;;AANA;EACI,qBAAA;AASJ;;AAPA;EACI,yBAAA;EACA,kCAAA;AAUJ;;AAPA;EACI,uBAAA;EACA,oBAAA;EACA,mBAAA;AAUJ","sourcesContent":["@font-face{\n    font-family: \"ubuntu-medium\";\n    src: url(\"/src/assets/fonts/Ubuntu/Ubuntu-Medium.ttf\") format(\"truetype\");\n}\n@font-face{\n    font-family: \"ubuntu-bold\";\n    src: url(\"/src/assets/fonts/Ubuntu/Ubuntu-Bold.ttf\") format(\"truetype\");\n}\n@font-face{\n    font-family: \"ubuntu-light\";\n    src: url(\"/src/assets/fonts/Ubuntu/Ubuntu-Light.ttf\") format(\"truetype\");\n}\n@font-face{\n    font-family: \"ubuntu-regular\";\n    src: url(\"/src/assets/fonts/Ubuntu/Ubuntu-Regular.ttf\") format(\"truetype\");\n}\n\n\n$font-size-large: 24px;\n$font-size-medium: 20px;\n$font-size-small: 16px;\n\n$netflix-dark: #222222;\n$netflix-red: #DB0000;\n$netflix-gray: #564D4D;\n$netflix-white: #FFFFFF;\n$netflix-dark-red: #831010;\n\n$primary: #02C39A;\n$secondary: #00A896;\n$support: #3185FC;\n\n\n\n\n\n","@import \"../../../../config//style.config.scss\";\n\n\n.button{\n    width: 100%;\n\n    outline: none;\n    border: none;\n    border-radius: 5px;\n\n    font-size: $font-size-small;\n    font-family: ubuntu-regular;\n    color: whitesmoke;\n\n    padding: 1em 1em;\n\n    filter: brightness(0.9);\n    cursor: pointer;\n    transition-duration: 0.5s;\n\n    background-color: $primary;\n}\n\n.button:hover{\n    filter: brightness(1);\n}\n.button:active{\n    transition-duration: 50ms;\n    box-shadow: 0px 0px 10px 1px white;\n}\n\n.button[disabled]{\n    filter: brightness(0.3);\n    pointer-events: none;\n    cursor: not-allowed;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "@font-face {\n  font-family: \"ubuntu-medium\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") format(\"truetype\");\n}\n@font-face {\n  font-family: \"ubuntu-bold\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") format(\"truetype\");\n}\n@font-face {\n  font-family: \"ubuntu-light\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ") format(\"truetype\");\n}\n@font-face {\n  font-family: \"ubuntu-regular\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + ") format(\"truetype\");\n}\n.button--ZIqzS6UuVN--src-pages-Setup-components-Button- {\n  width: 100%;\n  outline: none;\n  border: none;\n  border-radius: 5px;\n  font-size: 16px;\n  font-family: ubuntu-regular;\n  color: whitesmoke;\n  padding: 1em 1em;\n  cursor: pointer;\n  transition-duration: 0.3s;\n  background-color: #02C39A;\n}\n\n.button--ZIqzS6UuVN--src-pages-Setup-components-Button-:hover {\n  filter: brightness(0.9);\n}\n\n.button--ZIqzS6UuVN--src-pages-Setup-components-Button-:active {\n  transition-duration: 50ms;\n  box-shadow: 0px 0px 10px 1px white;\n}\n\n.button--ZIqzS6UuVN--src-pages-Setup-components-Button-[disabled] {\n  filter: brightness(0.3);\n  pointer-events: none;\n  cursor: not-allowed;\n}", "",{"version":3,"sources":["webpack://./src/config/style.config.scss","webpack://./src/pages/Setup/components/Button/style.module.scss"],"names":[],"mappings":"AAAA;EACI,4BAAA;EACA,+DAAA;ACCJ;ADCA;EACI,0BAAA;EACA,+DAAA;ACCJ;ADCA;EACI,2BAAA;EACA,+DAAA;ACCJ;ADCA;EACI,6BAAA;EACA,+DAAA;ACCJ;AAZA;EACI,WAAA;EAEA,aAAA;EACA,YAAA;EACA,kBAAA;EAEA,eDUc;ECTd,2BAAA;EACA,iBAAA;EAEA,gBAAA;EAGA,eAAA;EACA,yBAAA;EAEA,yBDQM;ACAV;;AALA;EACI,uBAAA;AAQJ;;AANA;EACI,yBAAA;EACA,kCAAA;AASJ;;AANA;EACI,uBAAA;EACA,oBAAA;EACA,mBAAA;AASJ","sourcesContent":["@font-face{\n    font-family: \"ubuntu-medium\";\n    src: url(\"/src/assets/fonts/Ubuntu/Ubuntu-Medium.ttf\") format(\"truetype\");\n}\n@font-face{\n    font-family: \"ubuntu-bold\";\n    src: url(\"/src/assets/fonts/Ubuntu/Ubuntu-Bold.ttf\") format(\"truetype\");\n}\n@font-face{\n    font-family: \"ubuntu-light\";\n    src: url(\"/src/assets/fonts/Ubuntu/Ubuntu-Light.ttf\") format(\"truetype\");\n}\n@font-face{\n    font-family: \"ubuntu-regular\";\n    src: url(\"/src/assets/fonts/Ubuntu/Ubuntu-Regular.ttf\") format(\"truetype\");\n}\n\n\n$font-size-large: 24px;\n$font-size-medium: 20px;\n$font-size-small: 16px;\n\n$netflix-dark: #222222;\n$netflix-red: #DB0000;\n$netflix-gray: #564D4D;\n$netflix-white: #FFFFFF;\n$netflix-dark-red: #831010;\n\n$primary: #02C39A;\n$secondary: #00A896;\n$support: #3185FC;\n\n\n\n\n\n","@import \"../../../../config//style.config.scss\";\n\n\n.button{\n    width: 100%;\n\n    outline: none;\n    border: none;\n    border-radius: 5px;\n\n    font-size: $font-size-small;\n    font-family: ubuntu-regular;\n    color: whitesmoke;\n\n    padding: 1em 1em;\n\n    \n    cursor: pointer;\n    transition-duration: 0.3s;\n\n    background-color: $primary;\n}\n\n.button:hover{\n    filter: brightness(0.9);\n}\n.button:active{\n    transition-duration: 50ms;\n    box-shadow: 0px 0px 10px 1px white;\n}\n\n.button[disabled]{\n    filter: brightness(0.3);\n    pointer-events: none;\n    cursor: not-allowed;\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"button": "button--ZIqzS6UuVN--src-pages-Setup-components-Button-"
@@ -40031,18 +40031,18 @@ var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_g
 var ___CSS_LOADER_URL_REPLACEMENT_2___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_2___);
 var ___CSS_LOADER_URL_REPLACEMENT_3___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_3___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "@font-face {\n  font-family: \"ubuntu-medium\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") format(\"truetype\");\n}\n@font-face {\n  font-family: \"ubuntu-bold\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") format(\"truetype\");\n}\n@font-face {\n  font-family: \"ubuntu-light\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ") format(\"truetype\");\n}\n@font-face {\n  font-family: \"ubuntu-regular\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + ") format(\"truetype\");\n}\n.config_detected--XeUB7cuf30--src-pages-Setup-components-ConfigDetected- {\n  width: 100%;\n  min-height: 100px;\n  display: flex;\n  flex-direction: column;\n  justify-content: flex-start;\n  margin-top: 1em;\n  font-family: ubuntu-medium;\n  animation: fade-in--WgaU5dzIZS--src-pages-Setup-components-ConfigDetected- 2s ease;\n}\n\n.header_wrapper--vPsT_Jadjn--src-pages-Setup-components-ConfigDetected- {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  align-items: center;\n  width: 100%;\n}\n\n.header--_zukyeA9KG--src-pages-Setup-components-ConfigDetected- {\n  font-size: 20px;\n  font-family: ubuntu-medium;\n  color: white;\n}\n\n.trash--vHmD5bboO7--src-pages-Setup-components-ConfigDetected- {\n  width: 28px;\n  filter: invert(1);\n  cursor: pointer;\n}\n\n.trash--vHmD5bboO7--src-pages-Setup-components-ConfigDetected-:hover {\n  transform: scale(0.95);\n}\n\n.trash--vHmD5bboO7--src-pages-Setup-components-ConfigDetected-:active {\n  transform: scale(1.1);\n}\n\n.status--NPvqYf0Z34--src-pages-Setup-components-ConfigDetected- {\n  font-size: 16px;\n  color: white;\n}\n\n.description--gWzqK087xc--src-pages-Setup-components-ConfigDetected- {\n  font-size: 16px;\n  font-family: ubuntu-light;\n  width: 80%;\n  color: white;\n  filter: brightness(0.6);\n}\n\n.url_list--tiGiUn6B0X--src-pages-Setup-components-ConfigDetected- {\n  width: 100%;\n  margin-top: 1em;\n  display: flex;\n  flex-direction: column;\n  justify-content: flex-start;\n  align-items: center;\n}\n\n.url_item--BuTfIRV6QN--src-pages-Setup-components-ConfigDetected- {\n  width: 100%;\n  margin: 0;\n  border: none;\n  padding: 8px 5px;\n  box-sizing: border-box;\n  margin-bottom: 1em;\n  border-radius: 5px;\n  background-color: white;\n  font-family: ubuntu-regular;\n  font-size: 14px;\n  color: black;\n}\n\n@keyframes fade-in--WgaU5dzIZS--src-pages-Setup-components-ConfigDetected- {\n  from {\n    opacity: 0;\n  }\n  to {\n    opacity: 1;\n  }\n}", "",{"version":3,"sources":["webpack://./src/config/style.config.scss","webpack://./src/pages/Setup/components/ConfigDetected/style.module.scss"],"names":[],"mappings":"AAAA;EACI,4BAAA;EACA,+DAAA;ACCJ;ADCA;EACI,0BAAA;EACA,+DAAA;ACCJ;ADCA;EACI,2BAAA;EACA,+DAAA;ACCJ;ADCA;EACI,6BAAA;EACA,+DAAA;ACCJ;AAbA;EACI,WAAA;EACA,iBAAA;EAEA,aAAA;EACA,sBAAA;EACA,2BAAA;EACA,eAAA;EACA,0BAAA;EAEA,kFAAA;AAaJ;;AATA;EACI,aAAA;EACA,mBAAA;EACA,8BAAA;EACA,mBAAA;EAEA,WAAA;AAWJ;;AATA;EACI,eDNe;ECOf,0BAAA;EAEA,YAAA;AAWJ;;AARA;EACI,WAAA;EACA,iBAAA;EACA,eAAA;AAWJ;;AATA;EACI,sBAAA;AAYJ;;AAVA;EACI,qBAAA;AAaJ;;AAVA;EACI,eDxBc;ECyBd,YAAA;AAaJ;;AATA;EACI,eD9Bc;EC+Bd,yBAAA;EACA,UAAA;EACA,YAAA;EACA,uBAAA;AAYJ;;AATA;EACI,WAAA;EACA,eAAA;EACA,aAAA;EACA,sBAAA;EACA,2BAAA;EACA,mBAAA;AAYJ;;AAVA;EACI,WAAA;EACA,SAAA;EACA,YAAA;EACA,gBAAA;EACA,sBAAA;EACA,kBAAA;EACA,kBAAA;EAEA,uBAAA;EACA,2BAAA;EACA,eAAA;EACA,YAAA;AAYJ;;AARA;EACI;IACI,UAAA;EAWN;EATE;IACI,UAAA;EAWN;AACF","sourcesContent":["@font-face{\n    font-family: \"ubuntu-medium\";\n    src: url(\"/src/assets/fonts/Ubuntu/Ubuntu-Medium.ttf\") format(\"truetype\");\n}\n@font-face{\n    font-family: \"ubuntu-bold\";\n    src: url(\"/src/assets/fonts/Ubuntu/Ubuntu-Bold.ttf\") format(\"truetype\");\n}\n@font-face{\n    font-family: \"ubuntu-light\";\n    src: url(\"/src/assets/fonts/Ubuntu/Ubuntu-Light.ttf\") format(\"truetype\");\n}\n@font-face{\n    font-family: \"ubuntu-regular\";\n    src: url(\"/src/assets/fonts/Ubuntu/Ubuntu-Regular.ttf\") format(\"truetype\");\n}\n\n\n$font-size-large: 24px;\n$font-size-medium: 20px;\n$font-size-small: 16px;\n\n$netflix-dark: #222222;\n$netflix-red: #DB0000;\n$netflix-gray: #564D4D;\n$netflix-white: #FFFFFF;\n$netflix-dark-red: #831010;\n\n$primary: #02C39A;\n$secondary: #00A896;\n$support: #3185FC;\n\n\n\n\n\n","@import \"../../../../config//style.config.scss\";\n\n.config_detected{\n    width: 100%;\n    min-height: 100px;\n\n    display: flex;\n    flex-direction: column;\n    justify-content: flex-start;\n    margin-top: 1em;\n    font-family: ubuntu-medium;\n\n    animation: fade-in 2s ease;\n}\n\n\n.header_wrapper{\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n\n    width: 100%;\n}\n.header{\n    font-size: $font-size-medium;\n    font-family: ubuntu-medium;\n\n    color: white;\n}\n\n.trash{\n    width: 28px;\n    filter: invert(1);\n    cursor: pointer;\n}\n.trash:hover{\n    transform: scale(0.95);\n}\n.trash:active{\n    transform: scale(1.1);\n}\n\n.status{\n    font-size: $font-size-small;\n    color: white;\n}\n\n\n.description{\n    font-size: $font-size-small;\n    font-family: ubuntu-light;\n    width: 80%;\n    color: white;\n    filter: brightness(0.6)\n}\n\n.url_list{\n    width: 100%;\n    margin-top: 1em;\n    display: flex;\n    flex-direction: column;\n    justify-content: flex-start;\n    align-items: center;\n}\n.url_item{\n    width: 100%;\n    margin: 0;\n    border: none;\n    padding: 8px 5px;\n    box-sizing: border-box;\n    margin-bottom: 1em;\n    border-radius: 5px;\n\n    background-color: white;\n    font-family: ubuntu-regular;\n    font-size: $font-size-small - 2px;\n    color: black;\n}\n\n\n@keyframes fade-in{\n    from{\n        opacity: 0;\n    }\n    to{\n        opacity: 1;\n    }\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "@font-face {\n  font-family: \"ubuntu-medium\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") format(\"truetype\");\n}\n@font-face {\n  font-family: \"ubuntu-bold\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") format(\"truetype\");\n}\n@font-face {\n  font-family: \"ubuntu-light\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ") format(\"truetype\");\n}\n@font-face {\n  font-family: \"ubuntu-regular\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + ") format(\"truetype\");\n}\n.config_detected--XeUB7cuf30--src-pages-Setup-components-ConfigDetected- {\n  width: 100%;\n  min-height: 100px;\n  display: flex;\n  flex-direction: column;\n  justify-content: flex-start;\n  margin-top: 1em;\n  font-family: ubuntu-medium;\n}\n\n.header_wrapper--vPsT_Jadjn--src-pages-Setup-components-ConfigDetected- {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  align-items: center;\n  width: 100%;\n}\n\n.header--_zukyeA9KG--src-pages-Setup-components-ConfigDetected- {\n  font-size: 20px;\n  font-family: ubuntu-medium;\n  color: white;\n}\n\n.trash--vHmD5bboO7--src-pages-Setup-components-ConfigDetected- {\n  width: 28px;\n  filter: invert(1);\n  cursor: pointer;\n}\n\n.trash--vHmD5bboO7--src-pages-Setup-components-ConfigDetected-:hover {\n  transform: scale(0.95);\n}\n\n.trash--vHmD5bboO7--src-pages-Setup-components-ConfigDetected-:active {\n  transform: scale(1.1);\n}\n\n.status--NPvqYf0Z34--src-pages-Setup-components-ConfigDetected- {\n  font-size: 16px;\n  color: white;\n}\n\n.description--gWzqK087xc--src-pages-Setup-components-ConfigDetected- {\n  font-size: 16px;\n  font-family: ubuntu-light;\n  width: 80%;\n  color: white;\n  filter: brightness(0.6);\n}\n\n.url_list--tiGiUn6B0X--src-pages-Setup-components-ConfigDetected- {\n  width: 100%;\n  margin-top: 1em;\n  display: flex;\n  flex-direction: column;\n  justify-content: flex-start;\n  align-items: center;\n}\n\n.url_item--BuTfIRV6QN--src-pages-Setup-components-ConfigDetected- {\n  width: 100%;\n  margin: 0;\n  border: none;\n  padding: 8px 5px;\n  box-sizing: border-box;\n  margin-bottom: 1em;\n  border-radius: 5px;\n  background-color: white;\n  font-family: ubuntu-regular;\n  font-size: 14px;\n  color: black;\n}\n\n@keyframes fade-in--WgaU5dzIZS--src-pages-Setup-components-ConfigDetected- {\n  from {\n    opacity: 0;\n  }\n  to {\n    opacity: 1;\n  }\n}", "",{"version":3,"sources":["webpack://./src/config/style.config.scss","webpack://./src/pages/Setup/components/ConfigDetected/style.module.scss"],"names":[],"mappings":"AAAA;EACI,4BAAA;EACA,+DAAA;ACCJ;ADCA;EACI,0BAAA;EACA,+DAAA;ACCJ;ADCA;EACI,2BAAA;EACA,+DAAA;ACCJ;ADCA;EACI,6BAAA;EACA,+DAAA;ACCJ;AAbA;EACI,WAAA;EACA,iBAAA;EAEA,aAAA;EACA,sBAAA;EACA,2BAAA;EACA,eAAA;EACA,0BAAA;AAcJ;;AAVA;EACI,aAAA;EACA,mBAAA;EACA,8BAAA;EACA,mBAAA;EAEA,WAAA;AAYJ;;AAVA;EACI,eDJe;ECKf,0BAAA;EAEA,YAAA;AAYJ;;AATA;EACI,WAAA;EACA,iBAAA;EACA,eAAA;AAYJ;;AAVA;EACI,sBAAA;AAaJ;;AAXA;EACI,qBAAA;AAcJ;;AAXA;EACI,eDtBc;ECuBd,YAAA;AAcJ;;AAVA;EACI,eD5Bc;EC6Bd,yBAAA;EACA,UAAA;EACA,YAAA;EACA,uBAAA;AAaJ;;AAVA;EACI,WAAA;EACA,eAAA;EACA,aAAA;EACA,sBAAA;EACA,2BAAA;EACA,mBAAA;AAaJ;;AAXA;EACI,WAAA;EACA,SAAA;EACA,YAAA;EACA,gBAAA;EACA,sBAAA;EACA,kBAAA;EACA,kBAAA;EAEA,uBAAA;EACA,2BAAA;EACA,eAAA;EACA,YAAA;AAaJ;;AATA;EACI;IACI,UAAA;EAYN;EAVE;IACI,UAAA;EAYN;AACF","sourcesContent":["@font-face{\n    font-family: \"ubuntu-medium\";\n    src: url(\"/src/assets/fonts/Ubuntu/Ubuntu-Medium.ttf\") format(\"truetype\");\n}\n@font-face{\n    font-family: \"ubuntu-bold\";\n    src: url(\"/src/assets/fonts/Ubuntu/Ubuntu-Bold.ttf\") format(\"truetype\");\n}\n@font-face{\n    font-family: \"ubuntu-light\";\n    src: url(\"/src/assets/fonts/Ubuntu/Ubuntu-Light.ttf\") format(\"truetype\");\n}\n@font-face{\n    font-family: \"ubuntu-regular\";\n    src: url(\"/src/assets/fonts/Ubuntu/Ubuntu-Regular.ttf\") format(\"truetype\");\n}\n\n\n$font-size-large: 24px;\n$font-size-medium: 20px;\n$font-size-small: 16px;\n\n$netflix-dark: #222222;\n$netflix-red: #DB0000;\n$netflix-gray: #564D4D;\n$netflix-white: #FFFFFF;\n$netflix-dark-red: #831010;\n\n$primary: #02C39A;\n$secondary: #00A896;\n$support: #3185FC;\n\n\n\n\n\n","@import \"../../../../config//style.config.scss\";\n\n.config_detected{\n    width: 100%;\n    min-height: 100px;\n\n    display: flex;\n    flex-direction: column;\n    justify-content: flex-start;\n    margin-top: 1em;\n    font-family: ubuntu-medium;\n}\n\n\n.header_wrapper{\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n\n    width: 100%;\n}\n.header{\n    font-size: $font-size-medium;\n    font-family: ubuntu-medium;\n\n    color: white;\n}\n\n.trash{\n    width: 28px;\n    filter: invert(1);\n    cursor: pointer;\n}\n.trash:hover{\n    transform: scale(0.95);\n}\n.trash:active{\n    transform: scale(1.1);\n}\n\n.status{\n    font-size: $font-size-small;\n    color: white;\n}\n\n\n.description{\n    font-size: $font-size-small;\n    font-family: ubuntu-light;\n    width: 80%;\n    color: white;\n    filter: brightness(0.6)\n}\n\n.url_list{\n    width: 100%;\n    margin-top: 1em;\n    display: flex;\n    flex-direction: column;\n    justify-content: flex-start;\n    align-items: center;\n}\n.url_item{\n    width: 100%;\n    margin: 0;\n    border: none;\n    padding: 8px 5px;\n    box-sizing: border-box;\n    margin-bottom: 1em;\n    border-radius: 5px;\n\n    background-color: white;\n    font-family: ubuntu-regular;\n    font-size: $font-size-small - 2px;\n    color: black;\n}\n\n\n@keyframes fade-in{\n    from{\n        opacity: 0;\n    }\n    to{\n        opacity: 1;\n    }\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"config_detected": "config_detected--XeUB7cuf30--src-pages-Setup-components-ConfigDetected-",
-	"fade-in": "fade-in--WgaU5dzIZS--src-pages-Setup-components-ConfigDetected-",
 	"header_wrapper": "header_wrapper--vPsT_Jadjn--src-pages-Setup-components-ConfigDetected-",
 	"header": "header--_zukyeA9KG--src-pages-Setup-components-ConfigDetected-",
 	"trash": "trash--vHmD5bboO7--src-pages-Setup-components-ConfigDetected-",
 	"status": "status--NPvqYf0Z34--src-pages-Setup-components-ConfigDetected-",
 	"description": "description--gWzqK087xc--src-pages-Setup-components-ConfigDetected-",
 	"url_list": "url_list--tiGiUn6B0X--src-pages-Setup-components-ConfigDetected-",
-	"url_item": "url_item--BuTfIRV6QN--src-pages-Setup-components-ConfigDetected-"
+	"url_item": "url_item--BuTfIRV6QN--src-pages-Setup-components-ConfigDetected-",
+	"fade-in": "fade-in--WgaU5dzIZS--src-pages-Setup-components-ConfigDetected-"
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -40080,12 +40080,12 @@ var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_g
 var ___CSS_LOADER_URL_REPLACEMENT_2___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_2___);
 var ___CSS_LOADER_URL_REPLACEMENT_3___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_3___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "@font-face {\n  font-family: \"ubuntu-medium\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") format(\"truetype\");\n}\n@font-face {\n  font-family: \"ubuntu-bold\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") format(\"truetype\");\n}\n@font-face {\n  font-family: \"ubuntu-light\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ") format(\"truetype\");\n}\n@font-face {\n  font-family: \"ubuntu-regular\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + ") format(\"truetype\");\n}\n.dropzone--zbXR66hKZH--src-pages-Setup-components-Dropzone- {\n  width: 100%;\n  min-height: 100px;\n  background-color: white;\n  border-radius: 5px;\n  margin-top: 2em;\n  border: 2px #DB0000 dashed;\n  box-sizing: border-box;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  animation: fade-in--ZtYg9koiAW--src-pages-Setup-components-Dropzone- 2s ease;\n}\n\n.dropzone--zbXR66hKZH--src-pages-Setup-components-Dropzone-[dragover=true] {\n  border: 2px #DB0000 solid;\n}\n\n.text--rSVWO1z820--src-pages-Setup-components-Dropzone- {\n  color: #222222;\n  font-size: 16px;\n}\n\n@keyframes fade-in--ZtYg9koiAW--src-pages-Setup-components-Dropzone- {\n  from {\n    opacity: 0;\n  }\n  to {\n    opacity: 1;\n  }\n}", "",{"version":3,"sources":["webpack://./src/config/style.config.scss","webpack://./src/pages/Setup/components/Dropzone/style.module.scss"],"names":[],"mappings":"AAAA;EACI,4BAAA;EACA,+DAAA;ACCJ;ADCA;EACI,0BAAA;EACA,+DAAA;ACCJ;ADCA;EACI,2BAAA;EACA,+DAAA;ACCJ;ADCA;EACI,6BAAA;EACA,+DAAA;ACCJ;AAbA;EACI,WAAA;EACA,iBAAA;EACA,uBAAA;EAEA,kBAAA;EACA,eAAA;EACA,0BAAA;EACA,sBAAA;EAEA,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,uBAAA;EAEA,4EAAA;AAYJ;;AATA;EACI,yBAAA;AAYJ;;AATA;EACG,cDHY;ECIZ,eDNe;ACkBlB;;AATA;EACI;IACI,UAAA;EAYN;EAVE;IACI,UAAA;EAYN;AACF","sourcesContent":["@font-face{\n    font-family: \"ubuntu-medium\";\n    src: url(\"/src/assets/fonts/Ubuntu/Ubuntu-Medium.ttf\") format(\"truetype\");\n}\n@font-face{\n    font-family: \"ubuntu-bold\";\n    src: url(\"/src/assets/fonts/Ubuntu/Ubuntu-Bold.ttf\") format(\"truetype\");\n}\n@font-face{\n    font-family: \"ubuntu-light\";\n    src: url(\"/src/assets/fonts/Ubuntu/Ubuntu-Light.ttf\") format(\"truetype\");\n}\n@font-face{\n    font-family: \"ubuntu-regular\";\n    src: url(\"/src/assets/fonts/Ubuntu/Ubuntu-Regular.ttf\") format(\"truetype\");\n}\n\n\n$font-size-large: 24px;\n$font-size-medium: 20px;\n$font-size-small: 16px;\n\n$netflix-dark: #222222;\n$netflix-red: #DB0000;\n$netflix-gray: #564D4D;\n$netflix-white: #FFFFFF;\n$netflix-dark-red: #831010;\n\n$primary: #02C39A;\n$secondary: #00A896;\n$support: #3185FC;\n\n\n\n\n\n","@import \"../../../../config//style.config.scss\";\n\n.dropzone{\n    width: 100%;\n    min-height: 100px;\n    background-color: white;\n\n    border-radius: 5px;\n    margin-top: 2em;\n    border: 2px $netflix-red dashed;\n    box-sizing: border-box;\n\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n\n    animation: fade-in 2s ease;\n}\n\n.dropzone[dragover=true]{\n    border: 2px $netflix-red solid;\n}\n\n.text{\n   color: $netflix-dark;\n   font-size: $font-size-small;\n}\n\n@keyframes fade-in{\n    from{\n        opacity: 0;\n    }\n    to{\n        opacity: 1;\n    }\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "@font-face {\n  font-family: \"ubuntu-medium\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") format(\"truetype\");\n}\n@font-face {\n  font-family: \"ubuntu-bold\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") format(\"truetype\");\n}\n@font-face {\n  font-family: \"ubuntu-light\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ") format(\"truetype\");\n}\n@font-face {\n  font-family: \"ubuntu-regular\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + ") format(\"truetype\");\n}\n.dropzone--zbXR66hKZH--src-pages-Setup-components-Dropzone- {\n  width: 100%;\n  min-height: 100px;\n  background-color: white;\n  border-radius: 5px;\n  margin-top: 2em;\n  border: 2px #DB0000 dashed;\n  box-sizing: border-box;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n}\n\n.dropzone--zbXR66hKZH--src-pages-Setup-components-Dropzone-[dragover=true] {\n  border: 2px #DB0000 solid;\n}\n\n.text--rSVWO1z820--src-pages-Setup-components-Dropzone- {\n  color: #222222;\n  font-size: 16px;\n}\n\n@keyframes fade-in--ZtYg9koiAW--src-pages-Setup-components-Dropzone- {\n  from {\n    opacity: 0;\n  }\n  to {\n    opacity: 1;\n  }\n}", "",{"version":3,"sources":["webpack://./src/config/style.config.scss","webpack://./src/pages/Setup/components/Dropzone/style.module.scss"],"names":[],"mappings":"AAAA;EACI,4BAAA;EACA,+DAAA;ACCJ;ADCA;EACI,0BAAA;EACA,+DAAA;ACCJ;ADCA;EACI,2BAAA;EACA,+DAAA;ACCJ;ADCA;EACI,6BAAA;EACA,+DAAA;ACCJ;AAbA;EACI,WAAA;EACA,iBAAA;EACA,uBAAA;EAEA,kBAAA;EACA,eAAA;EACA,0BAAA;EACA,sBAAA;EAEA,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,uBAAA;AAaJ;;AAVA;EACI,yBAAA;AAaJ;;AAVA;EACG,cDDY;ECEZ,eDJe;ACiBlB;;AAVA;EACI;IACI,UAAA;EAaN;EAXE;IACI,UAAA;EAaN;AACF","sourcesContent":["@font-face{\n    font-family: \"ubuntu-medium\";\n    src: url(\"/src/assets/fonts/Ubuntu/Ubuntu-Medium.ttf\") format(\"truetype\");\n}\n@font-face{\n    font-family: \"ubuntu-bold\";\n    src: url(\"/src/assets/fonts/Ubuntu/Ubuntu-Bold.ttf\") format(\"truetype\");\n}\n@font-face{\n    font-family: \"ubuntu-light\";\n    src: url(\"/src/assets/fonts/Ubuntu/Ubuntu-Light.ttf\") format(\"truetype\");\n}\n@font-face{\n    font-family: \"ubuntu-regular\";\n    src: url(\"/src/assets/fonts/Ubuntu/Ubuntu-Regular.ttf\") format(\"truetype\");\n}\n\n\n$font-size-large: 24px;\n$font-size-medium: 20px;\n$font-size-small: 16px;\n\n$netflix-dark: #222222;\n$netflix-red: #DB0000;\n$netflix-gray: #564D4D;\n$netflix-white: #FFFFFF;\n$netflix-dark-red: #831010;\n\n$primary: #02C39A;\n$secondary: #00A896;\n$support: #3185FC;\n\n\n\n\n\n","@import \"../../../../config//style.config.scss\";\n\n.dropzone{\n    width: 100%;\n    min-height: 100px;\n    background-color: white;\n\n    border-radius: 5px;\n    margin-top: 2em;\n    border: 2px $netflix-red dashed;\n    box-sizing: border-box;\n\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n}\n\n.dropzone[dragover=true]{\n    border: 2px $netflix-red solid;\n}\n\n.text{\n   color: $netflix-dark;\n   font-size: $font-size-small;\n}\n\n@keyframes fade-in{\n    from{\n        opacity: 0;\n    }\n    to{\n        opacity: 1;\n    }\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"dropzone": "dropzone--zbXR66hKZH--src-pages-Setup-components-Dropzone-",
-	"fade-in": "fade-in--ZtYg9koiAW--src-pages-Setup-components-Dropzone-",
-	"text": "text--rSVWO1z820--src-pages-Setup-components-Dropzone-"
+	"text": "text--rSVWO1z820--src-pages-Setup-components-Dropzone-",
+	"fade-in": "fade-in--ZtYg9koiAW--src-pages-Setup-components-Dropzone-"
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -40129,6 +40129,51 @@ ___CSS_LOADER_EXPORT___.locals = {
 	"wrapper": "wrapper--CX1LpX36dx--src-pages-Setup-components-Input-",
 	"label": "label--gswQ2HGe1f--src-pages-Setup-components-Input-",
 	"input": "input--d8sXUPmBDl--src-pages-Setup-components-Input-"
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./src/pages/Setup/components/Scheduler/style.module.scss":
+/*!*****************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./src/pages/Setup/components/Scheduler/style.module.scss ***!
+  \*****************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
+// Imports
+
+
+
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../../../../../../src/assets/fonts/Ubuntu/Ubuntu-Medium.ttf */ "./src/assets/fonts/Ubuntu/Ubuntu-Medium.ttf"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ../../../../../../src/assets/fonts/Ubuntu/Ubuntu-Bold.ttf */ "./src/assets/fonts/Ubuntu/Ubuntu-Bold.ttf"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_2___ = new URL(/* asset import */ __webpack_require__(/*! ../../../../../../src/assets/fonts/Ubuntu/Ubuntu-Light.ttf */ "./src/assets/fonts/Ubuntu/Ubuntu-Light.ttf"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_3___ = new URL(/* asset import */ __webpack_require__(/*! ../../../../../../src/assets/fonts/Ubuntu/Ubuntu-Regular.ttf */ "./src/assets/fonts/Ubuntu/Ubuntu-Regular.ttf"), __webpack_require__.b);
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
+var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_1___);
+var ___CSS_LOADER_URL_REPLACEMENT_2___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_2___);
+var ___CSS_LOADER_URL_REPLACEMENT_3___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_3___);
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "@font-face {\n  font-family: \"ubuntu-medium\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") format(\"truetype\");\n}\n@font-face {\n  font-family: \"ubuntu-bold\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") format(\"truetype\");\n}\n@font-face {\n  font-family: \"ubuntu-light\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ") format(\"truetype\");\n}\n@font-face {\n  font-family: \"ubuntu-regular\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + ") format(\"truetype\");\n}\n.scheduler--aP68TAROVF--src-pages-Setup-components-Scheduler- {\n  width: 100%;\n  display: flex;\n  flex-direction: column;\n  align-items: flex-start;\n  justify-content: flex-start;\n  margin-top: 2em;\n}\n\n.shutter--iqKJARAvuy--src-pages-Setup-components-Scheduler- {\n  top: 0;\n  left: 0;\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  background-color: rgba(34, 34, 34, 0.9);\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  z-index: 10;\n}\n\n.header--fIvtg81LwQ--src-pages-Setup-components-Scheduler- {\n  font-family: ubuntu-medium;\n  font-size: 20px;\n  color: white;\n}\n\n.input--INpoXI4hAU--src-pages-Setup-components-Scheduler- {\n  font-size: 16px;\n  font-family: ubuntu-medium;\n  padding: 10px;\n  outline: none;\n  border-radius: 5px;\n  border: 3px solid rgba(1, 1, 1, 0);\n  user-select: none;\n  filter: brightness(0.95);\n  margin-top: 10px;\n}\n\n.input--INpoXI4hAU--src-pages-Setup-components-Scheduler-:hover {\n  filter: brightness(1);\n}\n\n.input--INpoXI4hAU--src-pages-Setup-components-Scheduler-:focus {\n  border: 3px solid #02C39A;\n}\n\n.wrapper--aVGRgEBhE5--src-pages-Setup-components-Scheduler- {\n  width: 100%;\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  margin-top: 2em;\n  gap: 1em;\n}\n\n.wrapper--aVGRgEBhE5--src-pages-Setup-components-Scheduler- button {\n  width: 50%;\n}", "",{"version":3,"sources":["webpack://./src/config/style.config.scss","webpack://./src/pages/Setup/components/Scheduler/style.module.scss"],"names":[],"mappings":"AAAA;EACI,4BAAA;EACA,+DAAA;ACCJ;ADCA;EACI,0BAAA;EACA,+DAAA;ACCJ;ADCA;EACI,2BAAA;EACA,+DAAA;ACCJ;ADCA;EACI,6BAAA;EACA,+DAAA;ACCJ;AAXA;EACI,WAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,2BAAA;EAEA,eAAA;AAYJ;;AAVA;EACI,MAAA;EACA,OAAA;EACA,kBAAA;EACA,WAAA;EACA,YAAA;EACA,uCAAA;EAEA,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,uBAAA;EAEA,WAAA;AAWJ;;AARA;EACI,0BAAA;EACA,eDZe;ECaf,YAAA;AAWJ;;AARA;EACI,eDhBc;ECiBd,0BAAA;EACA,aAAA;EAEA,aAAA;EACA,kBAAA;EACA,kCAAA;EACA,iBAAA;EACA,wBAAA;EAEA,gBAAA;AASJ;;AAPA;EACI,qBAAA;AAUJ;;AARA;EACI,yBAAA;AAWJ;;AARA;EACI,WAAA;EACA,aAAA;EACA,mBAAA;EAEA,8BAAA;EAEA,eAAA;EACA,QAAA;AASJ;;AAPA;EACI,UAAA;AAUJ","sourcesContent":["@font-face{\n    font-family: \"ubuntu-medium\";\n    src: url(\"/src/assets/fonts/Ubuntu/Ubuntu-Medium.ttf\") format(\"truetype\");\n}\n@font-face{\n    font-family: \"ubuntu-bold\";\n    src: url(\"/src/assets/fonts/Ubuntu/Ubuntu-Bold.ttf\") format(\"truetype\");\n}\n@font-face{\n    font-family: \"ubuntu-light\";\n    src: url(\"/src/assets/fonts/Ubuntu/Ubuntu-Light.ttf\") format(\"truetype\");\n}\n@font-face{\n    font-family: \"ubuntu-regular\";\n    src: url(\"/src/assets/fonts/Ubuntu/Ubuntu-Regular.ttf\") format(\"truetype\");\n}\n\n\n$font-size-large: 24px;\n$font-size-medium: 20px;\n$font-size-small: 16px;\n\n$netflix-dark: #222222;\n$netflix-red: #DB0000;\n$netflix-gray: #564D4D;\n$netflix-white: #FFFFFF;\n$netflix-dark-red: #831010;\n\n$primary: #02C39A;\n$secondary: #00A896;\n$support: #3185FC;\n\n\n\n\n\n","@import \"../../../../config/style.config.scss\";\n\n\n\n.scheduler{\n    width: 100%;\n    display: flex;\n    flex-direction: column;\n    align-items: flex-start;\n    justify-content: flex-start;\n\n    margin-top: 2em;\n}\n.shutter{\n    top: 0;\n    left:0;\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    background-color: rgba(34, 34, 34, 0.9);\n\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n\n    z-index: 10;\n}\n\n.header{\n    font-family: ubuntu-medium;\n    font-size: $font-size-medium;\n    color: white;\n}\n\n.input{\n    font-size: $font-size-small;\n    font-family: ubuntu-medium;\n    padding: 10px;\n\n    outline: none;\n    border-radius: 5px;\n    border: 3px solid rgba(1,1,1,0);\n    user-select: none;\n    filter:brightness(0.95);\n\n    margin-top: 10px;\n}\n.input:hover{\n    filter:brightness(1)\n}\n.input:focus{\n    border: 3px solid $primary;\n}\n\n.wrapper{\n    width: 100%;\n    display: flex;\n    flex-direction: row;\n\n    justify-content: space-between;\n\n    margin-top: 2em;\n    gap: 1em;\n}\n.wrapper button{\n    width: 50%;\n}"],"sourceRoot":""}]);
+// Exports
+___CSS_LOADER_EXPORT___.locals = {
+	"scheduler": "scheduler--aP68TAROVF--src-pages-Setup-components-Scheduler-",
+	"shutter": "shutter--iqKJARAvuy--src-pages-Setup-components-Scheduler-",
+	"header": "header--fIvtg81LwQ--src-pages-Setup-components-Scheduler-",
+	"input": "input--INpoXI4hAU--src-pages-Setup-components-Scheduler-",
+	"wrapper": "wrapper--aVGRgEBhE5--src-pages-Setup-components-Scheduler-"
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -40333,7 +40378,7 @@ var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_g
 var ___CSS_LOADER_URL_REPLACEMENT_2___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_2___);
 var ___CSS_LOADER_URL_REPLACEMENT_3___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_3___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "@font-face {\n  font-family: \"ubuntu-medium\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") format(\"truetype\");\n}\n@font-face {\n  font-family: \"ubuntu-bold\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") format(\"truetype\");\n}\n@font-face {\n  font-family: \"ubuntu-light\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ") format(\"truetype\");\n}\n@font-face {\n  font-family: \"ubuntu-regular\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + ") format(\"truetype\");\n}\n.experiment_setup--wxj7NNV_yT--src-pages-Setup-views-ExperimentSetup- {\n  background-color: #222222;\n  width: 100%;\n  min-height: 100vh;\n  display: flex;\n  flex-direction: column;\n  justify-content: flex-start;\n  align-items: center;\n}\n\n.container--Rhnun73Q88--src-pages-Setup-views-ExperimentSetup- {\n  width: 30%;\n  display: flex;\n  flex-direction: column;\n  align-items: flex-start;\n  padding: 2em;\n}\n\n.header--GhaQCNCOkZ--src-pages-Setup-views-ExperimentSetup- {\n  font-size: 24px;\n  color: white;\n  font-family: ubuntu-medium;\n  text-align: left;\n}\n\n.sub_header--VuhG22MRQy--src-pages-Setup-views-ExperimentSetup- {\n  font-size: 20px;\n  color: white;\n  filter: brightness(0.8);\n  font-family: ubuntu-regular;\n}\n\n.wrapper--kvMVu6AojT--src-pages-Setup-views-ExperimentSetup- {\n  width: 100%;\n  margin: 5em 0;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n}\n\n.wrapper_row--alvQHQemzT--src-pages-Setup-views-ExperimentSetup- {\n  width: 100%;\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  justify-content: space-around;\n  margin: 1em 0;\n}", "",{"version":3,"sources":["webpack://./src/config/style.config.scss","webpack://./src/pages/Setup/views/ExperimentSetup/style.module.scss"],"names":[],"mappings":"AAAA;EACI,4BAAA;EACA,+DAAA;ACCJ;ADCA;EACI,0BAAA;EACA,+DAAA;ACCJ;ADCA;EACI,2BAAA;EACA,+DAAA;ACCJ;ADCA;EACI,6BAAA;EACA,+DAAA;ACCJ;AAZA;EACI,yBDkBW;ECjBX,WAAA;EACA,iBAAA;EAEA,aAAA;EACA,sBAAA;EACA,2BAAA;EACA,mBAAA;AAaJ;;AAVA;EACI,UAAA;EAEA,aAAA;EACA,sBAAA;EACA,uBAAA;EAEA,YAAA;AAWJ;;AARA;EACI,eDPc;ECQd,YAAA;EAEA,0BAAA;EACA,gBAAA;AAUJ;;AARA;EACI,eDbe;ECcf,YAAA;EACA,uBAAA;EACA,2BAAA;AAWJ;;AAPA;EACI,WAAA;EACA,aAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;AAUJ;;AARA;EACI,WAAA;EACA,aAAA;EACA,mBAAA;EACA,mBAAA;EACA,6BAAA;EAEA,aAAA;AAUJ","sourcesContent":["@font-face{\n    font-family: \"ubuntu-medium\";\n    src: url(\"/src/assets/fonts/Ubuntu/Ubuntu-Medium.ttf\") format(\"truetype\");\n}\n@font-face{\n    font-family: \"ubuntu-bold\";\n    src: url(\"/src/assets/fonts/Ubuntu/Ubuntu-Bold.ttf\") format(\"truetype\");\n}\n@font-face{\n    font-family: \"ubuntu-light\";\n    src: url(\"/src/assets/fonts/Ubuntu/Ubuntu-Light.ttf\") format(\"truetype\");\n}\n@font-face{\n    font-family: \"ubuntu-regular\";\n    src: url(\"/src/assets/fonts/Ubuntu/Ubuntu-Regular.ttf\") format(\"truetype\");\n}\n\n\n$font-size-large: 24px;\n$font-size-medium: 20px;\n$font-size-small: 16px;\n\n$netflix-dark: #222222;\n$netflix-red: #DB0000;\n$netflix-gray: #564D4D;\n$netflix-white: #FFFFFF;\n$netflix-dark-red: #831010;\n\n$primary: #02C39A;\n$secondary: #00A896;\n$support: #3185FC;\n\n\n\n\n\n","@import \"../../../../config/style.config.scss\";\n\n\n.experiment_setup{\n    background-color: $netflix-dark;\n    width: 100%;\n    min-height: 100vh;\n\n    display: flex;\n    flex-direction: column;\n    justify-content: flex-start;\n    align-items: center;\n}\n\n.container{\n    width: 30%;\n\n    display: flex;\n    flex-direction: column;\n    align-items: flex-start;\n\n    padding: 2em;\n}\n\n.header{\n    font-size: $font-size-large;\n    color: white;\n    \n    font-family: ubuntu-medium;\n    text-align: left;\n}\n.sub_header{\n    font-size: $font-size-medium;\n    color: white;\n    filter: brightness(0.8);\n    font-family: ubuntu-regular;\n}\n\n\n.wrapper{\n    width: 100%;\n    margin: 5em 0;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n}\n.wrapper_row{\n    width: 100%;\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    justify-content: space-around;\n\n    margin: 1em 0;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "@font-face {\n  font-family: \"ubuntu-medium\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") format(\"truetype\");\n}\n@font-face {\n  font-family: \"ubuntu-bold\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") format(\"truetype\");\n}\n@font-face {\n  font-family: \"ubuntu-light\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ") format(\"truetype\");\n}\n@font-face {\n  font-family: \"ubuntu-regular\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + ") format(\"truetype\");\n}\n.experiment_setup--wxj7NNV_yT--src-pages-Setup-views-ExperimentSetup- {\n  background-color: #222222;\n  width: 100%;\n  min-height: 100vh;\n  display: flex;\n  flex-direction: column;\n  justify-content: flex-start;\n  align-items: center;\n}\n\n.container--Rhnun73Q88--src-pages-Setup-views-ExperimentSetup- {\n  width: 30%;\n  display: flex;\n  flex-direction: column;\n  align-items: flex-start;\n  padding: 2em;\n}\n\n.header--GhaQCNCOkZ--src-pages-Setup-views-ExperimentSetup- {\n  font-size: 24px;\n  color: white;\n  font-family: ubuntu-medium;\n  text-align: left;\n}\n\n.sub_header--VuhG22MRQy--src-pages-Setup-views-ExperimentSetup- {\n  font-size: 20px;\n  color: white;\n  filter: brightness(0.8);\n  font-family: ubuntu-regular;\n}\n\n.wrapper--kvMVu6AojT--src-pages-Setup-views-ExperimentSetup- {\n  width: 100%;\n  margin: 2em 0;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n}\n\n.wrapper_row--alvQHQemzT--src-pages-Setup-views-ExperimentSetup- {\n  width: 100%;\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  justify-content: space-around;\n  margin: 1em 0;\n}", "",{"version":3,"sources":["webpack://./src/config/style.config.scss","webpack://./src/pages/Setup/views/ExperimentSetup/style.module.scss"],"names":[],"mappings":"AAAA;EACI,4BAAA;EACA,+DAAA;ACCJ;ADCA;EACI,0BAAA;EACA,+DAAA;ACCJ;ADCA;EACI,2BAAA;EACA,+DAAA;ACCJ;ADCA;EACI,6BAAA;EACA,+DAAA;ACCJ;AAZA;EACI,yBDkBW;ECjBX,WAAA;EACA,iBAAA;EAEA,aAAA;EACA,sBAAA;EACA,2BAAA;EACA,mBAAA;AAaJ;;AAVA;EACI,UAAA;EAEA,aAAA;EACA,sBAAA;EACA,uBAAA;EAEA,YAAA;AAWJ;;AARA;EACI,eDPc;ECQd,YAAA;EAEA,0BAAA;EACA,gBAAA;AAUJ;;AARA;EACI,eDbe;ECcf,YAAA;EACA,uBAAA;EACA,2BAAA;AAWJ;;AAPA;EACI,WAAA;EACA,aAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;AAUJ;;AARA;EACI,WAAA;EACA,aAAA;EACA,mBAAA;EACA,mBAAA;EACA,6BAAA;EAEA,aAAA;AAUJ","sourcesContent":["@font-face{\n    font-family: \"ubuntu-medium\";\n    src: url(\"/src/assets/fonts/Ubuntu/Ubuntu-Medium.ttf\") format(\"truetype\");\n}\n@font-face{\n    font-family: \"ubuntu-bold\";\n    src: url(\"/src/assets/fonts/Ubuntu/Ubuntu-Bold.ttf\") format(\"truetype\");\n}\n@font-face{\n    font-family: \"ubuntu-light\";\n    src: url(\"/src/assets/fonts/Ubuntu/Ubuntu-Light.ttf\") format(\"truetype\");\n}\n@font-face{\n    font-family: \"ubuntu-regular\";\n    src: url(\"/src/assets/fonts/Ubuntu/Ubuntu-Regular.ttf\") format(\"truetype\");\n}\n\n\n$font-size-large: 24px;\n$font-size-medium: 20px;\n$font-size-small: 16px;\n\n$netflix-dark: #222222;\n$netflix-red: #DB0000;\n$netflix-gray: #564D4D;\n$netflix-white: #FFFFFF;\n$netflix-dark-red: #831010;\n\n$primary: #02C39A;\n$secondary: #00A896;\n$support: #3185FC;\n\n\n\n\n\n","@import \"../../../../config/style.config.scss\";\n\n\n.experiment_setup{\n    background-color: $netflix-dark;\n    width: 100%;\n    min-height: 100vh;\n\n    display: flex;\n    flex-direction: column;\n    justify-content: flex-start;\n    align-items: center;\n}\n\n.container{\n    width: 30%;\n\n    display: flex;\n    flex-direction: column;\n    align-items: flex-start;\n\n    padding: 2em;\n}\n\n.header{\n    font-size: $font-size-large;\n    color: white;\n    \n    font-family: ubuntu-medium;\n    text-align: left;\n}\n.sub_header{\n    font-size: $font-size-medium;\n    color: white;\n    filter: brightness(0.8);\n    font-family: ubuntu-regular;\n}\n\n\n.wrapper{\n    width: 100%;\n    margin: 2em 0;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n}\n.wrapper_row{\n    width: 100%;\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    justify-content: space-around;\n\n    margin: 1em 0;\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"experiment_setup": "experiment_setup--wxj7NNV_yT--src-pages-Setup-views-ExperimentSetup-",
@@ -52862,6 +52907,119 @@ if (true) {
 
 /***/ }),
 
+/***/ "./src/pages/Setup/components/Scheduler/style.module.scss":
+/*!****************************************************************!*\
+  !*** ./src/pages/Setup/components/Scheduler/style.module.scss ***!
+  \****************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_0_use_1_node_modules_sass_loader_dist_cjs_js_ruleSet_1_rules_0_use_2_style_module_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!../../../../../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./style.module.scss */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./src/pages/Setup/components/Scheduler/style.module.scss");
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
+options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
+
+      options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
+    
+options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
+options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_0_use_1_node_modules_sass_loader_dist_cjs_js_ruleSet_1_rules_0_use_2_style_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+
+
+if (true) {
+  if (!_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_0_use_1_node_modules_sass_loader_dist_cjs_js_ruleSet_1_rules_0_use_2_style_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals || module.hot.invalidate) {
+    var isEqualLocals = function isEqualLocals(a, b, isNamedExport) {
+  if (!a && b || a && !b) {
+    return false;
+  }
+
+  var p;
+
+  for (p in a) {
+    if (isNamedExport && p === "default") {
+      // eslint-disable-next-line no-continue
+      continue;
+    }
+
+    if (a[p] !== b[p]) {
+      return false;
+    }
+  }
+
+  for (p in b) {
+    if (isNamedExport && p === "default") {
+      // eslint-disable-next-line no-continue
+      continue;
+    }
+
+    if (!a[p]) {
+      return false;
+    }
+  }
+
+  return true;
+};
+    var isNamedExport = !_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_0_use_1_node_modules_sass_loader_dist_cjs_js_ruleSet_1_rules_0_use_2_style_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals;
+    var oldLocals = isNamedExport ? _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_0_use_1_node_modules_sass_loader_dist_cjs_js_ruleSet_1_rules_0_use_2_style_module_scss__WEBPACK_IMPORTED_MODULE_6__ : _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_0_use_1_node_modules_sass_loader_dist_cjs_js_ruleSet_1_rules_0_use_2_style_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals;
+
+    module.hot.accept(
+      /*! !!../../../../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!../../../../../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./style.module.scss */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./src/pages/Setup/components/Scheduler/style.module.scss",
+      __WEBPACK_OUTDATED_DEPENDENCIES__ => { /* harmony import */ _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_0_use_1_node_modules_sass_loader_dist_cjs_js_ruleSet_1_rules_0_use_2_style_module_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!../../../../../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./style.module.scss */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./src/pages/Setup/components/Scheduler/style.module.scss");
+(function () {
+        if (!isEqualLocals(oldLocals, isNamedExport ? _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_0_use_1_node_modules_sass_loader_dist_cjs_js_ruleSet_1_rules_0_use_2_style_module_scss__WEBPACK_IMPORTED_MODULE_6__ : _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_0_use_1_node_modules_sass_loader_dist_cjs_js_ruleSet_1_rules_0_use_2_style_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals, isNamedExport)) {
+                module.hot.invalidate();
+
+                return;
+              }
+
+              oldLocals = isNamedExport ? _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_0_use_1_node_modules_sass_loader_dist_cjs_js_ruleSet_1_rules_0_use_2_style_module_scss__WEBPACK_IMPORTED_MODULE_6__ : _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_0_use_1_node_modules_sass_loader_dist_cjs_js_ruleSet_1_rules_0_use_2_style_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals;
+
+              update(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_0_use_1_node_modules_sass_loader_dist_cjs_js_ruleSet_1_rules_0_use_2_style_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"]);
+      })(__WEBPACK_OUTDATED_DEPENDENCIES__); }
+    )
+  }
+
+  module.hot.dispose(function() {
+    update();
+  });
+}
+
+
+
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_0_use_1_node_modules_sass_loader_dist_cjs_js_ruleSet_1_rules_0_use_2_style_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_0_use_1_node_modules_sass_loader_dist_cjs_js_ruleSet_1_rules_0_use_2_style_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_0_use_1_node_modules_sass_loader_dist_cjs_js_ruleSet_1_rules_0_use_2_style_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+
+
+/***/ }),
+
 /***/ "./src/pages/Setup/components/Select/style.module.scss":
 /*!*************************************************************!*\
   !*** ./src/pages/Setup/components/Select/style.module.scss ***!
@@ -54494,6 +54652,131 @@ var NavButton = function (props) {
 
 /***/ }),
 
+/***/ "./src/pages/Setup/components/Scheduler/Scheduler.tsx":
+/*!************************************************************!*\
+  !*** ./src/pages/Setup/components/Scheduler/Scheduler.tsx ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _style_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.module.scss */ "./src/pages/Setup/components/Scheduler/style.module.scss");
+/* harmony import */ var _Button_Button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Button/Button */ "./src/pages/Setup/components/Button/Button.tsx");
+/* harmony import */ var _ExperimentStartButton__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../ExperimentStartButton */ "./src/pages/Setup/components/ExperimentStartButton.tsx");
+/* harmony import */ var _useScheduler__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./useScheduler */ "./src/pages/Setup/components/Scheduler/useScheduler.ts");
+/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/CircularProgress/CircularProgress.js");
+
+
+
+
+
+
+var Scheduler = function () {
+    var _a = (0,_useScheduler__WEBPACK_IMPORTED_MODULE_4__.useScheduler)(), handle_time_change = _a.handle_time_change, handle_schedule = _a.handle_schedule, init = _a.init, time = _a.time, progress = _a.progress, scheduled = _a.scheduled;
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useLayoutEffect)(function () {
+        init();
+    }, []);
+    return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _style_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].scheduler },
+        scheduled ?
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _style_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].shutter },
+                react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _style_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].shutter_inner },
+                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(_mui_material__WEBPACK_IMPORTED_MODULE_5__["default"], { value: progress, variant: "determinate", size: 60 }))) : null,
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _style_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].header }, "Schedule auto-start"),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { className: _style_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].input, type: "time", onChange: handle_time_change, value: "".concat(time.hours, ":").concat(time.minutes) }),
+        react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _style_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].wrapper },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Button_Button__WEBPACK_IMPORTED_MODULE_2__["default"], { text: "Schedule auto-start", handleClick: handle_schedule }),
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement(_ExperimentStartButton__WEBPACK_IMPORTED_MODULE_3__["default"], { title: "Start immediately" }))));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Scheduler);
+
+
+/***/ }),
+
+/***/ "./src/pages/Setup/components/Scheduler/useScheduler.ts":
+/*!**************************************************************!*\
+  !*** ./src/pages/Setup/components/Scheduler/useScheduler.ts ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "useScheduler": () => (/* binding */ useScheduler)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _hooks_useExperimentStart__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../hooks/useExperimentStart */ "./src/pages/Setup/hooks/useExperimentStart.ts");
+
+
+var useScheduler = function () {
+    var start_experiment = (0,_hooks_useExperimentStart__WEBPACK_IMPORTED_MODULE_1__.useExperimentStart)().start_experiment;
+    var _a = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false), scheduled = _a[0], setScheduled = _a[1];
+    var _b = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({ hours: null, minutes: null }), time = _b[0], setTime = _b[1];
+    var _c = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(0), progress = _c[0], setProgress = _c[1];
+    var interval;
+    var init = function () {
+        var now = new Date();
+        setTime({
+            hours: now.getHours().toString().padStart(2, "0"),
+            minutes: now.getMinutes().toString().padStart(2, "0")
+        });
+    };
+    var handle_time_change = function (e) {
+        var value = e.currentTarget.value;
+        var _a = value.split(":"), hours = _a[0], minutes = _a[1];
+        setTime({
+            hours: hours,
+            minutes: minutes
+        });
+    };
+    var handle_schedule = function () {
+        // Validate config
+        // Validate setup form
+        // Validate server connection..
+        // ...before scheduling
+        // Get current moment
+        var now = new Date();
+        // Get scheduled time
+        var scheduled = new Date(new Date().setHours(Number(time.hours)));
+        scheduled = new Date(scheduled.setMinutes(Number(time.minutes)));
+        scheduled = new Date(scheduled.setSeconds(0));
+        scheduled = new Date(scheduled.setMilliseconds(0));
+        console.log(scheduled);
+        if (scheduled < now) {
+            window.alert("Cant schedule to the past");
+            return;
+        }
+        var total = (scheduled.getTime() - now.getTime()); // miliseconds until start
+        var count = 0;
+        interval = setInterval(function () {
+            count += 100;
+            var progress = (count / total) * 100;
+            if (progress >= 100) {
+                setProgress(100);
+                clearInterval(interval);
+                start_experiment();
+                return;
+            }
+            setProgress(progress);
+        }, 100);
+        setScheduled(true);
+    };
+    return {
+        init: init,
+        handle_schedule: handle_schedule,
+        handle_time_change: handle_time_change,
+        scheduled: scheduled,
+        time: time,
+        progress: progress
+    };
+};
+
+
+/***/ }),
+
 /***/ "./src/pages/Setup/components/Select/Select.tsx":
 /*!******************************************************!*\
   !*** ./src/pages/Setup/components/Select/Select.tsx ***!
@@ -55357,6 +55640,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Dropzone_Dropzone__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../components/Dropzone/Dropzone */ "./src/pages/Setup/components/Dropzone/Dropzone.tsx");
 /* harmony import */ var _utils_custom_ChromeStorage__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../../utils/custom/ChromeStorage */ "./src/utils/custom/ChromeStorage.ts");
 /* harmony import */ var _components_ExperimentStartButton__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../components/ExperimentStartButton */ "./src/pages/Setup/components/ExperimentStartButton.tsx");
+/* harmony import */ var _components_Scheduler_Scheduler__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../components/Scheduler/Scheduler */ "./src/pages/Setup/components/Scheduler/Scheduler.tsx");
 var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -55393,6 +55677,7 @@ var __generator = (undefined && undefined.__generator) || function (thisArg, bod
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
+
 
 
 
@@ -55453,7 +55738,8 @@ var ExperimentSetup = function () {
                             react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null,
                                 react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_ExperimentStartButton__WEBPACK_IMPORTED_MODULE_9__["default"], { title: "Start Experiment" }))
                             :
-                                react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, "Scheduler")) : react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null))))));
+                                react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null,
+                                    react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Scheduler_Scheduler__WEBPACK_IMPORTED_MODULE_10__["default"], null))) : react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null))))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ExperimentSetup);
 
@@ -60217,7 +60503,7 @@ function combine (array, callback) {
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("2ad1995e5754d23342f1")
+/******/ 		__webpack_require__.h = () => ("1d2ea2b11cbe4cfeb228")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */

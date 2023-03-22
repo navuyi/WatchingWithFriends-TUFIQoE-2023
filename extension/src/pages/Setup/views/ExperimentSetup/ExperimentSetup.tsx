@@ -9,6 +9,7 @@ import ConfigDetected from "../../components/ConfigDetected/ConfigDetected";
 import Dropzone from "../../components/Dropzone/Dropzone";
 import { ChromeStorage } from "../../../../utils/custom/ChromeStorage";
 import ExperimentStartButton from "../../components/ExperimentStartButton";
+import Scheduler from "../../components/Scheduler/Scheduler";
 
 
 
@@ -102,7 +103,7 @@ const ExperimentSetup = () => {
                                     </>
                                         :
                                     <>
-                                        Scheduler
+                                        <Scheduler />
                                     </>
                                 }
                             </> : <></>
