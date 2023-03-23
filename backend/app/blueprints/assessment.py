@@ -1,7 +1,7 @@
 
 from flask import Blueprint, request, jsonify
 from app.db import cursor
-import json
+
 
 from app.db import lastrowid
 

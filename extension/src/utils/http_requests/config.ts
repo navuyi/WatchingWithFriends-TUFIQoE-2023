@@ -4,4 +4,5 @@ export const backend_urls = {
     video: `${BASE_URL}/video/`,
     playback_data: `${BASE_URL}/playback_data/`,
     assessment: `${BASE_URL}/assessment/`,
+    connection_test: `${BASE_URL}/connection_test/`
 }

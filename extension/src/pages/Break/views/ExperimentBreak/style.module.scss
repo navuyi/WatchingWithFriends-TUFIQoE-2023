@@ -40,7 +40,7 @@
     font-size: $font-size-small;
 
     margin-top: auto;
-    background-color: $netflix-dark-red;
+    background-color: $secondary;
     
     border: none;
     border-radius: 5px;
@@ -49,5 +49,5 @@
     cursor: pointer;
 }
 .resume_button:hover{
-    background-color: $netflix-red;
+    filter: brightness(0.9)
 }

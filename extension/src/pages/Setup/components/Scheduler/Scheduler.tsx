@@ -3,7 +3,7 @@ import style from "./style.module.scss"
 
 import Button from "../Button/Button";
 import ExperimentStartButton from "../ExperimentStartButton";
-import { useScheduler } from "./useScheduler";
+import { useScheduleExperiment} from "../../hooks/useScheduleExperiment";
 import { CircularProgress } from "@mui/material";
 
 
@@ -11,7 +11,7 @@ import { CircularProgress } from "@mui/material";
 
 
 const Scheduler = () => {
-    const {handle_time_change, handle_schedule, init, time, progress, scheduled} = useScheduler()
+    const {handle_time_change, handle_schedule, init, time, progress, scheduled} = useScheduleExperiment()
 
     useLayoutEffect(() => {
         init()
@@ -31,7 +31,7 @@ const Scheduler = () => {
             <input className={style.input} type="time" onChange={handle_time_change} value={`${time.hours}:${time.minutes}`}/>
 
             <div className={style.wrapper}>
-                <Button text="Schedule auto-start" handleClick={handle_schedule} />
+                <Button text="Schedule auto-start" handleClick={handle_schedule} style={{backgroundColor: "#00A896"}}/>
                 <ExperimentStartButton title="Start immediately" />
             </div>
             

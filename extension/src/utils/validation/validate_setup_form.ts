@@ -4,7 +4,7 @@ import { ChromeStorage } from "../custom/ChromeStorage"
 export const validate_setup_form = async () : Promise<boolean> => {
     const {subject_age, subject_id, subject_sex, 
         subject_netflix_familiarity, subject_selected_content, device_id, 
-        session_type} = await ChromeStorage.get_experiment_settings()
+        session_type, content_continuation} = await ChromeStorage.get_experiment_settings()
 
     // Essential fields
     const schema = Joi.object({
@@ -25,9 +25,10 @@ export const validate_setup_form = async () : Promise<boolean> => {
             subject_age: Joi.number().greater(0).required(),
             subject_sex: Joi.string().valid("male", "female", "undisclosed").required(),
             subject_netflix_familiarity: Joi.boolean().required(),
-            subject_selected_content: Joi.boolean().required()
+            subject_selected_content: Joi.boolean().required(),
+            content_continuation: Joi.bool().required()
         })
-        const {error} = schema.validate({subject_age, subject_sex, subject_netflix_familiarity, subject_selected_content})
+        const {error} = schema.validate({subject_age, subject_sex, subject_netflix_familiarity, subject_selected_content, content_continuation})
         if(error){
             console.log(error)
             return false
@@ -39,9 +40,10 @@ export const validate_setup_form = async () : Promise<boolean> => {
             subject_age: Joi.equal("").required(),
             subject_sex: Joi.equal("").required(),
             subject_netflix_familiarity: Joi.equal("").required(),
-            subject_selected_content: Joi.equal("").required()
+            subject_selected_content: Joi.equal("").required(),
+            content_continuation: Joi.equal("").required()
         })
-        const {error} = schema.validate({subject_age, subject_sex, subject_netflix_familiarity, subject_selected_content})
+        const {error} = schema.validate({subject_age, subject_sex, subject_netflix_familiarity, subject_selected_content, content_continuation})
         if(error){
             console.log(error)
             return false

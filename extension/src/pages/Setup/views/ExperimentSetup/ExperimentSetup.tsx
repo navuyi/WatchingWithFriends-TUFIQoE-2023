@@ -27,6 +27,7 @@ const ExperimentSetup = () => {
                 settings.subject_netflix_familiarity = ""
                 settings.subject_sex = ""
                 settings.subject_selected_content = ""
+                settings.content_continuation = ""
 
                 await ChromeStorage.set_experiment_settings(settings)
             }
@@ -66,19 +67,25 @@ const ExperimentSetup = () => {
                                     label="Subject sex"
                                     id="subject_sex"
                                     options={[{label: "Male", value: "male"}, {label: "Female", value: "female"}, {label: "Prefer not to disclose", value: "undisclosed"}]}
-                                    style={{marginTop: "1em"}}
+                                    style={{marginTop: "1.1em"}}
                                 />
                                 <Select 
                                     label="Netflix familiarity"
                                     id="subject_netflix_familiarity"
                                     options={[{label: "Familiar", value: true}, {label: "Unfamiliar", value: false}]}
-                                    style={{marginTop: "1em"}}
+                                    style={{marginTop: "1.1em"}}
                                 />
                                 <Select 
                                     label="Who selected content"
                                     id="subject_selected_content"
                                     options={[{label: "Subject", value: true}, {label: "Administrator", value: "false"}]}
-                                    style={{marginTop: "1em"}}
+                                    style={{marginTop: "1.1em"}}
+                                />
+                                <Select 
+                                    label="Content continuation"
+                                    id="content_continuation"
+                                    options={[{label: "Yes", value: true}, {label: "No", value: "false"}]}
+                                    style={{marginTop: "1.1em"}}
                                 />
                             </div> : null
                     }
