@@ -6,14 +6,15 @@ type T_PROPS = {
     text: string,
     style? : object,
     attributes?: object,
-    handleClick: Function
+    handleClick: Function,
+    disabled?: boolean
 }
 
 const Button = (props : T_PROPS) => {
     
     return(
         <>
-            <button onClick={(e) => {props.handleClick()}} className={style.button} style={props.style} {...props.attributes}>{props.text}</button>
+            <button disabled={props.disabled} onClick={(e) => {props.handleClick()}} className={style.button} style={props.style} {...props.attributes}>{props.text}</button>
         </>
     )
 }

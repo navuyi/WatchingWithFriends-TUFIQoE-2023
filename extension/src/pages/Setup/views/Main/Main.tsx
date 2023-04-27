@@ -10,8 +10,8 @@ const Main = () => {
             <span className={style.sub_header}>What would you like to do?</span>
 
             <div className={style.btn_container}>
-                <NavButton text="Generate config file" to="config-generator"/>
-                <NavButton text="Experiment setup" to="experiment-setup"/>
+                <NavButton text="Configuration" to="configuration"/>
+                <NavButton text="Experiment" to="experiment"/>
                 <NavButton text="About" to="about"/>
             </div>
         </div>

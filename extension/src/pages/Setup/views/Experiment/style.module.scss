@@ -1,0 +1,14 @@
+@import "../../../../config/style.config.scss";
+
+.experiment{
+    width: 100%;
+    min-height: 100vh;
+    background-color: $netflix-dark;
+
+    font-family: ubuntu-regular;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

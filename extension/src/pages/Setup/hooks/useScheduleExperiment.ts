@@ -2,8 +2,6 @@ import { ChangeEvent, useState } from "react"
 import { ChromeStorage } from "../../../utils/custom/ChromeStorage"
 import { test_server_connection } from "../../../utils/http_requests/connection_test"
 import { get_local_datetime } from "../../../utils/time_utils"
-import { is_config_experiment_applicable } from "../../../utils/validation/validate_config"
-import { validate_setup_form } from "../../../utils/validation/validate_setup_form"
 import { useExperimentStart } from "./useExperimentStart"
 
 

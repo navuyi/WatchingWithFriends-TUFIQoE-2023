@@ -41,14 +41,9 @@ var STORAGE_DEFAULT = {
         stats_invisible: false,
         bitrate_interval_ms: 2.5 * 60 * 1000,
         assessment_interval_ms: 2.5 * 60 * 1000,
-        config: null,
+        urls: [],
+        videos: [],
         device_id: 106,
-        subject_id: "",
-        subject_sex: "",
-        subject_age: "",
-        subject_netflix_familiarity: "",
-        subject_selected_content: "",
-        content_continuation: "",
         session_type: ""
     },
     experiment_variables: {
@@ -57,6 +52,14 @@ var STORAGE_DEFAULT = {
         extension_running: false,
         extension_mode: "",
         video_index: 0
+    },
+    subject_data: {
+        subject_id: "",
+        subject_sex: "",
+        subject_age: "",
+        subject_netflix_familiarity: "",
+        subject_selected_content: "",
+        content_continuation: "",
     }
 };
 
@@ -449,6 +452,7 @@ var ChromeStorage = /** @class */ (function () {
     var _a;
     _a = ChromeStorage;
     ChromeStorage.logger = new _CustomLogger__WEBPACK_IMPORTED_MODULE_1__.CustomLogger("ChromeStorage");
+    // General utils
     ChromeStorage.initialize_default = function () { return __awaiter(void 0, void 0, void 0, function () {
         return __generator(_a, function (_b) {
             switch (_b.label) {
@@ -567,6 +571,43 @@ var ChromeStorage = /** @class */ (function () {
                     settings = _b.sent();
                     settings[key] = value;
                     return [4 /*yield*/, ChromeStorage.set_experiment_settings(settings)];
+                case 2:
+                    _b.sent();
+                    return [2 /*return*/];
+            }
+        });
+    }); };
+    // Subject data utils
+    ChromeStorage.get_subject_data = function () { return __awaiter(void 0, void 0, void 0, function () {
+        var subject_data;
+        return __generator(_a, function (_b) {
+            switch (_b.label) {
+                case 0: return [4 /*yield*/, ChromeStorage.get_single("subject_data")];
+                case 1:
+                    subject_data = _b.sent();
+                    return [2 /*return*/, subject_data];
+            }
+        });
+    }); };
+    ChromeStorage.set_subject_data = function (data) { return __awaiter(void 0, void 0, void 0, function () {
+        return __generator(_a, function (_b) {
+            switch (_b.label) {
+                case 0: return [4 /*yield*/, ChromeStorage.set_single("subject_data", data)];
+                case 1:
+                    _b.sent();
+                    return [2 /*return*/];
+            }
+        });
+    }); };
+    ChromeStorage.update_subject_data_property = function (key, value) { return __awaiter(void 0, void 0, void 0, function () {
+        var data;
+        return __generator(_a, function (_b) {
+            switch (_b.label) {
+                case 0: return [4 /*yield*/, ChromeStorage.get_subject_data()];
+                case 1:
+                    data = _b.sent();
+                    data[key] = value;
+                    return [4 /*yield*/, ChromeStorage.set_subject_data(data)];
                 case 2:
                     _b.sent();
                     return [2 /*return*/];
@@ -732,7 +773,7 @@ var get_local_datetime_and_timezone = function (object) {
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("7f3d6f95204ce9ed6116")
+/******/ 		__webpack_require__.h = () => ("366ea2b4a9a798ae7118")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */

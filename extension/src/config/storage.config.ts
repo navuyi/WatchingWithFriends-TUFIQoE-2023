@@ -1,22 +1,27 @@
-import { T_CONFIG } from "./types/data-structures.type"
-
+import { T_VIDEO } from "./types/data-structures.type"
 
 export type T_EXPERIMENT_SETTINGS = {
-    stats_record_interval_ms: number,
-    stats_nonclickable: boolean,
-    stats_invisible: boolean,
-    bitrate_interval_ms: number,
-    assessment_interval_ms: number,
-    config: T_CONFIG | null,
+    stats_record_interval_ms: number
+    stats_nonclickable: boolean
+    stats_invisible: boolean
 
-    device_id: "" | 106 | 107,
-    subject_id: "" | number,
-    subject_age : "" | number,
-    subject_sex : "" | "male" | "female" | "undisclosed",
-    subject_netflix_familiarity : "" | boolean,
-    subject_selected_content: "" | boolean,
-    content_continuation : "" | boolean,
+    bitrate_interval_ms: number
+    assessment_interval_ms: number
+
+    videos: Array<T_VIDEO>
+    urls: Array<string>
+
+    device_id: "" | 106 | 107
     session_type : "" | "alone" | "together"
+}
+
+export type T_SUBJECT_DATA = {
+    subject_id: "" | number
+    subject_age : "" | number
+    subject_sex : "" | "male" | "female" | "undisclosed"
+    subject_netflix_familiarity : "" | boolean
+    subject_selected_content: "" | boolean
+    content_continuation : "" | boolean
 }
 
 export type T_EXPERIMENT_VARIABLES = {
@@ -30,7 +35,8 @@ export type T_EXPERIMENT_VARIABLES = {
 
 export type T_STORAGE = {
     experiment_settings: T_EXPERIMENT_SETTINGS,
-    experiment_variables: T_EXPERIMENT_VARIABLES
+    experiment_variables: T_EXPERIMENT_VARIABLES,
+    subject_data: T_SUBJECT_DATA
 }
 
 export const STORAGE_DEFAULT : T_STORAGE = {
@@ -40,15 +46,11 @@ export const STORAGE_DEFAULT : T_STORAGE = {
         stats_invisible: false,
         bitrate_interval_ms: 2.5 * 60 * 1000, // default 2.5min=150sec=150*1000
         assessment_interval_ms: 2.5 * 60 * 1000, // default 2.5min=150sec=150*1000
-        config: null,
+        
+        urls: [],
+        videos: [],
 
         device_id: 106,
-        subject_id: "",
-        subject_sex: "",
-        subject_age: "",
-        subject_netflix_familiarity: "",
-        subject_selected_content: "",
-        content_continuation: "",
         session_type: ""
     },
     experiment_variables: {
@@ -58,5 +60,13 @@ export const STORAGE_DEFAULT : T_STORAGE = {
         extension_running: false,
         extension_mode: "", // main or mapping
         video_index: 0
+    },
+    subject_data:{
+        subject_id: "",
+        subject_sex: "",
+        subject_age: "",
+        subject_netflix_familiarity: "",
+        subject_selected_content: "",
+        content_continuation: "",
     }
 }

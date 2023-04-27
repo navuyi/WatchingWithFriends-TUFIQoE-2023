@@ -1,18 +1,18 @@
 import axios from "axios"
-import { T_EXPERIMENT_SETTINGS } from "../../config/storage.config"
+import { T_EXPERIMENT_SETTINGS, T_SUBJECT_DATA } from "../../config/storage.config"
 import { backend_urls } from "./config"
 
 type T_INPUT_DATA = {
     started : string,
-    subject_id : T_EXPERIMENT_SETTINGS["subject_id"]
+    subject_id : T_SUBJECT_DATA["subject_id"]
     device_id : T_EXPERIMENT_SETTINGS["device_id"]
     session_type : T_EXPERIMENT_SETTINGS["session_type"]
 
-    subject_age : T_EXPERIMENT_SETTINGS["subject_age"]
-    subject_sex : T_EXPERIMENT_SETTINGS["subject_sex"]
-    subject_netflix_familiarity : T_EXPERIMENT_SETTINGS["subject_netflix_familiarity"]
-    subject_selected_content : T_EXPERIMENT_SETTINGS["subject_selected_content"]
-    content_continuation : T_EXPERIMENT_SETTINGS["content_continuation"]
+    subject_age : T_SUBJECT_DATA["subject_age"]
+    subject_sex : T_SUBJECT_DATA["subject_sex"]
+    subject_netflix_familiarity : T_SUBJECT_DATA["subject_netflix_familiarity"]
+    subject_selected_content : T_SUBJECT_DATA["subject_selected_content"]
+    content_continuation : T_SUBJECT_DATA["content_continuation"]
 
     settings : string
     urls : string
