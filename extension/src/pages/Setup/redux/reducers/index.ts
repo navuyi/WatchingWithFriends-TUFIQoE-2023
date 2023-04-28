@@ -2,7 +2,7 @@ import { combineReducers } from "redux";
 import experimentSetupReducer from "./experimentSetupReducer";
 
 const rootReducer = combineReducers({
-    experimentSetupReducer: experimentSetupReducer
+    experimentSetup: experimentSetupReducer
 })
 
 

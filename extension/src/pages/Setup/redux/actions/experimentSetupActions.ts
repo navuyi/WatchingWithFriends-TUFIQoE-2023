@@ -7,5 +7,4 @@ export interface I_SET_EXPERIMENT_SETUP_ACTION {
     payload: any
 }
 
-
 export type T_EXPERIMENT_SETUP_ACTIONS = I_SET_EXPERIMENT_SETUP_ACTION

@@ -1,6 +1,6 @@
 import Joi from "joi"
 
-export const validateMappingApplicable = (config : any) : boolean => {
+export const validateExperimentAvailable = (config : any) : boolean => {
     const configSchema = Joi.object({
         title: Joi.string().allow("").required(),
         description: Joi.string().allow("").required(),
@@ -15,13 +15,13 @@ export const validateMappingApplicable = (config : any) : boolean => {
                 bitrate_vmaf_map: Joi.array().items(Joi.object({
                     vmaf: Joi.number().required(),
                     bitrate: Joi.number().required()
-                })).optional(),
+                })).required(),
                 scenario: Joi.array().items(Joi.object({
                     bitrate: Joi.number().required(),
                     vmaf: Joi.number().required(),
                     vmaf_diff: Joi.number().required(),
                     vmaf_template: Joi.number().required()
-                })).optional()
+                })).required()
             })
         )
     })

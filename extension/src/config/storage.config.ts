@@ -8,6 +8,8 @@ export type T_EXPERIMENT_SETTINGS = {
     bitrate_interval_ms: number
     assessment_interval_ms: number
 
+    config_seeding: boolean 
+
     videos: Array<T_VIDEO>
     urls: Array<string>
 
@@ -47,7 +49,9 @@ export const STORAGE_DEFAULT : T_STORAGE = {
         bitrate_interval_ms: 2.5 * 60 * 1000, // default 2.5min=150sec=150*1000
         assessment_interval_ms: 2.5 * 60 * 1000, // default 2.5min=150sec=150*1000
         
-        urls: [],
+        config_seeding: false,
+
+        urls: ["https://www.netflix.com/watch/80114856?trackId=267603888"],
         videos: [],
 
         device_id: 106,

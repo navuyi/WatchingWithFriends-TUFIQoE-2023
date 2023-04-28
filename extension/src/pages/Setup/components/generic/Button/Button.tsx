@@ -5,7 +5,9 @@ import style from "./style.module.scss"
 type T_PROPS = {
     text: string,
     style? : object,
-    attributes?: object,
+    attributes?: {
+        disabled?: boolean
+    },
     handleClick: Function,
     disabled?: boolean
 }

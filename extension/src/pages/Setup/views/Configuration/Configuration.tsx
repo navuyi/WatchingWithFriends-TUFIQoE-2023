@@ -6,9 +6,13 @@ import ConfigurationEraseButton from "../../components/ConfigurationEraseButton"
 import { useSelector } from "react-redux";
 import { T_APP_STATE } from "../../redux/reducers";
 
+import URLInput from "../../components/URLInput/URLInput";
+import ConfigSeeding from "../../components/ConfigSeeding/ConfigSeeding";
+import MappingStartButton from "../../components/MappingStartButton/MappingStartButton";
+
 
 const Configuration = () => {
-    const setup = useSelector((state:T_APP_STATE) => state.experimentSetupReducer)
+    const setup = useSelector((state:T_APP_STATE) => state.experimentSetup)
 
     return(
         <div className={style.configuration}>
@@ -22,6 +26,13 @@ const Configuration = () => {
                     {
                         setup.experiment_available ? <ConfigurationEraseButton /> : null
                     }
+                </div>
+                <div className={style.wrapper}>
+                    <ConfigSeeding />
+                    <URLInput />
+                </div>
+                <div className={style.wrapper}>
+                    <MappingStartButton />
                 </div>
                 
             </div>

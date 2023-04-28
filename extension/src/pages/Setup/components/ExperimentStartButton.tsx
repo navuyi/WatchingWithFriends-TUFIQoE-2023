@@ -1,7 +1,6 @@
 import React from "react";
-import { validate_setup_form } from "../../../utils/validation/validate_setup_form";
 import { useExperimentStart } from "../hooks/useExperimentStart";
-import Button from "./Button/Button";
+import Button from "./generic/Button/Button";
 import { CircularProgress } from "@mui/material";
 
 type T_PROPS = {
@@ -12,7 +11,9 @@ const ExperimentStartButton = (props:T_PROPS) => {
     const {start_experiment, experimentStarting} = useExperimentStart()
 
     const handleStart = async () => {
-        const formValid = await validate_setup_form()
+        
+        // TODO validate subject data form
+        const formValid = false
         
         if(formValid === false){
             window.alert("Experiment setup form is incorrect")

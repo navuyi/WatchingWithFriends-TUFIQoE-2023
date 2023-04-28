@@ -41,7 +41,8 @@ var STORAGE_DEFAULT = {
         stats_invisible: false,
         bitrate_interval_ms: 2.5 * 60 * 1000,
         assessment_interval_ms: 2.5 * 60 * 1000,
-        urls: [],
+        config_seeding: false,
+        urls: ["https://www.netflix.com/watch/80114856?trackId=267603888"],
         videos: [],
         device_id: 106,
         session_type: ""
@@ -773,7 +774,7 @@ var get_local_datetime_and_timezone = function (object) {
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("366ea2b4a9a798ae7118")
+/******/ 		__webpack_require__.h = () => ("2f5b67f3b05532f4b276")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */

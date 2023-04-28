@@ -6,7 +6,7 @@ type T_PROPS = {
     label: string
     type?: string
     value: string | number
-    handleChange: Function
+    handleChange: (value:string) => void
     style?: Object
 }
 

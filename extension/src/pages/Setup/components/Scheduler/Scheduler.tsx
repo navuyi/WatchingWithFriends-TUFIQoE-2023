@@ -1,7 +1,7 @@
 import React, { useLayoutEffect, useState } from "react";
 import style from "./style.module.scss"
 
-import Button from "../Button/Button";
+import Button from "../generic/Button/Button";
 import ExperimentStartButton from "../ExperimentStartButton";
 import { useScheduleExperiment} from "../../hooks/useScheduleExperiment";
 import { CircularProgress } from "@mui/material";

@@ -5,7 +5,7 @@ import Header from "../Header/Header"
 import { T_APP_STATE } from "../../redux/reducers"
 
 const ConfigurationStatus = () => {
-    const setup = useSelector((state:T_APP_STATE) => state.experimentSetupReducer)
+    const setup = useSelector((state:T_APP_STATE) => state.experimentSetup)
     return(
         <div className={style.configurationStatus}>
             <Header style={{fontSize: 20}}>Configuration status: <span className={style.status}>{setup.experiment_available ? "detected" : "not detected"}</span></Header>
