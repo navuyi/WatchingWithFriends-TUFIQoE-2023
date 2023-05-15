@@ -1,4 +1,4 @@
-import React, { useLayoutEffect } from 'react';
+import React, { useEffect, useLayoutEffect } from 'react';
 import { ChromeStorage } from '../../utils/custom/ChromeStorage';
 import { HashRouter, Routes, Route } from 'react-router-dom';
 
@@ -8,13 +8,15 @@ import Experiment from './views/Experiment/Experiment';
 import About from './views/About/About';
 
 import "./style.module.scss"
+import { validateExperimentAvailable } from '../../utils/validation/validate-experiment-available';
 
 
 const App = () => {
   
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const init = async () => {
+      
       
     }
     

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import style from "./style.module.scss"
 import Header from "../../components/Header/Header";
 import ConfigurationStatus from "../../components/ConfigurationStatus/ConfigurationStatus";
@@ -9,10 +9,27 @@ import { T_APP_STATE } from "../../redux/reducers";
 import URLInput from "../../components/URLInput/URLInput";
 import ConfigSeeding from "../../components/ConfigSeeding/ConfigSeeding";
 import MappingStartButton from "../../components/MappingStartButton/MappingStartButton";
+import { ChromeStorage } from "../../../../utils/custom/ChromeStorage";
+import { validateExperimentAvailable } from "../../../../utils/validation/validate-experiment-available";
+import { useDispatch } from "react-redux";
+import { Dispatch } from "redux";
+import { T_EXPERIMENT_SETUP_ACTIONS } from "../../redux/actions/experimentSetupActions";
 
 
 const Configuration = () => {
     const setup = useSelector((state:T_APP_STATE) => state.experimentSetup)
+    const dispatch = useDispatch<Dispatch<T_EXPERIMENT_SETUP_ACTIONS>>()
+
+    useEffect(() => {
+        const init = async () => {
+            const settings = await ChromeStorage.get_experiment_settings()
+            console.log(settings)
+            const valid = validateExperimentAvailable(settings.videos)
+            dispatch({type:"SET_EXPERIMENT_SETUP", key: "experiment_available", payload: valid})
+        }
+
+        init()
+    }, [])
 
     return(
         <div className={style.configuration}>

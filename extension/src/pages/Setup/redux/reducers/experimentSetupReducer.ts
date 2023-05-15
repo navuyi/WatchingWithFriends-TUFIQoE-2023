@@ -2,10 +2,10 @@ import { T_EXPERIMENT_SETUP_ACTIONS } from "../actions/experimentSetupActions";
 import { T_EXPERIMENT_SETUP } from "../types";
 
 const initialState: T_EXPERIMENT_SETUP = {
-    mirroring: false,
+    seeding: false,
     subject_id: "",
     urls: [],
-    experiment_available: true,
+    experiment_available: false,
     mapping_available: false
 }
 

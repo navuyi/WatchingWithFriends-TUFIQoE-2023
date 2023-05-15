@@ -7,16 +7,16 @@ import { useConfigSeeding } from "./useConfigSeeding";
 
 const ConfigSeeding = () => {
     const {subject_id, handleChange:handleIDChange} = useSubjectIDInput()
-    const {mirroring, handleChange:handleMirroringChange} = useConfigSeeding()
+    const {seeding, handleChange:handleMirroringChange} = useConfigSeeding()
 
     return(
         <div className={style.configMirroring}>
             <div className={style.wrapper}>
                 <span className={style.text}>Use config seeding:</span>
-                <input type="checkbox" className={style.checkbox} checked={mirroring} onChange={e => handleMirroringChange(e.currentTarget.checked)}/>
+                <input type="checkbox" className={style.checkbox} checked={seeding} onChange={e => handleMirroringChange(e.currentTarget.checked)}/>
             </div>
             {
-                mirroring ? <div className={style.wrapper}>
+                seeding ? <div className={style.wrapper}>
                 <Input label="Subject ID" value={subject_id} handleChange={handleIDChange}/>
             </div> : null
             }

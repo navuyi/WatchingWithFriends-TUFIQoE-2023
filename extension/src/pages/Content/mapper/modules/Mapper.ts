@@ -115,9 +115,9 @@ class Mapper{
         variables.video_index += 1
         await ChromeStorage.set_experiment_variables(variables)
 
-        if(variables.video_index < settings.videos.length){
+        if(variables.video_index < settings.urls.length){
             this.logger.log("Mapping in progress. Proceding to next video")
-            window.location.href = settings.videos[variables.video_index].url
+            window.location.href = settings.urls[variables.video_index]
         }
         else{
             this.logger.log("Mapping finished")

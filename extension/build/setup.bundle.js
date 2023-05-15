@@ -42704,7 +42704,7 @@ var __generator = (undefined && undefined.__generator) || function (thisArg, bod
 
 
 var App = function () {
-    (0,react__WEBPACK_IMPORTED_MODULE_0__.useLayoutEffect)(function () {
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
         var init = function () { return __awaiter(void 0, void 0, void 0, function () {
             return __generator(this, function (_a) {
                 return [2 /*return*/];
@@ -42748,12 +42748,12 @@ __webpack_require__.r(__webpack_exports__);
 
 var ConfigSeeding = function () {
     var _a = (0,_hooks_useSubjectIDInput__WEBPACK_IMPORTED_MODULE_3__.useSubjectIDInput)(), subject_id = _a.subject_id, handleIDChange = _a.handleChange;
-    var _b = (0,_useConfigSeeding__WEBPACK_IMPORTED_MODULE_4__.useConfigSeeding)(), mirroring = _b.mirroring, handleMirroringChange = _b.handleChange;
+    var _b = (0,_useConfigSeeding__WEBPACK_IMPORTED_MODULE_4__.useConfigSeeding)(), seeding = _b.seeding, handleMirroringChange = _b.handleChange;
     return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _style_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].configMirroring },
         react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _style_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].wrapper },
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", { className: _style_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].text }, "Use config seeding:"),
-            react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { type: "checkbox", className: _style_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].checkbox, checked: mirroring, onChange: function (e) { return handleMirroringChange(e.currentTarget.checked); } })),
-        mirroring ? react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _style_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].wrapper },
+            react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", { type: "checkbox", className: _style_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].checkbox, checked: seeding, onChange: function (e) { return handleMirroringChange(e.currentTarget.checked); } })),
+        seeding ? react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _style_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].wrapper },
             react__WEBPACK_IMPORTED_MODULE_0__.createElement(_generic_Input_Input__WEBPACK_IMPORTED_MODULE_2__["default"], { label: "Subject ID", value: subject_id, handleChange: handleIDChange })) : null));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ConfigSeeding);
@@ -42773,16 +42773,80 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "useConfigSeeding": () => (/* binding */ useConfigSeeding)
 /* harmony export */ });
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var _utils_custom_ChromeStorage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../utils/custom/ChromeStorage */ "./src/utils/custom/ChromeStorage.ts");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (undefined && undefined.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+
+
 
 
 var useConfigSeeding = function () {
     var dispatch = (0,react_redux__WEBPACK_IMPORTED_MODULE_0__.useDispatch)();
-    var mirroring = (0,react_redux__WEBPACK_IMPORTED_MODULE_0__.useSelector)(function (state) { return state.experimentSetup; }).mirroring;
-    var handleChange = function (checked) {
-        dispatch({ type: "SET_EXPERIMENT_SETUP", key: "mirroring", payload: checked });
-    };
+    var seeding = (0,react_redux__WEBPACK_IMPORTED_MODULE_0__.useSelector)(function (state) { return state.experimentSetup; }).seeding;
+    (0,react__WEBPACK_IMPORTED_MODULE_2__.useEffect)(function () {
+        var init = function () { return __awaiter(void 0, void 0, void 0, function () {
+            var config_seeding;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, _utils_custom_ChromeStorage__WEBPACK_IMPORTED_MODULE_1__.ChromeStorage.get_experiment_settings()];
+                    case 1:
+                        config_seeding = (_a.sent()).config_seeding;
+                        dispatch({ type: "SET_EXPERIMENT_SETUP", key: "seeding", payload: config_seeding });
+                        return [2 /*return*/];
+                }
+            });
+        }); };
+        init();
+    }, []);
+    var handleChange = function (checked) { return __awaiter(void 0, void 0, void 0, function () {
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    dispatch({ type: "SET_EXPERIMENT_SETUP", key: "seeding", payload: checked });
+                    return [4 /*yield*/, _utils_custom_ChromeStorage__WEBPACK_IMPORTED_MODULE_1__.ChromeStorage.update_experiment_settings_property("config_seeding", checked)];
+                case 1:
+                    _a.sent();
+                    return [2 /*return*/];
+            }
+        });
+    }); };
     return {
-        mirroring: mirroring,
+        seeding: seeding,
         handleChange: handleChange
     };
 };
@@ -42949,16 +43013,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 /* harmony import */ var _generic_Button_Button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../generic/Button/Button */ "./src/pages/Setup/components/generic/Button/Button.tsx");
 /* harmony import */ var _useMappingStartButton__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./useMappingStartButton */ "./src/pages/Setup/components/MappingStartButton/useMappingStartButton.ts");
+/* harmony import */ var _utils_string_utils__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../utils/string_utils */ "./src/utils/string_utils.ts");
+
 
 
 
 
 var MappingStartButton = function (props) {
-    var _a = (0,react_redux__WEBPACK_IMPORTED_MODULE_1__.useSelector)(function (state) { return state.experimentSetup; }), mapping_available = _a.mapping_available, experiment_available = _a.experiment_available;
+    var _a = (0,react_redux__WEBPACK_IMPORTED_MODULE_1__.useSelector)(function (state) { return state.experimentSetup; }), mapping_available = _a.mapping_available, experiment_available = _a.experiment_available, subject_id = _a.subject_id, seeding = _a.seeding;
     var handleMappingStart = (0,_useMappingStartButton__WEBPACK_IMPORTED_MODULE_3__.useMappingStartButton)().handleMappingStart;
     return (react__WEBPACK_IMPORTED_MODULE_0__.createElement(_generic_Button_Button__WEBPACK_IMPORTED_MODULE_2__["default"], { text: "Start mapping", style: {
             backgroundColor: "#02C39A"
-        }, attributes: { disabled: !mapping_available }, handleClick: function () { return handleMappingStart(); } }));
+        }, attributes: { disabled: !mapping_available || (seeding && (0,_utils_string_utils__WEBPACK_IMPORTED_MODULE_4__.remove_whitespaces)(subject_id) === "") || experiment_available }, handleClick: function () { return handleMappingStart(); } }));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MappingStartButton);
 
@@ -43037,7 +43103,7 @@ var useMappingStartButton = function () {
         });
     }); };
     return {
-        handleMappingStart: handleMappingStart
+        handleMappingStart: handleMappingStart,
     };
 };
 
@@ -43440,10 +43506,10 @@ var __assign = (undefined && undefined.__assign) || function () {
     return __assign.apply(this, arguments);
 };
 var initialState = {
-    mirroring: false,
+    seeding: false,
     subject_id: "",
     urls: [],
-    experiment_available: true,
+    experiment_available: false,
     mapping_available: false
 };
 var experimentSetupReducer = function (state, action) {
@@ -43561,6 +43627,47 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_URLInput_URLInput__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../components/URLInput/URLInput */ "./src/pages/Setup/components/URLInput/URLInput.tsx");
 /* harmony import */ var _components_ConfigSeeding_ConfigSeeding__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../components/ConfigSeeding/ConfigSeeding */ "./src/pages/Setup/components/ConfigSeeding/ConfigSeeding.tsx");
 /* harmony import */ var _components_MappingStartButton_MappingStartButton__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../components/MappingStartButton/MappingStartButton */ "./src/pages/Setup/components/MappingStartButton/MappingStartButton.tsx");
+/* harmony import */ var _utils_custom_ChromeStorage__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../../utils/custom/ChromeStorage */ "./src/utils/custom/ChromeStorage.ts");
+/* harmony import */ var _utils_validation_validate_experiment_available__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../../../utils/validation/validate-experiment-available */ "./src/utils/validation/validate-experiment-available.ts");
+var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (undefined && undefined.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+
+
+
 
 
 
@@ -43572,6 +43679,24 @@ __webpack_require__.r(__webpack_exports__);
 
 var Configuration = function () {
     var setup = (0,react_redux__WEBPACK_IMPORTED_MODULE_5__.useSelector)(function (state) { return state.experimentSetup; });
+    var dispatch = (0,react_redux__WEBPACK_IMPORTED_MODULE_5__.useDispatch)();
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+        var init = function () { return __awaiter(void 0, void 0, void 0, function () {
+            var settings, valid;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, _utils_custom_ChromeStorage__WEBPACK_IMPORTED_MODULE_9__.ChromeStorage.get_experiment_settings()];
+                    case 1:
+                        settings = _a.sent();
+                        console.log(settings);
+                        valid = (0,_utils_validation_validate_experiment_available__WEBPACK_IMPORTED_MODULE_10__.validateExperimentAvailable)(settings.videos);
+                        dispatch({ type: "SET_EXPERIMENT_SETUP", key: "experiment_available", payload: valid });
+                        return [2 /*return*/];
+                }
+            });
+        }); };
+        init();
+    }, []);
     return (react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _style_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].configuration },
         react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _style_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].container },
             react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", { className: _style_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].wrapper },
@@ -43978,6 +44103,47 @@ var get_local_datetime_and_timezone = function (object) {
     else {
         var timezone_standard = "-" + offset_hrs.toString().padStart(2, "0") + ":" + offset_min.toString().padStart(2, "0");
         return datetime + timezone_standard;
+    }
+};
+
+
+/***/ }),
+
+/***/ "./src/utils/validation/validate-experiment-available.ts":
+/*!***************************************************************!*\
+  !*** ./src/utils/validation/validate-experiment-available.ts ***!
+  \***************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "validateExperimentAvailable": () => (/* binding */ validateExperimentAvailable)
+/* harmony export */ });
+/* harmony import */ var joi__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! joi */ "./node_modules/joi/dist/joi-browser.min.js");
+/* harmony import */ var joi__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(joi__WEBPACK_IMPORTED_MODULE_0__);
+
+var validateExperimentAvailable = function (videos) {
+    var configSchema = joi__WEBPACK_IMPORTED_MODULE_0___default().array().items(joi__WEBPACK_IMPORTED_MODULE_0___default().object({
+        url: joi__WEBPACK_IMPORTED_MODULE_0___default().string().pattern(/https:\/\/www.netflix.com\/watch\/[0-9]+.+/m).required(),
+        vmaf_template_scenario: joi__WEBPACK_IMPORTED_MODULE_0___default().array().min(1).items(joi__WEBPACK_IMPORTED_MODULE_0___default().number()).required(),
+        bitrate_vmaf_map: joi__WEBPACK_IMPORTED_MODULE_0___default().array().items(joi__WEBPACK_IMPORTED_MODULE_0___default().object({
+            vmaf: joi__WEBPACK_IMPORTED_MODULE_0___default().number().required(),
+            bitrate: joi__WEBPACK_IMPORTED_MODULE_0___default().number().required()
+        })).required(),
+        scenario: joi__WEBPACK_IMPORTED_MODULE_0___default().array().items(joi__WEBPACK_IMPORTED_MODULE_0___default().object({
+            bitrate: joi__WEBPACK_IMPORTED_MODULE_0___default().number().required(),
+            vmaf: joi__WEBPACK_IMPORTED_MODULE_0___default().number().required(),
+            vmaf_diff: joi__WEBPACK_IMPORTED_MODULE_0___default().number().required(),
+            vmaf_template: joi__WEBPACK_IMPORTED_MODULE_0___default().number().required()
+        })).required()
+    })).min(1).required();
+    var error = configSchema.validate(videos).error;
+    if (error) {
+        return false;
+    }
+    else {
+        return true;
     }
 };
 
@@ -47052,7 +47218,7 @@ function _typeof(obj) {
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("2f5b67f3b05532f4b276")
+/******/ 		__webpack_require__.h = () => ("de3a59f40e5e8b32aedf")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
