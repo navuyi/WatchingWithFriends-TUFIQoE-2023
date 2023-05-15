@@ -1,6 +1,6 @@
 import React from "react";
 import { useExperimentStart } from "../hooks/useExperimentStart";
-import Button from "./generic/Button/Button";
+import Button from "./common/Button/Button";
 import { CircularProgress } from "@mui/material";
 
 type T_PROPS = {

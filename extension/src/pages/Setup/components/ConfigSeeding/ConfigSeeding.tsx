@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./style.module.scss"
-import Input from "../generic/Input/Input";
+import Input from "../common/Input/Input";
 import { useSubjectIDInput } from "../../hooks/useSubjectIDInput";
 import { useConfigSeeding } from "./useConfigSeeding";
 

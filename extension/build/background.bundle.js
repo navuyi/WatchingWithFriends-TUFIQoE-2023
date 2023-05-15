@@ -45,7 +45,13 @@ var STORAGE_DEFAULT = {
         urls: ["https://www.netflix.com/watch/80114856?trackId=267603888"],
         videos: [],
         device_id: 106,
-        session_type: ""
+        session_type: "",
+        subject_id: "",
+        subject_sex: "",
+        subject_age: "",
+        subject_netflix_familiarity: "",
+        subject_selected_content: "",
+        content_continuation: "",
     },
     experiment_variables: {
         database_experiment_id: -1,
@@ -53,14 +59,6 @@ var STORAGE_DEFAULT = {
         extension_running: false,
         extension_mode: "",
         video_index: 0
-    },
-    subject_data: {
-        subject_id: "",
-        subject_sex: "",
-        subject_age: "",
-        subject_netflix_familiarity: "",
-        subject_selected_content: "",
-        content_continuation: "",
     }
 };
 
@@ -578,43 +576,6 @@ var ChromeStorage = /** @class */ (function () {
             }
         });
     }); };
-    // Subject data utils
-    ChromeStorage.get_subject_data = function () { return __awaiter(void 0, void 0, void 0, function () {
-        var subject_data;
-        return __generator(_a, function (_b) {
-            switch (_b.label) {
-                case 0: return [4 /*yield*/, ChromeStorage.get_single("subject_data")];
-                case 1:
-                    subject_data = _b.sent();
-                    return [2 /*return*/, subject_data];
-            }
-        });
-    }); };
-    ChromeStorage.set_subject_data = function (data) { return __awaiter(void 0, void 0, void 0, function () {
-        return __generator(_a, function (_b) {
-            switch (_b.label) {
-                case 0: return [4 /*yield*/, ChromeStorage.set_single("subject_data", data)];
-                case 1:
-                    _b.sent();
-                    return [2 /*return*/];
-            }
-        });
-    }); };
-    ChromeStorage.update_subject_data_property = function (key, value) { return __awaiter(void 0, void 0, void 0, function () {
-        var data;
-        return __generator(_a, function (_b) {
-            switch (_b.label) {
-                case 0: return [4 /*yield*/, ChromeStorage.get_subject_data()];
-                case 1:
-                    data = _b.sent();
-                    data[key] = value;
-                    return [4 /*yield*/, ChromeStorage.set_subject_data(data)];
-                case 2:
-                    _b.sent();
-                    return [2 /*return*/];
-            }
-        });
-    }); };
     return ChromeStorage;
 }());
 
@@ -774,7 +735,7 @@ var get_local_datetime_and_timezone = function (object) {
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("de3a59f40e5e8b32aedf")
+/******/ 		__webpack_require__.h = () => ("c563546a8ace64f992fd")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */

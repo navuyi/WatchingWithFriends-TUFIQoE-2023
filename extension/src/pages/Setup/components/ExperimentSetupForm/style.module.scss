@@ -1,0 +1,16 @@
+@import "../../../../config/style.config.scss";
+
+
+
+.experimentSetupForm{
+    width: 100%;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    align-items: center;
+    justify-content: space-between;
+}

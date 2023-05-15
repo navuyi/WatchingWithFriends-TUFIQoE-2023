@@ -46,7 +46,7 @@ const init = async () => {
 
     // Choose random VMAF template
     const {config_seeding} = await ChromeStorage.get_experiment_settings()
-    const {subject_id} = await ChromeStorage.get_subject_data()
+    const {subject_id} = await ChromeStorage.get_experiment_settings()
     let vmaf_template : Array<number>
 
     if(config_seeding === true){

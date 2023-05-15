@@ -10,7 +10,6 @@ export const useExperimentStart = () => {
     const start_experiment = async () : Promise<void> => {
         const settings = await ChromeStorage.get_experiment_settings()
         const variables = await ChromeStorage.get_experiment_variables()
-        const subject_data = await ChromeStorage.get_subject_data()
 
         const timestamp = get_local_datetime(new Date())
 
@@ -19,15 +18,15 @@ export const useExperimentStart = () => {
         // Create new experiment entry in database
         const database_experiment_id = await post_new_experiment({
             started: timestamp,
-            subject_id: subject_data.subject_id,
+            subject_id: settings.subject_id,
             device_id: settings.device_id,
             session_type: settings.session_type,
 
-            subject_age: subject_data.subject_age,
-            subject_sex: subject_data.subject_sex,
-            subject_netflix_familiarity: subject_data.subject_netflix_familiarity,
-            subject_selected_content: subject_data.subject_selected_content,
-            content_continuation: subject_data.content_continuation,
+            subject_age: settings.subject_age,
+            subject_sex: settings.subject_sex,
+            subject_netflix_familiarity: settings.subject_netflix_familiarity,
+            subject_selected_content: settings.subject_selected_content,
+            content_continuation: settings.content_continuation,
 
             urls: JSON.stringify(settings.videos.map(video => video.url)),
             settings: JSON.stringify(settings)

@@ -16,8 +16,8 @@ export const useSubjectIDInput = () => {
 
     useEffect(() => {
         const init = async () => {
-            const subject_data = await ChromeStorage.get_subject_data()
-            dispatch({type:"SET_EXPERIMENT_SETUP", key:"subject_id", payload: subject_data.subject_id})
+            const settings = await ChromeStorage.get_experiment_settings()
+            dispatch({type:"SET_EXPERIMENT_SETUP", key:"subject_id", payload: settings.subject_id})
         }
         init()
     }, [])
@@ -26,7 +26,7 @@ export const useSubjectIDInput = () => {
     const handleChange = async (value:string) => {
         const id = remove_whitespaces(value)
         dispatch({type:"SET_EXPERIMENT_SETUP", key:"subject_id", payload: id})
-        await ChromeStorage.update_subject_data_property("subject_id", id)
+        await ChromeStorage.update_experiment_settings_property("subject_id", id)
     }
 
 

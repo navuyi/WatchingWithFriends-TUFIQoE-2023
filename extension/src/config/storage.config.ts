@@ -15,9 +15,7 @@ export type T_EXPERIMENT_SETTINGS = {
 
     device_id: "" | 106 | 107
     session_type : "" | "alone" | "together"
-}
 
-export type T_SUBJECT_DATA = {
     subject_id: "" | number
     subject_age : "" | number
     subject_sex : "" | "male" | "female" | "undisclosed"
@@ -25,6 +23,7 @@ export type T_SUBJECT_DATA = {
     subject_selected_content: "" | boolean
     content_continuation : "" | boolean
 }
+
 
 export type T_EXPERIMENT_VARIABLES = {
     database_experiment_id: number,
@@ -37,8 +36,7 @@ export type T_EXPERIMENT_VARIABLES = {
 
 export type T_STORAGE = {
     experiment_settings: T_EXPERIMENT_SETTINGS,
-    experiment_variables: T_EXPERIMENT_VARIABLES,
-    subject_data: T_SUBJECT_DATA
+    experiment_variables: T_EXPERIMENT_VARIABLES
 }
 
 export const STORAGE_DEFAULT : T_STORAGE = {
@@ -55,7 +53,13 @@ export const STORAGE_DEFAULT : T_STORAGE = {
         videos: [],
 
         device_id: 106,
-        session_type: ""
+        session_type: "",
+        subject_id: "",
+        subject_sex: "",
+        subject_age: "",
+        subject_netflix_familiarity: "",
+        subject_selected_content: "",
+        content_continuation: "",
     },
     experiment_variables: {
         database_experiment_id: -1,
@@ -64,13 +68,5 @@ export const STORAGE_DEFAULT : T_STORAGE = {
         extension_running: false,
         extension_mode: "", // main or mapping
         video_index: 0
-    },
-    subject_data:{
-        subject_id: "",
-        subject_sex: "",
-        subject_age: "",
-        subject_netflix_familiarity: "",
-        subject_selected_content: "",
-        content_continuation: "",
     }
 }

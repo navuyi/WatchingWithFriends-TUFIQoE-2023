@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { T_APP_STATE } from "../../redux/reducers";
-import Button from "../generic/Button/Button";
+import Button from "../common/Button/Button";
 import { useMappingStartButton } from "./useMappingStartButton";
 import { remove_whitespaces } from "../../../../utils/string_utils";
 

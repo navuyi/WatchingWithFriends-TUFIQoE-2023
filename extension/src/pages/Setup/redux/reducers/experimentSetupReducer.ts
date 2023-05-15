@@ -4,6 +4,8 @@ import { T_EXPERIMENT_SETUP } from "../types";
 const initialState: T_EXPERIMENT_SETUP = {
     seeding: false,
     subject_id: "",
+    device_id: "",
+    
     urls: [],
     experiment_available: false,
     mapping_available: false

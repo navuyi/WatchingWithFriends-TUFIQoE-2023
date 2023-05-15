@@ -1,4 +1,4 @@
-import { STORAGE_DEFAULT, T_STORAGE, T_SUBJECT_DATA } from "../../config/storage.config"
+import { STORAGE_DEFAULT, T_STORAGE} from "../../config/storage.config"
 import { T_EXPERIMENT_SETTINGS, T_EXPERIMENT_VARIABLES } from "../../config/storage.config"
 import { CustomLogger } from "./CustomLogger"
 
@@ -53,21 +53,6 @@ export abstract class ChromeStorage{
         const settings = await ChromeStorage.get_experiment_settings()
         settings[key] = value
         await ChromeStorage.set_experiment_settings(settings)
-    }
-
-
-    // Subject data utils
-    public static get_subject_data = async () : Promise<T_SUBJECT_DATA> => {
-        const subject_data = await ChromeStorage.get_single("subject_data")
-        return subject_data
-    }
-    public static set_subject_data = async (data:T_SUBJECT_DATA) : Promise<void> => {
-        await ChromeStorage.set_single("subject_data", data)
-    }
-    public static update_subject_data_property = async (key:keyof T_SUBJECT_DATA, value: any) : Promise<void> => {
-        const data = await ChromeStorage.get_subject_data()
-        data[key] = value
-        await ChromeStorage.set_subject_data(data)
     }
 }
 
