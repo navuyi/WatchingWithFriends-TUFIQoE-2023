@@ -1,8 +1,10 @@
 import { combineReducers } from "redux";
 import experimentSetupReducer from "./experimentSetupReducer";
+import startupFormReducer from "./startupFormReducer";
 
 const rootReducer = combineReducers({
-    experimentSetup: experimentSetupReducer
+    experimentSetup: experimentSetupReducer,
+    startupForm: startupFormReducer
 })
 
 

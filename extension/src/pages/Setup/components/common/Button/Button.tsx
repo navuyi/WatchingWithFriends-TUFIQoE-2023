@@ -16,7 +16,7 @@ const Button = (props : T_PROPS) => {
     
     return(
         <>
-            <button disabled={props.disabled} onClick={(e) => {props.handleClick()}} className={style.button} style={props.style} {...props.attributes}>{props.text}</button>
+            <button disabled={props.disabled} onClick={(e) => {props.handleClick()}} className={style.button} {...props.attributes} style={props.style}>{props.text}</button>
         </>
     )
 }

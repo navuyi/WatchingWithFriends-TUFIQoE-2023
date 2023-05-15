@@ -1,7 +1,7 @@
 import Joi from "joi"
 import { T_VIDEO } from "../../config/types/data-structures.type"
 
-export const validateExperimentAvailable = (videos : Array<T_VIDEO>) : boolean => {
+export const validateExperimentConfig = (videos : Array<T_VIDEO>) : boolean => {
     const configSchema = Joi.array().items(Joi.object({
         url: Joi.string().pattern(/https:\/\/www.netflix.com\/watch\/[0-9]+.+/m).required(),
         vmaf_template_scenario: Joi.array().min(1).items(Joi.number()).required(),

@@ -7,28 +7,40 @@ import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { Dispatch } from "redux";
 import { useEffect } from "react";
-import { validateExperimentAvailable } from "../../../../utils/validation/validate-experiment-available";
+import { validateExperimentConfig } from "../../../../utils/validation/validate-experiment-config";
 import { ChromeStorage } from "../../../../utils/custom/ChromeStorage";
 import { T_APP_STATE } from "../../redux/reducers";
 import { T_EXPERIMENT_SETUP_ACTIONS } from "../../redux/actions/experimentSetupActions";
 import Dropzone from "../../components/Dropzone/Dropzone";
 import ExperimentSetupForm from "../../components/ExperimentSetupForm/ExperimentSetupForm";
 import SubjectDataForm from "../../components/SubjectDataForm/SubjectDataForm";
+import ExperimentStartButton from "../../components/ExperimentStartButton";
+import { validateExperimentStartAvailable } from "../../../../utils/validation/validate-experiment-start-available";
+import { useState } from "react";
+
 
 const Experiment = () => {
-    const setup = useSelector((state:T_APP_STATE) => state.experimentSetup)
-    const dispatch = useDispatch<Dispatch<T_EXPERIMENT_SETUP_ACTIONS>>()
+    const experimentSetup = useSelector((state:T_APP_STATE) => state.experimentSetup)
+    const startupForm = useSelector((state:T_APP_STATE) => state.startupForm)
+    const dispatch = useDispatch<Dispatch<T_EXPERIMENT_SETUP_ACTIONS>>() 
+
+    const [startAvailable, setStartAvailable] = useState(false)
 
     useEffect(() => {
         const init = async () => {
             const settings = await ChromeStorage.get_experiment_settings()
-            console.log(settings)
-            const valid = validateExperimentAvailable(settings.videos)
+            const valid = validateExperimentConfig(settings.videos)
             dispatch({type:"SET_EXPERIMENT_SETUP", key: "experiment_available", payload: valid})
         }
 
         init()
     }, [])
+
+    useEffect(() => {
+        const valid = validateExperimentStartAvailable(startupForm)
+        console.log(valid)
+        setStartAvailable(valid)
+    }, [startupForm])
 
     return(
         <div className={style.experiment}>
@@ -40,12 +52,19 @@ const Experiment = () => {
                     <div className={style.wrapper}>
                         <ConfigurationStatus />
                         {
-                            setup.experiment_available ? <ConfigurationEraseButton /> : <Dropzone />
+                            experimentSetup.experiment_available ? <ConfigurationEraseButton /> : <Dropzone />
                         }
                     </div>
                     <div className={style.wrapper}>
                        <ExperimentSetupForm />
-                       <SubjectDataForm />
+                       {
+                        startupForm.session_type === "alone" ? <SubjectDataForm /> : null
+                       }
+                    </div>
+                    <div className={style.wrapper}>
+                        {
+                            startupForm.session_type !== "" && startAvailable ? <ExperimentStartButton /> : null
+                        }
                     </div>
             </div>
         </div>

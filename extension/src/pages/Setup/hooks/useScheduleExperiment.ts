@@ -1,9 +1,8 @@
 import { ChangeEvent, useState } from "react"
 import { ChromeStorage } from "../../../utils/custom/ChromeStorage"
 import { test_server_connection } from "../../../utils/http_requests/connection_test"
+import { validateExperimentConfig } from "../../../utils/validation/validate-experiment-config"
 import { useExperimentStart } from "./useExperimentStart"
-import { validateExperimentAvailable } from "../../../utils/validation/validate-experiment-available"
-
 
 export type T_TIME = {
     hours: string | null
@@ -48,7 +47,7 @@ export const useScheduleExperiment = () => {
             return
         }
         const settings = await ChromeStorage.get_experiment_settings()
-        const valid_config = validateExperimentAvailable(settings.videos)
+        const valid_config = validateExperimentConfig(settings.videos)
         if(valid_config === false){
             window.alert("Config is not experiment applicable. Cannot schedule experiment start.")
             return

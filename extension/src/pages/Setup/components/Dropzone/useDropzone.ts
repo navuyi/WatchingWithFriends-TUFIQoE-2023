@@ -1,5 +1,5 @@
 import { DragEvent } from "react"
-import { validateExperimentAvailable } from "../../../../utils/validation/validate-experiment-available"
+import { validateExperimentConfig } from "../../../../utils/validation/validate-experiment-config"
 import { ChromeStorage } from "../../../../utils/custom/ChromeStorage"
 import { useDispatch } from "react-redux"
 import { Dispatch } from "redux"
@@ -40,7 +40,7 @@ export const useDropzone = () => {
                     return
                 }
                 const config = JSON.parse(e.target.result as string)
-                const isValid = validateExperimentAvailable(config)
+                const isValid = validateExperimentConfig(config)
                 if(isValid === true){
                     dispatch({type: "SET_EXPERIMENT_SETUP", key: "experiment_available", payload: isValid})
                     await ChromeStorage.update_experiment_settings_property("videos", config)

@@ -1,42 +1,23 @@
-import React from "react";
-import { useExperimentStart } from "../hooks/useExperimentStart";
+import React, { useEffect, useLayoutEffect, useState } from "react";
+import { ChromeStorage } from "../../../utils/custom/ChromeStorage";
+import { post_new_experiment } from "../../../utils/http_requests/post_new_experiment";
+import { post_new_video } from "../../../utils/http_requests/post_new_video";
+import { get_local_datetime } from "../../../utils/time_utils";
 import Button from "./common/Button/Button";
-import { CircularProgress } from "@mui/material";
+import { useExperimentStart } from "../hooks/useExperimentStart";
 
-type T_PROPS = {
-    title: string
-}
+const ExperimentStartButton = () => {
 
-const ExperimentStartButton = (props:T_PROPS) => {
-    const {start_experiment, experimentStarting} = useExperimentStart()
-
-    const handleStart = async () => {
-        
-        // TODO validate subject data form
-        const formValid = false
-        
-        if(formValid === false){
-            window.alert("Experiment setup form is incorrect")
-            return
-        }
-
-        await start_experiment()
-    }
+    const {start_experiment} = useExperimentStart()
 
     return(
-        <>
-            {
-                experimentStarting ? <CircularProgress variant="indeterminate" thickness={5} size={50}/> : 
-                <Button 
-                    text={props.title}
-                    handleClick={() => {handleStart()}}
-                />
-            }
-        </>
-        
+        <Button 
+            text="Run extension in experiment mode"
+           
+            //attributes={{disabled: !setup.experimentAvailable || !subjectID}}
+            handleClick={start_experiment}
+        />
     )
 }
-
-
 
 export default ExperimentStartButton

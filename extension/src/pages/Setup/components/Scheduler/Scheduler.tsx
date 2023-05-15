@@ -32,7 +32,7 @@ const Scheduler = () => {
 
             <div className={style.wrapper}>
                 <Button text="Schedule auto-start" handleClick={handle_schedule} style={{backgroundColor: "#00A896"}}/>
-                <ExperimentStartButton title="Start immediately" />
+                <ExperimentStartButton />
             </div>
             
         </div>

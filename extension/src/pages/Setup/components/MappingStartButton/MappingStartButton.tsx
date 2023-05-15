@@ -10,7 +10,8 @@ type T_PROPS = {
 }
 
 const MappingStartButton = (props : T_PROPS) => {
-    const {mapping_available, experiment_available, subject_id, seeding} = useSelector((state:T_APP_STATE) => state.experimentSetup)
+    const {mapping_available, experiment_available, seeding} = useSelector((state:T_APP_STATE) => state.experimentSetup)
+    const {subject_id} = useSelector((state:T_APP_STATE) => state.startupForm)
     const {handleMappingStart} = useMappingStartButton()
     
 
