@@ -10,7 +10,7 @@ type T_PROPS = {
 }
 
 const MappingStartButton = (props : T_PROPS) => {
-    const {mapping_available, experiment_available, seeding} = useSelector((state:T_APP_STATE) => state.experimentSetup)
+    const {mapping_available, config_valid, seeding} = useSelector((state:T_APP_STATE) => state.experimentSetup)
     const {subject_id} = useSelector((state:T_APP_STATE) => state.startupForm)
     const {handleMappingStart} = useMappingStartButton()
     
@@ -21,7 +21,7 @@ const MappingStartButton = (props : T_PROPS) => {
             style={{
                 backgroundColor: "#02C39A"
             }}
-            attributes={{disabled: !mapping_available || (seeding && remove_whitespaces(subject_id)==="") || experiment_available}}
+            attributes={{disabled: !mapping_available || (seeding && remove_whitespaces(subject_id)==="") || config_valid}}
             handleClick={() => handleMappingStart()}
         />
     )

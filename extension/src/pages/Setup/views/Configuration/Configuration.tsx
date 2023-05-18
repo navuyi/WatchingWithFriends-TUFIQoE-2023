@@ -25,7 +25,7 @@ const Configuration = () => {
             const settings = await ChromeStorage.get_experiment_settings()
             console.log(settings)
             const valid = validateExperimentConfig(settings.videos)
-            dispatch({type:"SET_EXPERIMENT_SETUP", key: "experiment_available", payload: valid})
+            dispatch({type:"SET_EXPERIMENT_SETUP", key: "config_valid", payload: valid})
         }
 
         init()
@@ -41,7 +41,7 @@ const Configuration = () => {
                 <div className={style.wrapper}>
                     <ConfigurationStatus />
                     {
-                        setup.experiment_available ? <ConfigurationEraseButton /> : null
+                        setup.config_valid ? <ConfigurationEraseButton /> : null
                     }
                 </div>
                 <div className={style.wrapper}>

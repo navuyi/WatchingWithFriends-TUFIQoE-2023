@@ -42,11 +42,11 @@ export const useDropzone = () => {
                 const config = JSON.parse(e.target.result as string)
                 const isValid = validateExperimentConfig(config)
                 if(isValid === true){
-                    dispatch({type: "SET_EXPERIMENT_SETUP", key: "experiment_available", payload: isValid})
+                    dispatch({type: "SET_EXPERIMENT_SETUP", key: "config_valid", payload: isValid})
                     await ChromeStorage.update_experiment_settings_property("videos", config)
                 }
                 else{
-                    dispatch({type: "SET_EXPERIMENT_SETUP", key: "experiment_available", payload: isValid})
+                    dispatch({type: "SET_EXPERIMENT_SETUP", key: "config_valid", payload: isValid})
                     window.alert("Provided file is incorrect")
                 }
             }

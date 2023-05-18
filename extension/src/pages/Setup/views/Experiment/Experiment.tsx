@@ -15,8 +15,9 @@ import Dropzone from "../../components/Dropzone/Dropzone";
 import ExperimentSetupForm from "../../components/ExperimentSetupForm/ExperimentSetupForm";
 import SubjectDataForm from "../../components/SubjectDataForm/SubjectDataForm";
 import ExperimentStartButton from "../../components/ExperimentStartButton";
-import { validateExperimentStartAvailable } from "../../../../utils/validation/validate-experiment-start-available";
-import { useState } from "react";
+
+import Scheduler from "../../components/Scheduler/Scheduler";
+import { validateStartupForm } from "../../../../utils/validation/validate-startup-form";
 
 
 const Experiment = () => {
@@ -24,23 +25,27 @@ const Experiment = () => {
     const startupForm = useSelector((state:T_APP_STATE) => state.startupForm)
     const dispatch = useDispatch<Dispatch<T_EXPERIMENT_SETUP_ACTIONS>>() 
 
-    const [startAvailable, setStartAvailable] = useState(false)
-
     useEffect(() => {
         const init = async () => {
             const settings = await ChromeStorage.get_experiment_settings()
             const valid = validateExperimentConfig(settings.videos)
-            dispatch({type:"SET_EXPERIMENT_SETUP", key: "experiment_available", payload: valid})
+            dispatch({type:"SET_EXPERIMENT_SETUP", key: "config_valid", payload: valid})
         }
-
+        
         init()
     }, [])
 
     useEffect(() => {
-        const valid = validateExperimentStartAvailable(startupForm)
-        console.log(valid)
-        setStartAvailable(valid)
+        const validate = async () => {
+            const s = await ChromeStorage.get_experiment_settings()
+            const valid = await validateStartupForm()
+            dispatch({type: "SET_EXPERIMENT_SETUP", key: "experiment_start_available", payload: valid})
+        }
+
+        validate()
     }, [startupForm])
+
+    
 
     return(
         <div className={style.experiment}>
@@ -52,7 +57,7 @@ const Experiment = () => {
                     <div className={style.wrapper}>
                         <ConfigurationStatus />
                         {
-                            experimentSetup.experiment_available ? <ConfigurationEraseButton /> : <Dropzone />
+                            experimentSetup.config_valid ? <ConfigurationEraseButton /> : <Dropzone />
                         }
                     </div>
                     <div className={style.wrapper}>
@@ -63,7 +68,7 @@ const Experiment = () => {
                     </div>
                     <div className={style.wrapper}>
                         {
-                            startupForm.session_type !== "" && startAvailable ? <ExperimentStartButton /> : null
+                            startupForm.session_type === "alone" ? <Scheduler /> : startupForm.session_type === "together" ? <ExperimentStartButton /> : null
                         }
                     </div>
             </div>

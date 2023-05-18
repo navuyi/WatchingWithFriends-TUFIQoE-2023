@@ -3,8 +3,9 @@ import { T_EXPERIMENT_SETTINGS } from "../../../config/storage.config"
 interface I_EXPERIMENMT_SETUP {
     seeding: boolean
     urls: string[]
-    experiment_available: boolean
+    config_valid: boolean
     mapping_available: boolean
+    experiment_start_available: boolean
 }
 
 interface I_INDEX_SIGNATURE {

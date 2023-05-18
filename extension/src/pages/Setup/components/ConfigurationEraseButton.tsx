@@ -11,7 +11,7 @@ const ConfigurationEraseButton = () => {
 
     const handleErase = async () => {
         await ChromeStorage.update_experiment_settings_property("videos", [])
-        dispatch({type: "SET_EXPERIMENT_SETUP", key: "experiment_available", payload: false})
+        dispatch({type: "SET_EXPERIMENT_SETUP", key: "config_valid", payload: false})
     }
 
     return(

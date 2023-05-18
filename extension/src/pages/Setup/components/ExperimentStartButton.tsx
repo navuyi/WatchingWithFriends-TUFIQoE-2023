@@ -1,19 +1,17 @@
 import React, { useEffect, useLayoutEffect, useState } from "react";
-import { ChromeStorage } from "../../../utils/custom/ChromeStorage";
-import { post_new_experiment } from "../../../utils/http_requests/post_new_experiment";
-import { post_new_video } from "../../../utils/http_requests/post_new_video";
-import { get_local_datetime } from "../../../utils/time_utils";
 import Button from "./common/Button/Button";
 import { useExperimentStart } from "../hooks/useExperimentStart";
+import { useSelector } from "react-redux";
+import { T_APP_STATE } from "../redux/reducers";
 
 const ExperimentStartButton = () => {
-
     const {start_experiment} = useExperimentStart()
+    const {experiment_start_available, config_valid} = useSelector((state:T_APP_STATE) => state.experimentSetup)
 
     return(
         <Button 
-            text="Run extension in experiment mode"
-           
+            text="Start experiment"
+            disabled={!experiment_start_available || !config_valid}
             //attributes={{disabled: !setup.experimentAvailable || !subjectID}}
             handleClick={start_experiment}
         />

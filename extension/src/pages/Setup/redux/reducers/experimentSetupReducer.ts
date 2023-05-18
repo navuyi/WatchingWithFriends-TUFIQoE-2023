@@ -6,8 +6,9 @@ const initialState: T_EXPERIMENT_SETUP = {
     subject_id: "",
 
     urls: [],
-    experiment_available: false,
-    mapping_available: false
+    config_valid: false,
+    mapping_available: false,
+    experiment_start_available: false
 }
 
 

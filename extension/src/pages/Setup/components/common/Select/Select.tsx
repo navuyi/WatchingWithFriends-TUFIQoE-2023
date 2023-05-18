@@ -23,7 +23,7 @@ const Select = (props:T_PROPS) => {
    
 
     const handleChange = async (e:ChangeEvent<HTMLSelectElement>) => {
-        const _value = e.currentTarget.value
+        const _value = e.target.value
         dispatch({type: "SET_STARTUP_FORM", key: props.id, payload: _value})
         await ChromeStorage.update_experiment_settings_property(props.id, _value)
     }
