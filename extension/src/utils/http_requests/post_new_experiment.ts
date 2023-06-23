@@ -1,5 +1,5 @@
 import axios from "axios"
-import { T_EXPERIMENT_SETTINGS } from "../../config/storage.config"
+import { T_EXPERIMENT_SETTINGS} from "../../config/storage.config"
 import { backend_urls } from "./config"
 
 type T_INPUT_DATA = {
@@ -14,8 +14,9 @@ type T_INPUT_DATA = {
     subject_selected_content : T_EXPERIMENT_SETTINGS["subject_selected_content"]
     content_continuation : T_EXPERIMENT_SETTINGS["content_continuation"]
 
-    settings : string
+    videos : string
     urls : string
+    settings: string
 }
 
 export const post_new_experiment = async (data : T_INPUT_DATA) : Promise<number|null> => {

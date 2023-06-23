@@ -28,7 +28,8 @@ export const useExperimentStart = () => {
             subject_selected_content: settings.subject_selected_content,
             content_continuation: settings.content_continuation,
 
-            urls: JSON.stringify(settings.config?.videos.map(video => video.url)),
+            urls: JSON.stringify(settings.urls),
+            videos: JSON.stringify(settings.videos),
             settings: JSON.stringify(settings)
         })
         if(database_experiment_id == null){
@@ -44,7 +45,7 @@ export const useExperimentStart = () => {
         const database_video_id = await post_new_video({
             started: timestamp,
             experiment_id: database_experiment_id as number,
-            url: settings.config?.videos[variables.video_index].url as string
+            url: settings.videos[variables.video_index].url as string
         })
 
         if(database_video_id == null){
@@ -59,7 +60,7 @@ export const useExperimentStart = () => {
         // Start experiment
         await ChromeStorage.update_experiment_variables_property("extension_mode", "main")
         await ChromeStorage.update_experiment_variables_property("extension_running", true)
-        window.location.href = settings.config?.videos[variables.video_index].url as string
+        window.location.href = settings.videos[variables.video_index].url 
     }
 
 

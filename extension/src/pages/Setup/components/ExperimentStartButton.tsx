@@ -1,41 +1,21 @@
-import React from "react";
-import { validate_setup_form } from "../../../utils/validation/validate_setup_form";
+import React, { useEffect, useLayoutEffect, useState } from "react";
+import Button from "./common/Button/Button";
 import { useExperimentStart } from "../hooks/useExperimentStart";
-import Button from "./Button/Button";
-import { CircularProgress } from "@mui/material";
+import { useSelector } from "react-redux";
+import { T_APP_STATE } from "../redux/reducers";
 
-type T_PROPS = {
-    title: string
-}
-
-const ExperimentStartButton = (props:T_PROPS) => {
-    const {start_experiment, experimentStarting} = useExperimentStart()
-
-    const handleStart = async () => {
-        const formValid = await validate_setup_form()
-        
-        if(formValid === false){
-            window.alert("Experiment setup form is incorrect")
-            return
-        }
-
-        await start_experiment()
-    }
+const ExperimentStartButton = () => {
+    const {start_experiment} = useExperimentStart()
+    const {experiment_start_available, config_valid} = useSelector((state:T_APP_STATE) => state.experimentSetup)
 
     return(
-        <>
-            {
-                experimentStarting ? <CircularProgress variant="indeterminate" thickness={5} size={50}/> : 
-                <Button 
-                    text={props.title}
-                    handleClick={() => {handleStart()}}
-                />
-            }
-        </>
-        
+        <Button 
+            text="Start experiment"
+            disabled={!experiment_start_available || !config_valid}
+            //attributes={{disabled: !setup.experimentAvailable || !subjectID}}
+            handleClick={start_experiment}
+        />
     )
 }
-
-
 
 export default ExperimentStartButton

@@ -1,11 +1,11 @@
 {
   "name": "watching-with-friends-netflix-qoe-experiment",
-  "version": "4.3.5",
+  "version": "1.0.0",
   "description": "",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/navuyi/WatchingWithFriends-TUFIQoE-2023/"
   },
   "scripts": {
     "build": "node utils/build.js",
@@ -21,6 +21,7 @@
     "@types/react-redux": "^7.1.25",
     "axios": "^0.27.2",
     "bootstrap": "^5.2.0",
+    "esm-seedrandom": "^3.0.5",
     "joi": "^17.7.0",
     "react": "^17.0.2",
     "react-bootstrap": "^2.5.0",
@@ -33,7 +34,8 @@
     "react-router-dom": "^6.8.0",
     "react-transition-group": "^4.4.5",
     "redux": "^4.2.0",
-    "redux-devtools-extension": "^2.13.9"
+    "redux-devtools-extension": "^2.13.9",
+    "sass": "^1.63.6"
   },
   "devDependencies": {
     "@babel/core": "^7.17.0",
