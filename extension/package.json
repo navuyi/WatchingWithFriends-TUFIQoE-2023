@@ -1,11 +1,11 @@
 {
   "name": "watching-with-friends-netflix-qoe-experiment",
-  "version": "4.3.5",
+  "version": "1.0.0",
   "description": "",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/navuyi/WatchingWithFriends-TUFIQoE-2023/"
   },
   "scripts": {
     "build": "node utils/build.js",
